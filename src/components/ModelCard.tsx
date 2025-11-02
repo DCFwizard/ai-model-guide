@@ -2,8 +2,9 @@ import { AIModel } from '@/types';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Cpu, DollarSign, FileText, Scale } from 'lucide-react';
+import { ArrowRight, DollarSign, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 interface ModelCardProps {
   model: AIModel;
 }
@@ -14,41 +15,49 @@ const iconMap = {
 };
 export function ModelCard({ model }: ModelCardProps) {
   return (
-    <Card className="flex flex-col h-full bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
-      <CardHeader>
-        <div className="flex justify-between items-start">
-          <div>
-            <CardTitle className="text-xl">{model.name}</CardTitle>
-            <CardDescription>{model.provider}</CardDescription>
+    <motion.div
+      className="h-full"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      whileHover={{ y: -5 }}
+    >
+      <Card className="flex flex-col h-full bg-card shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <CardHeader>
+          <div className="flex justify-between items-start">
+            <div>
+              <CardTitle className="text-xl">{model.name}</CardTitle>
+              <CardDescription>{model.provider}</CardDescription>
+            </div>
+            {model.open_weight && <Badge variant="secondary">Open-weight</Badge>}
           </div>
-          {model.open_weight && <Badge variant="secondary">Open-weight</Badge>}
-        </div>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <p className="text-sm text-muted-foreground mb-4">{model.description}</p>
-        <div className="flex flex-wrap gap-2">
-          {model.strengths.slice(0, 3).map((strength) => (
-            <Badge key={strength} variant="outline" className="capitalize">{strength}</Badge>
-          ))}
-        </div>
-      </CardContent>
-      <CardFooter className="flex justify-between items-center">
-        <div className="flex items-center gap-3 text-sm text-muted-foreground">
-          <div className="flex items-center gap-1" title="Cost Tier">
-            <DollarSign className="w-4 h-4" />
-            <span>{model.cost_tier}</span>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-sm text-muted-foreground mb-4">{model.description}</p>
+          <div className="flex flex-wrap gap-2">
+            {model.strengths.slice(0, 3).map((strength) => (
+              <Badge key={strength} variant="outline" className="capitalize">{strength}</Badge>
+            ))}
           </div>
-          <div className="flex items-center gap-1" title="Context Window">
-            {iconMap[model.context_window]}
-            <span className="capitalize">{model.context_window}</span>
+        </CardContent>
+        <CardFooter className="flex justify-between items-center">
+          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+            <div className="flex items-center gap-1" title="Cost Tier">
+              <DollarSign className="w-4 h-4" />
+              <span>{model.cost_tier}</span>
+            </div>
+            <div className="flex items-center gap-1" title="Context Window">
+              {iconMap[model.context_window]}
+              <span className="capitalize">{model.context_window}</span>
+            </div>
           </div>
-        </div>
-        <Button variant="ghost" size="sm" asChild>
-          <Link to={`/models/${model.id}`}>
-            Details <ArrowRight className="w-4 h-4 ml-2" />
-          </Link>
-        </Button>
-      </CardFooter>
-    </Card>
+          <Button variant="ghost" size="sm" asChild>
+            <Link to={`/models/${model.id}`}>
+              Details <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
+        </CardFooter>
+      </Card>
+    </motion.div>
   );
 }

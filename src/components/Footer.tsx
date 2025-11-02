@@ -12,9 +12,9 @@ export function Footer() {
             </p>
           </div>
           <div className="flex items-center space-x-6">
-            <Link to="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</Link>
-            <Link to="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</Link>
-            <Link to="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</Link>
+            <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</Link>
+            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-muted-foreground/80">

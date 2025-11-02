@@ -17,6 +17,9 @@ import { UseCaseDetailPage } from '@/pages/UseCaseDetailPage';
 import { ComparisonPage } from '@/pages/ComparisonPage';
 import { FaqPage } from '@/pages/FaqPage';
 import { AboutPage } from '@/pages/AboutPage';
+import { ContactPage } from '@/pages/ContactPage';
+import { PrivacyPage } from '@/pages/PrivacyPage';
+import { TermsPage } from '@/pages/TermsPage';
 enableMapSet();
 const router = createBrowserRouter([
   {
@@ -32,9 +35,9 @@ const router = createBrowserRouter([
       { path: 'comparisons/gpt-vs-claude', element: <ComparisonPage /> },
       { path: 'faq', element: <FaqPage /> },
       { path: 'about', element: <AboutPage /> },
-      { path: 'contact', element: <div>Contact Page</div> },
-      { path: 'privacy', element: <div>Privacy Page</div> },
-      { path: 'terms', element: <div>Terms Page</div> },
+      { path: 'contact', element: <ContactPage /> },
+      { path: 'privacy', element: <PrivacyPage /> },
+      { path: 'terms', element: <TermsPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
