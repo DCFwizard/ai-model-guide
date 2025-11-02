@@ -12,6 +12,11 @@ import { HomePage } from '@/pages/HomePage';
 import { ModelsPage } from '@/pages/ModelsPage';
 import { UseCasesPage } from '@/pages/UseCasesPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { ModelDetailPage } from '@/pages/ModelDetailPage';
+import { UseCaseDetailPage } from '@/pages/UseCaseDetailPage';
+import { ComparisonPage } from '@/pages/ComparisonPage';
+import { FaqPage } from '@/pages/FaqPage';
+import { AboutPage } from '@/pages/AboutPage';
 enableMapSet();
 const router = createBrowserRouter([
   {
@@ -21,12 +26,12 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'models', element: <ModelsPage /> },
+      { path: 'models/:id', element: <ModelDetailPage /> },
       { path: 'use-cases', element: <UseCasesPage /> },
-      // Placeholder routes for future phases
-      { path: 'use-cases/:slug', element: <div>Use Case Detail Page</div> },
-      { path: 'comparisons/:slug', element: <div>Comparison Page</div> },
-      { path: 'faq', element: <div>FAQ Page</div> },
-      { path: 'about', element: <div>About Page</div> },
+      { path: 'use-cases/:slug', element: <UseCaseDetailPage /> },
+      { path: 'comparisons/gpt-vs-claude', element: <ComparisonPage /> },
+      { path: 'faq', element: <FaqPage /> },
+      { path: 'about', element: <AboutPage /> },
       { path: 'contact', element: <div>Contact Page</div> },
       { path: 'privacy', element: <div>Privacy Page</div> },
       { path: 'terms', element: <div>Terms Page</div> },
