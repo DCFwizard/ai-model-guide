@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "summarization",
+    "title": "Summarization",
+    "description": "Condense long documents, articles, or conversations into concise summaries.",
+    "icon": "BookText",
+    "overview": "Summarization is the task of creating a short, accurate, and coherent version of a longer text document. AI models excel at this by identifying key points and generating fluent summaries, saving significant time and effort in processing large volumes of information.",
+    "recommendations": {
+      "premium": { "model_id": "claude-3-class", "reason": "Best-in-class for handling very long documents and producing nuanced, high-quality summaries." },
+      "balanced": { "model_id": "gpt-4-class", "reason": "Excellent all-rounder with strong comprehension and generation, suitable for most summary tasks." },
+      "budget": { "model_id": "mistral-class", "reason": "Offers a great balance of speed, cost, and quality, ideal for summarizing at scale." }
+    },
+    "evaluation_criteria": [
+      { "title": "Context Window", "description": "Can the model handle the full length of your documents? Models like Claude 3 are ideal for very long inputs." },
+      { "title": "Factual Accuracy", "description": "Does the summary accurately reflect the source text without introducing hallucinations or errors?" },
+      { "title": "Coherence & Readability", "description": "Is the generated summary well-written, easy to understand, and fluent?" },
+      { "title": "Cost & Latency", "description": "For high-volume summarization, efficient models like Mistral can provide significant cost savings." }
+    ],
+    "faq": [
+      { "question": "What's the difference between extractive and abstractive summarization?", "answer": "Extractive summarization selects key sentences directly from the source text, while abstractive summarization generates new sentences to capture the core meaning, which is what modern LLMs do." },
+      { "question": "How can I improve summary quality?", "answer": "Use clear, specific prompts. For example, instead of 'Summarize this,' try 'Summarize this meeting transcript into a list of key decisions and action items.'" },
+      { "question": "Can models summarize audio or video?", "answer": "Yes, but it's a two-step process. First, you need a speech-to-text model to transcribe the audio, then you can feed the transcript to a text model for summarization." }
+    ]
+  },
+  {
+    "slug": "rag",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "description": "Answer questions using a private knowledge base for accurate, context-aware responses.",
+    "icon": "Database",
+    "overview": "RAG is a technique that enhances LLMs by connecting them to external knowledge bases. Instead of relying solely on its training data, the model first retrieves relevant information from your documents and then uses that information to generate a more accurate, up-to-date, and verifiable answer.",
+    "recommendations": {
+      "premium": { "model_id": "cohere-command-class", "reason": "Specifically designed for enterprise RAG with strong grounding and citation features." },
+      "balanced": { "model_id": "gpt-4-class", "reason": "A powerful and reliable choice with excellent reasoning over retrieved context." },
+      "budget": { "model_id": "mistral-class", "reason": "Fast and cost-effective, making it a great choice for building scalable RAG applications." }
+    },
+    "evaluation_criteria": [
+      { "title": "Faithfulness to Context", "description": "Does the model's answer strictly adhere to the provided documents, avoiding outside knowledge or hallucinations?" },
+      { "title": "Reasoning Ability", "description": "Can the model synthesize information from multiple retrieved chunks to answer complex questions?" },
+      { "title": "Speed and Cost", "description": "RAG can be token-intensive. Efficient models are crucial for maintaining a good user experience and managing costs." },
+      { "title": "Tool Use / Function Calling", "description": "Robust function calling is essential for integrating the retrieval step into the model's workflow." }
+    ],
+    "faq": [
+      { "question": "Why use RAG instead of fine-tuning?", "answer": "RAG is better for incorporating new or rapidly changing information, as you only need to update your knowledge base, not retrain the model. It also helps reduce hallucinations by grounding the model in specific facts." },
+      { "question": "What is a vector database?", "answer": "A vector database is a specialized database used in RAG to store information (like text chunks) as numerical representations called embeddings. It allows for fast and efficient searching based on semantic similarity, not just keywords." },
+      { "question": "How do I prevent the model from ignoring the context?", "answer": "Prompt engineering is key. Use a clear, forceful prompt that instructs the model to *only* use the provided documents to answer the question and to say 'I don't know' if the answer isn't present." }
+    ]
+  },
+  {
+    "slug": "coding-assistance",
+    "title": "Coding Assistance",
+    "description": "Generate, debug, and explain code in various programming languages.",
+    "icon": "Code",
+    "overview": "AI models can act as powerful pair programmers, helping developers write code faster, debug complex issues, understand unfamiliar codebases, and learn new languages. They can generate boilerplate code, write unit tests, refactor existing code, and provide explanations for complex algorithms.",
+    "recommendations": {
+      "premium": { "model_id": "gpt-4-class", "reason": "Top-tier performance in code generation, debugging, and complex logic across many languages." },
+      "balanced": { "model_id": "claude-3-class", "reason": "Strong coding abilities, particularly good at explaining code and working with large codebases." },
+      "budget": { "model_id": "mistral-class", "reason": "Excellent speed and performance for its size, making it a fantastic open-weight choice for coding." }
+    },
+    "evaluation_criteria": [
+      { "title": "Language Support", "description": "How well does the model perform in your specific programming language and framework?" },
+      { "title": "Problem-Solving Ability", "description": "Can the model understand and solve complex algorithmic challenges, not just generate simple snippets?" },
+      { "title": "Debugging Skills", "description": "When given a piece of buggy code and an error message, can the model identify the issue and suggest a correct fix?" },
+      { "title": "Contextual Awareness", "description": "Does the model understand the broader context of your project to provide relevant and consistent suggestions?" }
+    ],
+    "faq": [
+      { "question": "Can AI models write complete applications?", "answer": "Not yet. They are excellent for generating functions, components, or solving specific problems, but they cannot yet architect and build a full, complex application from scratch without significant human oversight." },
+      { "question": "Is the code generated by AI secure?", "answer": "Not always. You should treat AI-generated code as you would code from a junior developer—it needs to be reviewed, tested, and checked for security vulnerabilities before being used in production." },
+      { "question": "How can I get the best code from an AI model?", "answer": "Be as specific as possible in your prompt. Provide context, mention the language and frameworks, give examples of input and desired output, and break down complex requests into smaller steps." }
+    ]
+  },
+  {
+    "slug": "text-generation",
+    "title": "Text Generation",
+    "description": "Create high-quality written content, from articles to creative stories.",
+    "icon": "PenTool",
+    "overview": "Text generation involves creating human-like text for various purposes, such as writing articles, marketing copy, emails, or creative fiction. Models are evaluated on their creativity, coherence, and ability to adopt a specific style or tone.",
+    "recommendations": {
+      "premium": { "model_id": "gpt-4-class", "reason": "Unmatched for creative and technical writing, producing highly coherent and nuanced text." },
+      "balanced": { "model_id": "claude-3-class", "reason": "Excels at long-form writing and maintaining a consistent, thoughtful tone throughout." },
+      "budget": { "model_id": "llama-3-class", "reason": "A powerful open-weight option that can be fine-tuned for specific writing styles." }
+    },
+    "evaluation_criteria": [
+      { "title": "Creativity & Style", "description": "Can the model generate text that is engaging, original, and matches your desired tone (e.g., formal, witty, technical)?" },
+      { "title": "Coherence", "description": "Does the generated text flow logically and stay on topic, especially in longer pieces of content?" },
+      { "title": "Instruction Following", "description": "How well does the model adhere to complex instructions, constraints, and formatting requirements in your prompt?" },
+      { "title": "Factuality", "description": "For non-fiction content, it's crucial to verify the model's outputs, as even the best models can 'hallucinate' facts." }
+    ],
+    "faq": [
+      { "question": "How do I prevent generic-sounding content?", "answer": "Use highly detailed prompts. Include brand voice guidelines, target audience descriptions, examples of the desired style, and specific points to cover." },
+      { "question": "Can I use AI to write a whole book?", "answer": "While possible, it's a significant undertaking. It's more effective to use AI as a co-writer for brainstorming, outlining, drafting sections, and overcoming writer's block, with a human providing the overarching structure and final polish." }
+    ]
+  },
+  {
+    "slug": "vision",
+    "title": "Vision / Multimodal",
+    "description": "Analyze and interpret images, charts, and videos to answer questions.",
+    "icon": "Eye",
+    "overview": "Vision or multimodal models can process and understand visual information in addition to text. They can describe images, read text from documents, analyze charts and graphs, and answer questions about the content of a picture or video frame.",
+    "recommendations": {
+      "premium": { "model_id": "gemini-class", "reason": "State-of-the-art multimodal capabilities, deeply integrated with Google's ecosystem for broad applications." },
+      "balanced": { "model_id": "gpt-4-class", "reason": "Excellent vision capabilities for analyzing complex images, documents, and charts with high accuracy." },
+      "budget": { "model_id": "phi-3-class", "reason": "A strong, small open-weight model with surprising vision capabilities for on-device or low-latency tasks." }
+    },
+    "evaluation_criteria": [
+      { "title": "Image Comprehension", "description": "How accurately does the model understand the objects, relationships, and context within an image?" },
+      { "title": "OCR Accuracy", "description": "For document analysis, how well does the model perform Optical Character Recognition (OCR) to extract text, especially from complex layouts?" },
+      { "title": "Data Extraction", "description": "Can the model accurately extract structured data from unstructured visual inputs like invoices, receipts, or charts?" },
+      { "title": "Latency", "description": "Processing images is more computationally intensive than text. Consider the speed requirements for your application." }
+    ],
+    "faq": [
+      { "question": "What is 'prompting with images'?", "answer": "This involves providing an image (or multiple images) along with a text prompt to the model. For example, you could upload a picture of your refrigerator and ask, 'What can I make for dinner with these ingredients?'" },
+      { "question": "Can these models understand video?", "answer": "Yes, typically by processing the video frame by frame. You can ask questions about actions happening over time in the video. This is a rapidly advancing area." }
+    ]
+  },
+  {
+    "slug": "agents",
+    "title": "AI Agents",
+    "description": "Create autonomous agents that can perform multi-step tasks and use tools.",
+    "icon": "Bot",
+    "overview": "AI agents are systems that use LLMs as their 'brain' to reason, plan, and execute a sequence of actions to achieve a goal. They can use 'tools' (like calling an API, searching the web, or running code) to interact with the outside world and complete complex, multi-step tasks autonomously.",
+    "recommendations": {
+      "premium": { "model_id": "gpt-4-class", "reason": "The best model for complex reasoning, planning, and reliable tool use, making it the top choice for robust agents." },
+      "balanced": { "model_id": "claude-3-class", "reason": "Strong reasoning and a large context window make it excellent for agents that need to process a lot of information." },
+      "budget": { "model_id": "llama-3-class", "reason": "A very capable open-weight model that can be fine-tuned for specific agentic behaviors and tool sets." }
+    },
+    "evaluation_criteria": [
+      { "title": "Reasoning & Planning", "description": "Can the model break down a complex goal into a logical sequence of smaller, executable steps?" },
+      { "title": "Tool Use Reliability", "description": "How reliably can the model call functions/tools with the correct arguments and handle their outputs to inform its next action?" },
+      { "title": "Resilience", "description": "When a tool fails or an unexpected event occurs, can the agent recover, re-plan, and still attempt to complete its goal?" },
+      { "title": "Cost & Speed", "description": "Agentic workflows can involve many model calls, so the cost and latency of the chosen model are critical factors for user experience." }
+    ],
+    "faq": [
+      { "question": "What is 'function calling'?", "answer": "Function calling is the ability of a model to recognize when it needs to use an external tool and to output a structured JSON object specifying the function to call and the arguments to use. This is the core mechanism that allows agents to act." },
+      { "question": "Are AI agents reliable enough for production?", "answer": "It depends on the task. For well-defined, constrained tasks, yes. For open-ended, complex goals, they are still an area of active research and may not be reliable enough for mission-critical applications without human oversight." }
+    ]
+  }
+]
