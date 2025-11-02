@@ -11,8 +11,6 @@ export interface AIModel {
   context_window: ContextWindow;
   strengths: string[];
   best_for: string[];
-  consider_if: string;
-  limitations: string;
   cost_tier: CostTier;
   open_weight: boolean;
   links: {
@@ -21,29 +19,9 @@ export interface AIModel {
     pricing: string;
   };
 }
-export interface UseCaseRecommendation {
-  model_id: string;
-  reason: string;
-}
-export interface UseCaseEvaluationCriterion {
-  title: string;
-  description: string;
-}
-export interface UseCaseFAQ {
-  question: string;
-  answer: string;
-}
 export interface UseCase {
   slug: string;
   title: string;
   description: string;
   icon: keyof typeof import("lucide-react");
-  overview: string;
-  recommendations: {
-    premium: UseCaseRecommendation;
-    balanced: UseCaseRecommendation;
-    budget: UseCaseRecommendation;
-  };
-  evaluation_criteria: UseCaseEvaluationCriterion[];
-  faq: UseCaseFAQ[];
 }
