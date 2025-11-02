@@ -11,7 +11,7 @@ interface ModelCardProps {
 const iconMap = {
   medium: <FileText className="w-4 h-4" />,
   long: <FileText className="w-4 h-4" />,
-  small: <FileText className="w-4 h-4" />,
+  small: <FileText className="w-4 h-4" />
 };
 export function ModelCard({ model }: ModelCardProps) {
   return (
