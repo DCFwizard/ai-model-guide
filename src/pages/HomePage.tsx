@@ -1,7 +1,6 @@
 import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ModelPicker } from '@/components/ModelPicker';
 import { UseCaseCard } from '@/components/UseCaseCard';
 import { ModelCard } from '@/components/ModelCard';
 import useCasesData from '@/data/use-cases.json';
@@ -34,12 +33,6 @@ export function HomePage() {
                 </Button>
               </div>
             </div>
-          </div>
-        </section>
-        {/* Model Picker Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ModelPicker />
           </div>
         </section>
         {/* Popular Use Cases Section */}
