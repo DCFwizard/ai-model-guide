@@ -8,7 +8,7 @@ interface SEOProps {
 const DEFAULT_TITLE = 'Which AI Model To Use For What?';
 const DEFAULT_DESCRIPTION = 'A practical, no-hype guide to choosing the right model for your task. Compare capabilities, costs, and use cases to build better with AI.';
 const SITE_URL = 'https://whichaimodeltouseforwhat.com';
-const OG_IMAGE = `${SITE_URL}/og-image.svg`;
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
 export function SEO({ title, description, children }: SEOProps) {
   const pageTitle = title ? `${title} | AI Model Guide` : DEFAULT_TITLE;
   const pageDescription = description || DEFAULT_DESCRIPTION;
