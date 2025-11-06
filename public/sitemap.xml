@@ -19,6 +19,18 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://whichaimodeltouseforwhat.com/blog</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://whichaimodeltouseforwhat.com/comparisons</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://whichaimodeltouseforwhat.com/comparisons/gpt-vs-claude</loc>
     <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -131,5 +143,23 @@
     <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://whichaimodeltouseforwhat.com/blog/gpt-4-vs-claude-3-comprehensive-comparison</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://whichaimodeltouseforwhat.com/blog/best-ai-models-for-rag-2025</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://whichaimodeltouseforwhat.com/blog/open-source-ai-models-comparison</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 </urlset>
