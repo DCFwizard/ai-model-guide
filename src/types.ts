@@ -47,3 +47,16 @@ export interface UseCase {
   evaluation_criteria: UseCaseEvaluationCriterion[];
   faq: UseCaseFAQ[];
 }
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  publishDate: string;
+  category: string;
+  tags: string[];
+  featured: boolean;
+  readTime: number;
+}

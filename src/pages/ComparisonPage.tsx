@@ -35,6 +35,7 @@ export function ComparisonPage() {
       <SEO
         title={comparisonData.title}
         description={`A detailed side-by-side comparison of ${comparisonData.models.gpt4.name} and ${comparisonData.models.claude3.name}.`}
+        keywords="GPT-4 vs Claude 3, ChatGPT vs Claude, AI model comparison, OpenAI vs Anthropic, best AI model, which AI to choose"
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 md:py-24">

@@ -39,7 +39,11 @@ export function ModelsPage() {
   }, [models, searchTerm, activeFilters]);
   return (
     <>
-      <SEO title="All AI Models" description="Filter and compare all available AI models to find the perfect one for your project." />
+      <SEO
+        title="All AI Models"
+        description="Filter and compare all available AI models to find the perfect one for your project."
+        keywords="AI models list, GPT-4, Claude 3, Gemini, Llama 3, Mistral, compare AI models, LLM models 2025, open source AI models"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 md:py-24">
           <div className="text-center">

@@ -11,7 +11,9 @@ export function HomePage() {
   const popularUseCases = (useCasesData as UseCase[]).slice(0, 6);
   return (
     <>
-      <SEO />
+      <SEO
+        keywords="AI model comparison, best AI model 2025, GPT-4 vs Claude, AI model guide, LLM comparison, machine learning models, choose AI model"
+      />
       <div className="w-full">
         {/* Hero Section */}
         <section className="relative bg-slate-100 dark:bg-slate-900/50 overflow-hidden">
