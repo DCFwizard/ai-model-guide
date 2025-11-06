@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedUseCases } from '@/components/RelatedUseCases';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -134,6 +135,9 @@ export function ModelDetailPage() {
               </Card>
             </aside>
           </div>
+
+          {/* Related Use Cases */}
+          <RelatedUseCases modelId={model.id} />
         </div>
       </div>
     </>

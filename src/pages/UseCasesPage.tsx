@@ -6,7 +6,11 @@ export function UseCasesPage() {
   const useCases = useCasesData as UseCase[];
   return (
     <>
-      <SEO title="AI Use Cases" description="Explore various use cases for AI models, from summarization to code generation." />
+      <SEO
+        title="AI Use Cases"
+        description="Explore various use cases for AI models, from summarization to code generation."
+        keywords="AI use cases, AI summarization, RAG AI, AI coding assistant, AI for writing, best AI for task, LLM use cases 2025"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 md:py-24">
           <div className="text-center">
