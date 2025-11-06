@@ -1,18 +1,19 @@
 import { useEffect } from 'react';
-import { onCLS, onFID, onFCP, onLCP, onTTFB, onINP, Metric } from 'web-vitals';
+import { onCLS, onFCP, onLCP, onTTFB, onINP, Metric } from 'web-vitals';
 
 /**
  * Hook to measure and report Core Web Vitals
  *
  * Core Web Vitals tracked:
  * - LCP (Largest Contentful Paint) - Loading performance
- * - FID (First Input Delay) - Interactivity
+ * - INP (Interaction to Next Paint) - Interactivity (replaces FID)
  * - CLS (Cumulative Layout Shift) - Visual stability
  *
  * Additional metrics:
  * - FCP (First Contentful Paint)
  * - TTFB (Time to First Byte)
- * - INP (Interaction to Next Paint)
+ *
+ * Note: FID (First Input Delay) has been deprecated and replaced by INP
  */
 export function useWebVitals() {
   useEffect(() => {
@@ -44,13 +45,12 @@ export function useWebVitals() {
 
     // Track Core Web Vitals
     onCLS(sendToAnalytics); // Cumulative Layout Shift
-    onFID(sendToAnalytics); // First Input Delay
+    onINP(sendToAnalytics); // Interaction to Next Paint (replaces FID)
     onLCP(sendToAnalytics); // Largest Contentful Paint
 
     // Track additional metrics
     onFCP(sendToAnalytics); // First Contentful Paint
     onTTFB(sendToAnalytics); // Time to First Byte
-    onINP(sendToAnalytics); // Interaction to Next Paint
 
   }, []);
 }
@@ -60,9 +60,8 @@ export function useWebVitals() {
  *
  * Good ratings:
  * - LCP: ≤ 2.5s
- * - FID: ≤ 100ms
+ * - INP: ≤ 200ms (replaces FID)
  * - CLS: ≤ 0.1
  * - FCP: ≤ 1.8s
  * - TTFB: ≤ 800ms
- * - INP: ≤ 200ms
  */
