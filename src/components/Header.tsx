@@ -9,6 +9,7 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/models', label: 'Models' },
   { to: '/use-cases', label: 'Use Cases' },
+  { to: '/blog', label: 'Blog' },
 ];
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

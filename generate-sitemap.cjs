@@ -9,6 +9,9 @@ const modelsData = JSON.parse(
 const useCasesData = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src/data/use-cases.json'), 'utf8')
 );
+const blogPostsData = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'src/data/blog-posts.json'), 'utf8')
+);
 
 const SITE_URL = 'https://whichaimodeltouseforwhat.com';
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
@@ -18,6 +21,8 @@ const staticPages = [
   { url: '/', priority: '1.00', changefreq: 'weekly' },
   { url: '/models', priority: '0.90', changefreq: 'weekly' },
   { url: '/use-cases', priority: '0.90', changefreq: 'weekly' },
+  { url: '/blog', priority: '0.90', changefreq: 'daily' },
+  { url: '/comparisons', priority: '0.85', changefreq: 'monthly' },
   { url: '/comparisons/gpt-vs-claude', priority: '0.85', changefreq: 'monthly' },
   { url: '/faq', priority: '0.70', changefreq: 'monthly' },
   { url: '/about', priority: '0.60', changefreq: 'monthly' },
@@ -64,6 +69,17 @@ useCasesData.forEach(useCase => {
 `;
 });
 
+// Add blog post pages
+blogPostsData.forEach(post => {
+  xml += `  <url>
+    <loc>${SITE_URL}/blog/${post.slug}</loc>
+    <lastmod>${post.publishDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+`;
+});
+
 xml += `</urlset>`;
 
 // Write sitemap.xml
@@ -73,4 +89,5 @@ console.log('✅ Sitemap generated successfully!');
 console.log(`   - ${staticPages.length} static pages`);
 console.log(`   - ${modelsData.length} model pages`);
 console.log(`   - ${useCasesData.length} use case pages`);
-console.log(`   - Total: ${staticPages.length + modelsData.length + useCasesData.length} URLs`);
+console.log(`   - ${blogPostsData.length} blog posts`);
+console.log(`   - Total: ${staticPages.length + modelsData.length + useCasesData.length + blogPostsData.length} URLs`);
