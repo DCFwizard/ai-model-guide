@@ -67,7 +67,6 @@ export function HomePage() {
             <div className="mt-8 mb-12 flex flex-col items-center">
               <div className="text-center mb-4">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50">Market Prediction</h3>
-                <p className="text-sm text-muted-foreground">Which company will have the best AI model by end of 2025?</p>
               </div>
               <div className="w-full max-w-md">
                 <iframe
