@@ -8,8 +8,6 @@ import { BlogPost } from '@/types';
 
 export function BlogPage() {
   const posts = blogPosts as BlogPost[];
-  const featuredPosts = posts.filter(post => post.featured);
-  const recentPosts = posts.filter(post => !post.featured);
 
   return (
     <>
@@ -27,12 +25,11 @@ export function BlogPage() {
             </p>
           </div>
 
-          {/* Featured Posts */}
-          {featuredPosts.length > 0 && (
+          {/* All Posts */}
+          {posts.length > 0 && (
             <section className="mt-12">
-              <h2 className="text-2xl font-bold mb-6">Featured Articles</h2>
               <div className="grid gap-8 md:grid-cols-2">
-                {featuredPosts.map((post) => (
+                {posts.map((post) => (
                   <Link key={post.slug} to={`/blog/${post.slug}`}>
                     <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
                       <CardHeader>
@@ -68,46 +65,6 @@ export function BlogPage() {
                           <div className="flex items-center text-sm text-sky-600 group-hover:text-sky-700">
                             Read more <ArrowRight className="ml-1 h-4 w-4" />
                           </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Recent Posts */}
-          {recentPosts.length > 0 && (
-            <section className="mt-16">
-              <h2 className="text-2xl font-bold mb-6">Recent Articles</h2>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {recentPosts.map((post) => (
-                  <Link key={post.slug} to={`/blog/${post.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
-                      <CardHeader>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                          <Badge variant="secondary">{post.category}</Badge>
-                          <span className="flex items-center gap-1">
-                            <Clock className="h-4 w-4" />
-                            {post.readTime} min
-                          </span>
-                        </div>
-                        <CardTitle className="text-xl group-hover:text-sky-600 transition-colors">
-                          {post.title}
-                        </CardTitle>
-                        <CardDescription className="mt-2 line-clamp-3">
-                          {post.excerpt}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex items-center text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4 mr-1" />
-                          {new Date(post.publishDate).toLocaleDateString('en-US', {
-                            month: 'short',
-                            day: 'numeric',
-                            year: 'numeric',
-                          })}
                         </div>
                       </CardContent>
                     </Card>
