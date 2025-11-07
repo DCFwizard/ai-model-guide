@@ -63,8 +63,14 @@ export function HomePage() {
               </p>
             </div>
 
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {topModels.map((model) => (
+                <ModelCard key={model.id} model={model} />
+              ))}
+            </div>
+
             {/* Polymarket Prediction Widget */}
-            <div className="mt-8 mb-12 flex flex-col items-center">
+            <div className="mt-16 mb-8 flex flex-col items-center">
               <div className="text-center mb-4">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50">Market Prediction</h3>
               </div>
@@ -77,12 +83,6 @@ export function HomePage() {
                   frameBorder="0"
                 />
               </div>
-            </div>
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {topModels.map((model) => (
-                <ModelCard key={model.id} model={model} />
-              ))}
             </div>
           </div>
         </section>
