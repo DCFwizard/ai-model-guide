@@ -4,65 +4,77 @@ import { readFileSync } from 'fs';
 const width = 1200;
 const height = 630;
 
-// SVG with large logo centered at top and text below
+// SVG matching the actual site style: white/light gray background with sky blue accents
 const svg = `
 <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light gray background matching site -->
+  <rect width="${width}" height="${height}" fill="#f1f5f9"/>
+
+  <!-- Subtle gradient overlay -->
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    <linearGradient id="subtle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
     </linearGradient>
   </defs>
+  <rect width="${width}" height="${height}" fill="url(#subtle)"/>
 
-  <!-- Background -->
-  <rect width="${width}" height="${height}" fill="url(#grad)"/>
-
-  <!-- Logo centered at top - Large Brain Circuit Icon -->
-  <g transform="translate(${width/2}, 150) scale(8)">
-    <!-- Brain Circuit paths scaled and centered -->
+  <!-- Logo centered at top - Brain Circuit icon with exact site colors -->
+  <g transform="translate(${width/2}, 150) scale(10)">
     <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
-          stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(-12, -12)"/>
-    <path d="M12 5a3 3 0 1 0 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
-          stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(-12, -12)"/>
-    <path d="M15 6.5v1a2 2 0 0 0 2 2v0a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2"
-          stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(-12, -12)"/>
-    <path d="M5.5 17H8m5 0h5.5"
-          stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(-12, -12)"/>
-    <circle cx="0" cy="0" r="1" fill="white" transform="translate(-12, -12) translate(12, 11)"/>
-    <circle cx="0" cy="0" r="1" fill="white" transform="translate(-12, -12) translate(18, 16)"/>
-    <circle cx="0" cy="0" r="1" fill="white" transform="translate(-12, -12) translate(6, 16)"/>
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M9 13a4.5 4.5 0 0 0 3-4"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M3.477 10.896a4 4 0 0 1 .585-.396"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M6 18a4 4 0 0 1-1.967-.516"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M12 13h4"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M12 18h6a2 2 0 0 1 2 2v1"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M12 8h8"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <path d="M16 8V5a2 2 0 0 1 2-2"
+          fill="none" stroke="#0ea5e9" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-12, -12)"/>
+    <circle cx="0" cy="0" r="0.5" fill="#0ea5e9" transform="translate(-12, -12) translate(16, 13)"/>
+    <circle cx="0" cy="0" r="0.5" fill="#0ea5e9" transform="translate(-12, -12) translate(18, 3)"/>
+    <circle cx="0" cy="0" r="0.5" fill="#0ea5e9" transform="translate(-12, -12) translate(20, 21)"/>
+    <circle cx="0" cy="0" r="0.5" fill="#0ea5e9" transform="translate(-12, -12) translate(20, 8)"/>
   </g>
 
-  <!-- Title centered below logo -->
+  <!-- Title centered below logo - dark text like site -->
   <text
     x="${width/2}"
-    y="350"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="64"
+    y="360"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif"
+    font-size="68"
     font-weight="bold"
-    fill="white"
+    fill="#0f172a"
     text-anchor="middle">
     AI Model Guide
   </text>
 
-  <!-- Subtitle -->
+  <!-- Subtitle with sky blue color -->
   <text
     x="${width/2}"
-    y="440"
-    font-family="Arial, Helvetica, sans-serif"
+    y="445"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif"
     font-size="36"
-    fill="rgba(255,255,255,0.95)"
+    fill="#0284c7"
     text-anchor="middle">
     Choose the Right AI Model
   </text>
 
-  <!-- Description -->
+  <!-- Description in gray -->
   <text
     x="${width/2}"
-    y="520"
-    font-family="Arial, Helvetica, sans-serif"
+    y="525"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif"
     font-size="28"
-    fill="rgba(255,255,255,0.85)"
+    fill="#64748b"
     text-anchor="middle">
     Compare capabilities, costs, and use cases
   </text>
