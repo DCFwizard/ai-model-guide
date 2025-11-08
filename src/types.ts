@@ -30,6 +30,31 @@ export interface AIModel {
     quality: number;
     cost: number;
   };
+  // Detailed content sections (optional)
+  detailed_description?: string;
+  use_cases_detail?: {
+    sections: Array<{
+      title: string;
+      content: string;
+    }>;
+    summary?: string;
+  };
+  pricing_detail?: {
+    tiers: Array<{
+      name: string;
+      price: string;
+      description: string;
+    }>;
+    summary?: string;
+  };
+  developer_info?: string;
+  category?: string;
+  tags?: string[];
+  rating_detail?: {
+    speed_explanation?: string;
+    quality_explanation?: string;
+    cost_explanation?: string;
+  };
 }
 export interface UseCaseRecommendation {
   model_id: string;
