@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import { BrainCircuit, Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import logoImage from '@/assets/logo.png';
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/models', label: 'Models' },
@@ -18,7 +19,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <NavLink to="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <BrainCircuit className="h-7 w-7 text-sky-500" />
+            <img src={logoImage} alt="AI Model Guide Logo" className="h-24 w-24" />
             <span className="font-bold text-lg hidden sm:inline-block">AI Model Guide</span>
           </NavLink>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
