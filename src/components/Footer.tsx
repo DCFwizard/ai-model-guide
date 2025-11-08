@@ -1,12 +1,12 @@
-import { BrainCircuit } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImage from '@/assets/logo.png';
 export function Footer() {
   return (
     <footer className="border-t bg-background">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           <div className="flex items-center justify-center md:justify-start space-x-4">
-            <BrainCircuit className="h-7 w-7 text-sky-500" />
+            <img src={logoImage} alt="AI Model Guide Logo" className="h-8 w-8" />
             <p className="text-center text-base text-muted-foreground">
               &copy; {new Date().getFullYear()} AI Model Guide. All rights reserved.
             </p>
