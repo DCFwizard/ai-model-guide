@@ -1,5 +1,33 @@
 [
   {
+    "id": "gpt-5",
+    "name": "GPT-5",
+    "provider": "OpenAI",
+    "description": "OpenAI's most advanced large language model with multi-model design (Main, Mini, Nano) and intelligent routing. Features 45% fewer factual errors than GPT-4, up to 80% fewer hallucinations in thinking mode, and handles hundreds of thousands of tokens with multimodal capabilities.",
+    "modalities": ["text", "vision"],
+    "context_window": "very long",
+    "strengths": ["reasoning", "coding", "accuracy", "low hallucination", "multimodal", "context awareness"],
+    "best_for": ["Software development and debugging", "Complex reasoning and analytics", "Content generation and creative writing", "Multi-step problem-solving", "Domain-specific expertise (healthcare, law)"],
+    "consider_if": "You need the highest-quality, most reliable AI outputs for demanding tasks like important content drafting, hard coding/math problems, or applications requiring advanced reasoning.",
+    "limitations": "Pro tier ($200/month) required for heaviest usage. Complex queries in thinking mode can take longer. Free tier has usage limits.",
+    "cost_tier": "$-$$$",
+    "open_weight": false,
+    "pricing": "Free tier available | ChatGPT Plus $20/month | ChatGPT Pro $200/month | Team $30/user/month | Enterprise (custom)",
+    "tasks": ["Code generation and debugging", "Content writing and editing", "Complex reasoning and research", "Math and logic problems", "Personal assistant tasks", "Domain expertise (healthcare, law)", "Tutoring and education"],
+    "industries": ["Software Development", "Healthcare", "Legal", "Education", "Finance", "Content Creation", "Research"],
+    "release_date": "2025",
+    "rating": {
+      "speed": 8,
+      "quality": 10,
+      "cost": 8
+    },
+    "links": {
+      "site": "https://openai.com",
+      "docs": "https://platform.openai.com/docs",
+      "pricing": "https://openai.com/pricing"
+    }
+  },
+  {
     "id": "gpt-4-class",
     "name": "GPT-4 Class",
     "provider": "OpenAI",
