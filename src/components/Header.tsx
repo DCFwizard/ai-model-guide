@@ -19,7 +19,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <NavLink to="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <img src={logoImage} alt="AI Model Guide Logo" className="h-12 w-12" />
+            <img src={logoImage} alt="AI Model Guide Logo" className="h-14 w-14" />
             <span className="font-bold text-lg hidden sm:inline-block">AI Model Guide</span>
           </NavLink>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
