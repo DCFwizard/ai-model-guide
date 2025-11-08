@@ -12,7 +12,8 @@ const DEFAULT_TITLE = 'Which AI Model To Use For What?';
 const DEFAULT_DESCRIPTION = 'A practical, no-hype guide to choosing the right model for your task. Compare capabilities, costs, and use cases to build better with AI.';
 const SITE_URL = 'https://whichaimodeltouseforwhat.com';
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
-const LOGO_URL = `${SITE_URL}/logo.svg`;
+const LOGO_URL = `${SITE_URL}/logo.png`;
+const TWITTER_IMAGE = `${SITE_URL}/twitter-image.png`;
 export function SEO({ title, description, canonical, keywords, noindex = false, children }: SEOProps) {
   const pageTitle = title ? `${title} | AI Model Guide` : DEFAULT_TITLE;
   const pageDescription = description || DEFAULT_DESCRIPTION;
@@ -48,11 +49,11 @@ export function SEO({ title, description, canonical, keywords, noindex = false, 
       <meta property="og:site_name" content="AI Model Guide" />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:url" content={currentUrl} />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      <meta name="twitter:image" content={OG_IMAGE} />
+      <meta name="twitter:image" content={TWITTER_IMAGE} />
 
       {/* Schema.org JSON-LD for Google */}
       <script type="application/ld+json">

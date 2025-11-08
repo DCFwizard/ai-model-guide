@@ -33,7 +33,7 @@ export function BlogPostPage() {
       'name': 'AI Model Guide',
       'logo': {
         '@type': 'ImageObject',
-        'url': `${SITE_URL}/logo.svg`,
+        'url': `${SITE_URL}/logo.png`,
       },
     },
     'mainEntityOfPage': {
