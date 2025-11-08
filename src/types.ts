@@ -1,7 +1,7 @@
 import { LucideIcon } from "lucide-react";
 export type Modality = "text" | "vision" | "speech";
-export type ContextWindow = "small" | "medium" | "long";
-export type CostTier = "$" | "$$" | "$$$";
+export type ContextWindow = "small" | "medium" | "long" | "very long";
+export type CostTier = "$" | "$$" | "$$$" | "$-$$$";
 export interface AIModel {
   id: string;
   name: string;
@@ -19,6 +19,41 @@ export interface AIModel {
     site: string;
     docs: string;
     pricing: string;
+  };
+  // SEO-friendly fields (optional)
+  pricing?: string;
+  tasks?: string[];
+  industries?: string[];
+  release_date?: string;
+  rating?: {
+    speed: number;
+    quality: number;
+    cost: number;
+  };
+  // Detailed content sections (optional)
+  detailed_description?: string;
+  use_cases_detail?: {
+    sections: Array<{
+      title: string;
+      content: string;
+    }>;
+    summary?: string;
+  };
+  pricing_detail?: {
+    tiers: Array<{
+      name: string;
+      price: string;
+      description: string;
+    }>;
+    summary?: string;
+  };
+  developer_info?: string;
+  category?: string;
+  tags?: string[];
+  rating_detail?: {
+    speed_explanation?: string;
+    quality_explanation?: string;
+    cost_explanation?: string;
   };
 }
 export interface UseCaseRecommendation {
