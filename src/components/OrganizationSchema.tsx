@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     'name': 'AI Model Guide',
     'url': SITE_URL,
-    'logo': `${SITE_URL}/logo.svg`,
+    'logo': `${SITE_URL}/logo.png`,
     'description': 'A practical, no-hype guide to choosing the right AI model for your task. Compare capabilities, costs, and use cases to build better with AI.',
     'sameAs': [
       // Add social media profiles here when available
@@ -31,7 +31,7 @@ export function OrganizationSchema() {
       'name': 'AI Model Guide',
       'logo': {
         '@type': 'ImageObject',
-        'url': `${SITE_URL}/logo.svg`,
+        'url': `${SITE_URL}/logo.png`,
       },
     },
     'potentialAction': {
