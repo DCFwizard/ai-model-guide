@@ -354,6 +354,98 @@
     }
   },
   {
+    "id": "qwen3-max",
+    "name": "Qwen3-Max",
+    "provider": "Alibaba Cloud Intelligence",
+    "description": "Alibaba's most powerful AI model with unprecedented scale: a trillion-parameter (1T) Mixture-of-Experts architecture trained on 36 trillion tokens. Features 1 million token context window, state-of-the-art coding performance (69.6 on SWE-Bench), and top-tier tool-use capabilities. OpenAI API-compatible and optimized for enterprise deployment.",
+    "modalities": ["text", "vision"],
+    "context_window": "very long",
+    "strengths": ["coding", "reasoning", "tool use", "agentic", "context awareness", "multilingual", "cost efficiency", "enterprise"],
+    "best_for": ["Enterprise knowledge management", "Complex code generation", "AI agents and automation", "Big data natural language queries", "Multilingual applications"],
+    "consider_if": "You need top-tier AI performance with massive context, strong coding capabilities, or an alternative to Western models with competitive pricing and China-compliant deployment.",
+    "limitations": "Resource-intensive (cloud API only). Less fine-tuned personality than Western models. Primarily optimized for Chinese market.",
+    "cost_tier": "$-$$",
+    "open_weight": false,
+    "pricing": "Pay-as-you-go (~$0.86-$3.44 per million tokens) | Free trial (1M tokens, 90 days) | Batch processing (50% discount) | Enterprise custom",
+    "tasks": ["Code generation and debugging", "AI agent development", "Large-scale document analysis", "Tool-use and automation", "Multilingual translation", "Enterprise data analysis", "Natural language database queries"],
+    "industries": ["Software Development", "Enterprise", "Finance", "Legal", "Research", "Manufacturing", "E-commerce"],
+    "release_date": "2025",
+    "rating": {
+      "speed": 8,
+      "quality": 9,
+      "cost": 9
+    },
+    "links": {
+      "site": "https://www.alibabacloud.com/en/solutions/generative-ai",
+      "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+      "pricing": "https://www.alibabacloud.com/help/en/model-studio/developer-reference/qwen-api"
+    },
+    "detailed_description": "Qwen3-Max is Alibaba's most powerful AI model, representing the 3rd generation of their Qwen (通义·Qwen) LLM series. Unveiled in late 2025, Qwen3-Max is notable for its unprecedented scale: it's a trillion-parameter model – over 1,000 billion parameters – making it one of the largest models ever created. It employs a Mixture-of-Experts (MoE) architecture to manage this scale: effectively, Qwen3-Max is like an ensemble of many sub-model \"experts\" that are coordinated to answer queries. In operation, only a subset of those 1T parameters (the most relevant experts) are activated per token, roughly 37B parameters per token by design. This architecture allows Qwen3-Max to achieve extreme performance without proportionally extreme computation for every step. Training-wise, Qwen3-Max was fed an enormous dataset of 36 trillion tokens (text from web, books, code, etc., presumably multilingual and diverse). Alibaba's team introduced new training methods like ChunkFlow to handle ultra-long sequences efficiently, achieving stable training (no loss spikes) even at this massive scale. The context window of Qwen3-Max is also very large – it can process up to 1 million words (tokens) in one go, comparable to models like Gemini's context length. They have two modes: Instruct (optimized for chat/instructions, which was deployed first) and a \"Thinking\" version (still in training at the time of reveal, aimed to add even more reasoning capabilities). In terms of capabilities, Qwen3-Max is a top performer globally: It secured a Top-3 spot on an international leaderboard (TextArena) for general NLP, even edging out OpenAI's GPT-5 Chat in one setting. It achieved a SOTA score of 69.6 on SWE-Bench (a coding benchmark), making it one of the strongest coding models available. On a tool-use benchmark (Tau2-Bench measuring how well AI uses external tools/agents), Qwen3-Max scored 74.8, outperforming competitors like Anthropic's Claude Opus 4. This highlights its strength in agentic tasks where it might need to call APIs or chain reasoning steps. The model is also multimodal to an extent – Alibaba hinted at a \"Qwen3-Max-Preview\" with a Thinking mode in training that will excel at vision+language tasks. Another aspect: OpenAI-compatibility. Alibaba designed Qwen3-Max's API to be largely compatible with OpenAI's API (same formats), making it easy for developers to switch to or integrate with Alibaba's model. Overall, Qwen3-Max positions Alibaba at the forefront of AI research. It's essentially China's answer to GPT-5 and Google Gemini, pushing the envelope with massive scale and strong results across coding, reasoning, and tool-using evaluations.",
+    "use_cases_detail": {
+      "sections": [
+        {
+          "title": "Enterprise Knowledge Management",
+          "content": "With its ability to process huge text inputs, Qwen3-Max can be deployed as an AI analyst over vast corporate data. For example, an insurance company could use it to analyze thousands of claim documents in one prompt to detect patterns of fraud, or a law firm could have it review a whole case library to find relevant precedents. Alibaba offers Qwen3-Max on Alibaba Cloud, so enterprises in finance, legal, and research are target users, especially in China where data sovereignty is important."
+        },
+        {
+          "title": "Complex Code Generation and Software Engineering",
+          "content": "Qwen3-Max has shown it can tackle large-scale coding tasks. Use it to generate entire software modules or debug complex systems. Because it can outperform even GPT-4 in coding benchmarks, developers with access can use it for advanced programming assistance, maybe even multi-language code translation or writing code with minimal human prompt. Its tool-use capability suggests it might integrate with dev tools to test or run code as part of its solution finding."
+        },
+        {
+          "title": "AI Agent and Automation",
+          "content": "Thanks to high Tau2-Bench scores, Qwen3-Max is excellent for building autonomous agents (for example, AI customer support that can handle multi-turn dialogues + actions). It can plan and execute tasks with minimal human guidance. If you need an AI to not only answer queries but take actions (like querying databases, controlling IoT devices, performing web scraping), Qwen3-Max is a strong candidate to be the brain of that system."
+        },
+        {
+          "title": "Natural Language Interface for Big Data",
+          "content": "If you have a large database or data lake, Qwen3-Max could be used to query it in natural language. Its high reasoning ability means it can parse complex analytical questions. For instance, \"Compare our Q3 sales across regions and explain the main factors for any differences; data is in the attached 1000-page Excel\" – Qwen could conceivably handle that, generate SQL queries behind the scenes, and produce a thorough analysis."
+        },
+        {
+          "title": "Multilingual and Multimodal AI",
+          "content": "Alibaba likely trained Qwen on multilingual data (given prior Qwen versions supported Chinese/English well). Use Qwen3-Max for translation or cross-language tasks at a very high quality. Also, when the \"Thinking (multimodal) version\" is available, it will be able to analyze images or other inputs combined with text. That could open use cases like supply chain monitoring (an AI that looks at product photos + description to spot issues), or medical AI (analyzing patient health records plus medical images)."
+        }
+      ],
+      "summary": "Use Qwen3-Max primarily if you are an Alibaba Cloud user or require an AI model within China's regulatory environment. It's also ideal if your application demands a huge context window and top-tier performance but you might want an alternative to Western models. For example, a Chinese corporation might choose Qwen3-Max for an internal AI assistant to ensure data stays on Alibaba's cloud rather than an American service. Also, developers who have built solutions around OpenAI might switch to Qwen if they want potentially better coding performance or cost advantages. However, Qwen3-Max is resource-intensive – you'll typically access it via cloud API rather than run it yourself. So use it when maximum capability is needed and cloud access is acceptable."
+    },
+    "pricing_detail": {
+      "tiers": [
+        {
+          "name": "Pay-as-You-Go (Alibaba Cloud)",
+          "price": "~$0.86-$3.44 per million tokens",
+          "description": "Qwen3-Max's API pricing is tiered by the length of input. For typical inputs up to 32K tokens, it's about $0.861 per million input tokens and $3.441 per million output tokens. If you use larger contexts (32K–128K or beyond), the prices per token increase in tiers. These rates are roughly half the price of some competitors, making it very cost-competitive for large-scale usage."
+        },
+        {
+          "name": "Batch Processing",
+          "price": "50% discount on standard rates",
+          "description": "Batch calls (asynchronous processing jobs) are half-price for Qwen3-Max, encouraging users to queue up tasks if real-time interactivity isn't needed. This is particularly attractive for processing huge jobs overnight at lower priority, significantly reducing costs."
+        },
+        {
+          "name": "Free Trial and Quotas",
+          "price": "Free (1M tokens for 90 days)",
+          "description": "Alibaba Cloud often provides a free quota for new users. For Qwen3-Max, they offer something like \"1 million input and output tokens free, valid 90 days after activation\" for Model Studio usage. This means developers can experiment with Qwen at no cost initially. There's also a free tier on their ModelStudio where some number of calls per month might be free for low-volume use."
+        },
+        {
+          "name": "Enterprise Subscription",
+          "price": "Custom pricing",
+          "description": "While Alibaba primarily pushes the cloud API model, they have been integrating models into their business apps as well. Enterprise customers of Alibaba can get Qwen3-Max included in certain SaaS products or as part of an enterprise agreement. A company could license a dedicated Qwen3-Max instance on Alibaba Cloud for a fixed monthly fee depending on hardware requirements."
+        },
+        {
+          "name": "Community Access",
+          "price": "Free (research/demo access)",
+          "description": "If you are a researcher or open-source enthusiast, Alibaba has released smaller Qwen models openly (like Qwen-7B, Qwen-14B on Hugging Face). While Qwen3-Max is not fully open-sourced due to its size, Alibaba Cloud ModelScope community might host a demo, and there may be free research access available."
+        }
+      ],
+      "summary": "Using Qwen3-Max via API could be cheaper than using an equivalent OpenAI model for large tasks, especially when leveraging the batch discount. Pricing is pay-for-what-you-use, with free tokens to start. There's no fixed subscription for Qwen3-Max alone (unless you consider being an Alibaba Cloud user). Enterprises can integrate it and manage cost via the tiered pricing and batch jobs. Input tokens cost on the order of $1 per million and output around $3-9 per million depending on context length. Alibaba Cloud prices are often given in RMB for Chinese customers and can be lower to encourage adoption domestically."
+    },
+    "developer_info": "Developer: Alibaba Cloud Intelligence (China) – specifically the Alibaba DAMO Academy (Academy for Discovery, Adventure, Momentum and Outlook) which is Alibaba's R&D division. They also brand under Alibaba AI (Tongyi): \"Tongyi Qianwen\" is the Chinese name for the Qwen models. Qwen3-Max was announced at Alibaba's annual Aspara Conference in Sept 2025, by Alibaba Cloud CTO Zhou Jingren. It's part of Alibaba's huge investment in AI (they pledged $2B+ over three years to AI development). The company's strategy is to build world-class AI to fuel its cloud services and enterprise solutions in China and globally. Qwen3-Max's release shows Alibaba's commitment to open up advanced AI capabilities on their cloud platform, somewhat analogous to Amazon's approach with Titan or Bedrock. Notably, Qwen stands for \"Quantum Wen\" (Wen means language/text in Chinese) – earlier Qwen-7B and 14B were open-source. Qwen3-Max is not open-source due to its size, but the devs made it API-compatible with OpenAI to ease adoption.",
+    "category": "Giant-Scale Large Language Model (Enterprise AI)",
+    "tags": ["Mixture-of-Experts", "Cloud AI Service", "Chinese & Multilingual LLM", "Long-Context AI"],
+    "rating_detail": {
+      "speed_explanation": "Given its MoE design, Qwen3-Max is actually more efficient than its trillion-parameter size implies. Only ~37B parameters are active per token, so generation speed is comparable to other ~30B models, which is reasonable. Alibaba also introduced optimizations (ChunkFlow, etc.) to handle long inputs faster. In practice, on Alibaba Cloud, Qwen3-Max responds in a few seconds for standard prompts, but very large contexts or extremely complex tasks might still be slow. It's not as quick as smaller models (like Mistral 13B or such), but for its capability class, it's quite speedy. Real-time usage for chat is feasible; for massive jobs, batch mode may be used where speed is less critical.",
+      "quality_explanation": "Qwen3-Max is clearly among the best in quality. Its performance on coding and reasoning benchmarks places it at the elite level. It often matches or surpasses models like GPT-4.5 or Claude 2 on evaluations. Early reports highlight its coding skill and ability to handle tools well, which means it produces not just accurate answers but can follow through with actions. Why not 10? Possibly only because by late 2025, GPT-5 and Gemini Pro are marginally ahead in some frontier benchmarks. But Qwen3-Max is extremely close – likely within a few percentage points – and for many tasks, you'd find it equally effective. It's especially strong for Chinese language tasks, given Alibaba's focus (so if you need bilingual excellence, Qwen might even outperform others). On coherence and creativity, it's top-tier as well, though some users note slight differences in style.",
+      "cost_explanation": "Alibaba has priced Qwen3-Max aggressively. The cost per token is lower than similar offerings from Western providers. And features like half-price batch processing and free token quotas improve the value. Essentially, you can do more with Qwen for the same dollar spend compared to, say, using GPT-4 via API. Also, because it's on Alibaba Cloud, for businesses already in that ecosystem, integration might be cost-saving (no expensive data transfer or proxy through external APIs). The only reason it's not 10 is that truly open-source models (like ones you can run yourself) could be considered the ultimate in cost efficiency if you have the hardware. But among proprietary cloud models, Qwen3-Max offers excellent bang for buck. It enables cutting-edge AI use at a somewhat lower price point, and Alibaba often provides promotions or subsidies to attract users."
+    }
+  },
+  {
     "id": "gpt-4-class",
     "name": "GPT-4 Class",
     "provider": "OpenAI",
