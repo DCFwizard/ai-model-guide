@@ -17,12 +17,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <NavLink to="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <img src={logoImage} alt="AI Model Guide Logo" className="h-24 w-24" />
-            <span className="font-bold text-lg hidden sm:inline-block">AI Model Guide</span>
-          </NavLink>
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <div className="flex h-16 items-center">
+          <div className="flex items-center flex-1">
+            <NavLink to="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+              <img src={logoImage} alt="AI Model Guide Logo" className="h-24 w-24" />
+              <span className="font-bold text-lg hidden sm:inline-block">AI Model Guide</span>
+            </NavLink>
+          </div>
+          <nav className="hidden md:flex items-center justify-center space-x-6 text-sm font-medium flex-1">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -38,7 +40,7 @@ export function Header() {
               </NavLink>
             ))}
           </nav>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-1 justify-end">
             <ThemeToggle className="relative" />
             <div className="md:hidden">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
