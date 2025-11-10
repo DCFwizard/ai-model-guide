@@ -719,6 +719,101 @@
     }
   },
   {
+    "id": "kimi-k2",
+    "name": "Kimi K2",
+    "provider": "Moonshot AI",
+    "description": "State-of-the-art open-source large language model with exceptional reasoning abilities and massive scale. Features 1T total parameters with 32B activated per token using Mixture-of-Experts architecture. Set records on Humanity's Last Exam (44.9%), excelling at deep logical reasoning, coding, and multi-step tool use. Includes 'Thinking' mode variant for extended tool-augmented reasoning with hundreds of sequential steps.",
+    "modalities": ["text"],
+    "context_window": "very long",
+    "strengths": ["reasoning", "coding", "agentic", "tool use", "long-horizon autonomy", "open-source", "efficiency", "self-hostable", "transparency"],
+    "best_for": ["Autonomous agents and co-pilots", "Advanced coding assistance", "Research and data analysis", "Strategic decision support", "Complex customer support", "Scientific discovery and simulations"],
+    "consider_if": "You need the most powerful open AI with deep reasoning capabilities, want full control and transparency, require autonomous agents that can operate independently over long durations, or need to process complex multi-step tasks with tool integration.",
+    "limitations": "Requires significant computational resources (multiple GPUs). Heavyweight model demanding ML ops expertise to deploy. May be overkill for simple tasks or short conversations.",
+    "cost_tier": "$",
+    "open_weight": true,
+    "pricing": "Free under permissive license | Self-hosting (hardware costs only) | Third-party services available | No licensing fees",
+    "tasks": ["Autonomous agent development", "Complex code generation and review", "Research analysis and synthesis", "Strategic planning and decision support", "Multi-step problem solving", "Scientific simulations", "Data analysis and experimentation", "Long-context reasoning"],
+    "industries": ["Software Development", "Research", "Enterprise", "Data Science", "Healthcare", "Finance", "Strategic Consulting", "Scientific Research"],
+    "release_date": "2025",
+    "rating": {
+      "speed": 8,
+      "quality": 10,
+      "cost": 9
+    },
+    "links": {
+      "site": "https://www.moonshot.cn",
+      "docs": "https://platform.moonshot.ai/docs/introduction"
+    },
+    "detailed_description": "Kimi K2 is a state-of-the-art open-source large language model developed by Moonshot AI, known for its strong reasoning abilities and massive scale. K2 is built on a Mixture-of-Experts architecture, featuring 1 trillion total parameters with 32 billion parameters activated per token. In simpler terms, it's an MoE model where 32B \"experts\" are utilized at each step, giving it extremely high capacity (comparable to the largest models in existence) while keeping inference manageable (like running a 32B dense model). Kimi K2 is often cited for its exceptional performance on hard reasoning benchmarks. In fact, it set records on tasks like Humanity's Last Exam (HLE), achieving 44.9% on that notoriously difficult test, which at release was higher than GPT-5's score on the same (GPT-5 Pro had ~42%). This indicates K2's prowess at deep logical reasoning and complex problem-solving. The model is also very capable in coding and multi-step tool use (it was designed to coordinate large reasoning chains over hundreds of steps). Notably, Kimi K2 has a \"Thinking\" mode variant (referred to as K2-Thinking), which is optimized for extended tool-augmented reasoning. It can execute hundreds of sequential tool calls, maintaining coherent reasoning throughout. For example, it can autonomously work on a coding project for hours, or analyze lengthy legal documents across hundreds of queries without losing context. The model's training involved massive datasets and a focus on agentic tasks. Moonshot AI, with backing from Alibaba and others, emphasized making K2 an \"open agentic intelligence\" that organizations can trust and verify. They even published an arXiv technical report \"Kimi K2: Open Agentic Intelligence\" detailing its architecture and alignment. Kimi K2 is open-source under a permissive license (likely under an MIT-style or Apache license) which allows commercial use. The community embraced K2 since it was one of the first open models to truly rival and even surpass some closed models on key benchmarks, especially in rigorous coding and reasoning tasks. One distinguishing aspect is K2's focus on efficiency and hardware: it was trained to run on as few as 8 A100 GPUs despite its trillion parameters (using compression and MoE sparseness). That means while huge, it's accessible to deploy for those with high-end hardware clusters. In summary, Kimi K2 is an open \"frontier model\" combining huge scale, tool-using smarts, and long-horizon autonomy – effectively Moonshot's answer to models like GPT-5 or Anthropic's Claude 4.5, but open.",
+    "use_cases_detail": {
+      "sections": [
+        {
+          "title": "Autonomous Agents & Co-pilots",
+          "content": "K2 is perfect for building complex AI agents that can operate independently over long durations. For instance, a \"CEO AI\" that takes a high-level goal (e.g., start a marketing campaign) and breaks it into tasks: doing market research (via web tools), writing content, analyzing data, setting up ads – all with minimal human guidance. K2's ability to do 200-300 tool calls sequentially means it won't give up on multi-step tasks that require perseverance. Its long-horizon autonomy makes it ideal for agents that need to work on projects over hours or days without human intervention."
+        },
+        {
+          "title": "Advanced Coding Assistant",
+          "content": "If you have large, complex programming projects, K2 can serve as an AI software engineer. It can read and comprehend entire codebases (with 32B context and good memory via tools), then refactor code, find bugs, or even architect new modules. Its HLE performance and coding benchmarks suggest it catches subtle issues and handles heavy logic. It might be integrated in IDEs for power users who want an AI that can manage very big projects or do intricate code reviews that lesser models might miss. Its ability to maintain reasoning over hundreds of steps makes it exceptional for complex refactoring tasks."
+        },
+        {
+          "title": "Research Analyst / Data Scientist",
+          "content": "For research institutions or data-heavy companies, K2 can be used to sift through enormous amounts of information. E.g., feed it hundreds of scientific papers (which it can handle via extended context or iterative reading), and have it derive novel insights or hypotheses. Or let it analyze a complex dataset by writing and running code to do so (since it can use tools, including possibly Python execution, as part of its reasoning). Its reasoning strength makes it less likely to misinterpret data trends. It can synthesize information across multiple sources and produce comprehensive research reports with novel insights."
+        },
+        {
+          "title": "Strategic Decision Support",
+          "content": "Executives could use K2 as a strategy advisor – give it a pile of internal reports, market analyses, etc. and have it formulate strategic plans or risk assessments. It can connect dots across different documents over a long session (which many models with shorter contexts struggle with). Because it's open and self-hosted, sensitive corporate data stays in-house. Its exceptional reasoning ability on benchmarks like HLE translates to better strategic analysis, identifying non-obvious connections and potential risks that other models might miss."
+        },
+        {
+          "title": "Complex Customer Support Automation",
+          "content": "For companies with very complex products (telecom, enterprise software), a K2-based support bot could handle customer issues that require diagnosing across many systems and logs. It can navigate extensive troubleshooting steps (like replicating an issue via tool use, analyzing logs, then suggesting fixes). Its ability to maintain context across a long dialog with many back-and-forths and actions is key for this. K2 can handle support scenarios that would normally require escalation to senior technical staff."
+        },
+        {
+          "title": "Scientific Discovery & Simulations",
+          "content": "K2 could even be tasked with running scientific simulations or exploring theoretical problems. For example, in drug discovery: it could iteratively propose molecules, call a chemistry simulator tool, analyze results, refine proposals – effectively doing many cycles of experiment in silico. That agentic loop combined with reasoning might expedite R&D processes. Its ability to maintain coherent reasoning over hundreds of iterations makes it valuable for scientific workflows that require extensive experimentation and analysis."
+        }
+      ],
+      "summary": "Use Kimi K2 essentially when you need the most powerful open AI that can think and act deeply, and you're prepared to allocate significant computing to it. If your use case involves complicated, long-term tasks where intermediate reasoning steps are crucial (and you want transparency to inspect those steps – K2 being open helps in trust), K2 is ideal. It's also a great choice if you want to push the envelope of what AI can do in an autonomous setting, without going to a closed provider. K2 might be overkill for simple tasks or short conversations – smaller models could handle those more cost-effectively. But for those who need unprecedented autonomous capability with transparency, K2 yields exceptional results."
+    },
+    "pricing_detail": {
+      "tiers": [
+        {
+          "name": "Model License",
+          "price": "Free",
+          "description": "Kimi K2 is open-source under a permissive license (likely MIT-style or Apache), meaning there's no licensing fee to pay. Moonshot AI released it openly, allowing commercial use for free. Downloading the model weights (which might be huge, possibly hundreds of GBs) is free aside from bandwidth costs. This open availability makes it accessible to organizations of all sizes without any royalty or usage fees."
+        },
+        {
+          "name": "Hardware/Inference Costs",
+          "price": "Variable (compute costs)",
+          "description": "Running K2 is where costs come in. With 32B active params, running it is comparable to a 32B model inference – which typically requires at least one high-memory GPU or a couple of smaller ones in parallel. For good performance, you might use 4 or 8 GPUs. On cloud, 8 A100 80GB might cost ~$20-$30/hour, though 4 GPUs in 8-bit mode could work for $10-$15/hour. Despite being a trillion-parameter model, MoE architecture keeps inference manageable. Reports suggest it can run on as few as 8 A100 GPUs despite its massive scale."
+        },
+        {
+          "name": "Batching Efficiency",
+          "price": "Cost scales favorably with usage",
+          "description": "For heavy usage, you can batch queries. These MoE models often handle batch processing well, effectively serving many requests in parallel on that hardware, which amortizes the cost. So if you have lots of queries, the cost per query goes down drastically vs. using an external API that charges per call. At scale, costs can drop well under $0.001 per token, which is far below closed API rates."
+        },
+        {
+          "name": "Third-party Services",
+          "price": "Extremely low (if available)",
+          "description": "Possibly, services like Together.ai or others provide K2 as part of their offerings. If so, their pricing likely just covers compute. Some references suggest K2's effective input cost could be around $0.15/1M tokens compared to closed models charging $15/1M – a 100x cost advantage. This shows how open models can dramatically reduce costs compared to proprietary alternatives while delivering comparable or superior performance."
+        },
+        {
+          "name": "Fine-tuning Cost",
+          "price": "Variable (compute costs)",
+          "description": "If you fine-tune K2, you'll need to run training. Often LoRA fine-tunes for such big models can be done within a few hours on multi-GPU, which might cost a few hundred dollars at most – trivial compared to benefits. Because it's open, you also avoid any quotas or surge pricing that an API might impose. You invest in hardware and then you have consistent cost usage."
+        }
+      ],
+      "summary": "Kimi K2 is extremely cost-effective at scale, albeit with upfront or ongoing hardware investment. Many medium to large companies find it cheaper to have an AI cluster for K2 than to pay API fees to OpenAI/Anthropic for equivalent usage. For example, if a company used 1 million tokens with a closed model charging $15, using K2 that same million tokens might cost well under $1 in GPU time (depending on hardware and utilization). Over millions of tokens, that's huge savings. The license is free, running cost is determined by hardware, and on enterprise scale can be well under $0.001 per token – far below closed API rates."
+    },
+    "developer_info": "Developer: Moonshot AI (China). Moonshot is an AI lab founded by Yang Zhilin (a Tsinghua/Baidu alum) in 2023. They quickly grew to unicorn status by focusing on long-context and agentic AI. Moonshot was backed by big players like Alibaba, which hints at why K2 is so advanced – they had significant resources. They launched the Kimi platform (with Kimi 1.5 earlier, a 15B model, and then K2 at 1T params). Moonshot's approach is heavily on open research – publishing extensively and open-sourcing. They have a motto of \"transparency and control for enterprises\" in AI. Kimi K2's release was announced at a conference and on platforms like their WeChat blog and arXiv. The developer, by releasing K2, positioned themselves among top open AI providers like Meta's Llama. K2's performance forced even Western observers to acknowledge an open model exceeded some closed ones, which is a testament to Moonshot's team. Moonshot published an arXiv technical report titled \"Kimi K2: Open Agentic Intelligence\" detailing its architecture and alignment, demonstrating their commitment to transparency and advancing the field of open AI research.",
+    "category": "Large Language Model (Agentic, Open-Source)",
+    "tags": ["Mixture-of-Experts LLM", "Long-term AI Agent", "Trillion-parameter model", "Open AGI", "Enterprise AI"],
+    "rating_detail": {
+      "speed_explanation": "Kimi K2 is extremely powerful, but with 32B active parameters, it's a heavyweight to run. It's optimized to run on multi-GPU setups (they claim it runs on 8 A100 GPUs for the full model). Thanks to MoE, it's faster than an equivalent dense trillion-param model by far. Many routine queries it handles quickly like a 30B model would. However, if it's in \"Thinking mode\" doing 200-step tool calls, that obviously takes more wall-clock time. So for short Q&A, it's decently fast (maybe a couple tokens per second per GPU), but not as snappy as a 7B model. Considering its capability, it's impressively efficient. It's not tuned purely for speed – it's tuned for not giving up on tough tasks, which may involve being thorough rather than fast.",
+      "quality_explanation": "Kimi K2 has a strong claim to be at the pinnacle of quality among all available models at its time. It scored above OpenAI's and Meta's offerings on some benchmarks, achieving 44.9% on Humanity's Last Exam (higher than GPT-5 Pro's ~42%). It's the \"most intelligent non-reasoning model\" in some evaluations, and with its \"Thinking\" variant, it likely ties or exceeds them on many tasks. Domain experts who tested it note it narrowing any gaps. It basically delivered AGI-like performance on certain tasks. It handles complex, domain-specific queries, has excellent coding and logic, and can maintain context over very long sequences. K2 arguably meets or even beats GPT-5 in some areas like HLE, making it a top-tier frontier model.",
+      "cost_explanation": "K2 is open, so there's no usage fee. That's a huge plus. However, it's a large model to run – requiring significant compute and memory (32B active param is manageable, but the infrastructure for heavy multi-user deployments needs planning). Compared to paying for an API for an equally powerful model, it's far cheaper in the long run. Some references suggest K2's effective input cost is $0.15/M vs closed models at $15/M – a 100x advantage. That's extraordinary. It's extremely cost-efficient for what it delivers, though absolute compute cost is high if you only need moderate power. For those who need its level of capability, it's absolutely a money-saver versus closed options. With new hardware (H100s, etc.), running K2 becomes easier over time, making it increasingly accessible."
+    }
+  },
+  {
     "id": "gpt-4-class",
     "name": "GPT-4 Class",
     "provider": "OpenAI",
