@@ -95,6 +95,33 @@ export function HomePage() {
              </p>
           </div>
         </section>
+
+        {/* About Section - SEO Content */}
+        <section className="py-16 md:py-24 bg-background">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">About Which AI Model To Use For What</h2>
+
+            <p className="text-lg text-muted-foreground mb-4">
+              WhichAIModelToUseForWhat.com is a practical, no-hype guide designed to help you understand and compare today's most powerful AI models. We make it easier to decide which model fits your specific task — whether it's summarization, retrieval-augmented generation (RAG), coding, multimodal analysis, or building AI agents.
+            </p>
+
+            <p className="text-lg text-muted-foreground mb-4">
+              Our team tracks and compares leading models such as OpenAI GPT-5, Claude Sonnet 4.5, Gemini 2.5 Pro, Grok 4, Qwen3-Max, and DeepSeek-V3. Each model page includes clear data on reasoning quality, coding ability, context length, cost, speed, and multimodal performance.
+            </p>
+
+            <p className="text-lg text-muted-foreground mb-4">
+              The goal of AI Model Guide is to provide transparent, practical insights rather than marketing claims. We evaluate each model based on real-world use cases, benchmark results, and feedback from the developer community.
+            </p>
+
+            <p className="text-lg text-muted-foreground mb-4">
+              Whether you're an engineer, a researcher, or a business professional exploring AI integration, our comparison tables and summaries help you make informed decisions. By understanding which AI model to use for what, you can save time, optimize costs, and build smarter applications.
+            </p>
+
+            <p className="text-lg text-muted-foreground">
+              The site is continuously updated as new models are released. As the AI landscape evolves — from open-source frameworks like Llama and Mistral to proprietary systems like GPT-5 and Claude — our mission remains the same: help you navigate the complexity of large language models and choose the best tool for the job.
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );
