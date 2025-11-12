@@ -6,6 +6,7 @@ import '@/lib/errorReporter';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { RouteErrorBoundary } from '@/components/RouteErrorBoundary';
 import { SEOProvider } from '@/components/SEO';
+import { PageLoader } from '@/components/PageLoader';
 import '@/index.css';
 import { Layout } from '@/pages/Layout';
 
@@ -29,14 +30,6 @@ const NotFoundPage = lazy(() => import('@/pages/NotFoundPage').then(m => ({ defa
 
 enableMapSet();
 
-// Loading fallback component
-function PageLoader() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-600"></div>
-    </div>
-  );
-}
 const router = createBrowserRouter([
   {
     path: '/',
