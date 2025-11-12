@@ -814,6 +814,102 @@
     }
   },
   {
+    "id": "magistral-medium-1-2",
+    "name": "Magistral Medium 1.2",
+    "provider": "Mistral AI",
+    "description": "Frontier-class multimodal reasoning language model with transparent chain-of-thought capabilities. Fine-tuned for step-by-step logical reasoning in multiple languages, achieving 73.6% on AIME2024 benchmark. Features 128k token context window and Flash Answer mode for up to 10× faster generation. Enterprise-focused model with strong performance in complex problem-solving.",
+    "modalities": ["text", "vision"],
+    "context_window": "long",
+    "strengths": ["reasoning", "chain-of-thought", "multilingual", "speed", "transparency", "coding", "creative writing", "structured logic"],
+    "best_for": ["Complex reasoning and problem-solving", "Legal research and analysis", "Financial forecasting", "Healthcare decision support", "Coding and software design", "Creative writing and storytelling"],
+    "consider_if": "You need transparent, verifiable reasoning for enterprise applications, require multi-step logical problem-solving, or want fast generation with strong reasoning capabilities across multiple languages.",
+    "limitations": "Medium model is not open-source (enterprise/platform access only). Smaller than some frontier models. Quality rated 4/5 rather than 5/5.",
+    "cost_tier": "$$",
+    "open_weight": false,
+    "pricing": "Free tier (limited) | Pro $14.99/month | Team $24.99/user/month | Enterprise (custom) | Small variant is open-source",
+    "tasks": ["Multi-step reasoning", "Structured calculations", "Data analysis", "Legal research", "Financial forecasting", "Healthcare analysis", "Code generation and design", "Creative writing", "Decision trees and rule-based logic"],
+    "industries": ["Legal", "Finance", "Healthcare", "Software Development", "Enterprise", "Research", "Creative Writing"],
+    "release_date": "2025",
+    "rating": {
+      "speed": 5,
+      "quality": 4,
+      "cost": 4
+    },
+    "links": {
+      "site": "https://mistral.ai",
+      "docs": "https://docs.mistral.ai",
+      "pricing": "https://mistral.ai/pricing"
+    },
+    "detailed_description": "Magistral Medium 1.2 is a frontier-class multimodal reasoning language model released by Mistral AI in September 2025. It is part of Mistral's Magistral series, which comes in two variants: Magistral Small (a 24B-parameter open-source model) and Magistral Medium (a more powerful enterprise model). Magistral Medium is specifically fine-tuned for step-by-step logical reasoning and supports transparent chain-of-thought in multiple languages. This means it can show its reasoning process explicitly, making it valuable for applications where transparency and verifiability are crucial. It achieved strong benchmark performance, notably 73.6% on the AIME2024 reasoning benchmark, demonstrating its capability to handle complex mathematical and logical problems. The model offers an expanded 128k token context window for handling very lengthy inputs, allowing it to process substantial documents, codebases, or research papers in a single session. Despite its focus on complex reasoning, Magistral Medium is optimized for speed – in Mistral's Le Chat platform, a new \"Flash Answer\" mode allows up to 10× faster token generation compared to many competitors. This combination of deep reasoning capability and fast generation makes it uniquely positioned in the market. The model is multimodal, supporting both text and vision inputs, enabling it to analyze diagrams, charts, and images alongside text. Mistral trained Magistral using advanced techniques including supervised fine-tuning on reasoning traces and reinforcement learning to achieve transparent, verifiable reasoning.",
+    "use_cases_detail": {
+      "sections": [
+        {
+          "title": "Complex Reasoning and Problem-Solving",
+          "content": "This model is well-suited for any task requiring deep, multi-step reasoning or complex problem solving. Its transparent chain-of-thought capability means you can see exactly how it arrives at conclusions, making it ideal for critical applications where understanding the reasoning path is as important as the answer. For example, it can work through complex mathematical proofs, solve intricate logic puzzles, or analyze multi-layered strategic scenarios. The 73.6% performance on AIME2024 demonstrates its capability with competition-level mathematics."
+        },
+        {
+          "title": "Enterprise Legal and Financial Applications",
+          "content": "Enterprises can leverage Magistral for structured calculations, data analysis, decision trees, and rule-based logic in domains like legal research and financial forecasting where traceable reasoning is critical. In legal contexts, it can analyze case law, identify relevant precedents, and construct logical arguments with visible reasoning steps. For financial applications, it can model complex scenarios, evaluate risk factors, and provide transparent analysis of investment strategies or market trends. The ability to verify each reasoning step is invaluable for compliance and audit requirements."
+        },
+        {
+          "title": "Healthcare Decision Support",
+          "content": "In healthcare settings, Magistral's transparent reasoning is particularly valuable for clinical decision support systems. It can analyze patient data, consider multiple diagnostic possibilities, and explain its reasoning process in a way that healthcare professionals can verify and understand. This transparency is crucial for medical applications where decisions must be explainable and defensible. The model can process lengthy medical records, research papers, and clinical guidelines within its 128k context window."
+        },
+        {
+          "title": "Software Development and Architecture",
+          "content": "Developers find Magistral valuable for coding and software design assistance. The model can plan multi-step coding tasks, improve architecture decisions, and work through complex refactoring challenges with transparent reasoning. It excels at breaking down large programming problems into logical steps, considering trade-offs between different implementation approaches, and providing rationale for its suggestions. This makes it particularly useful for senior developers and architects working on complex system design."
+        },
+        {
+          "title": "Creative Writing and Content Generation",
+          "content": "Despite its focus on logical reasoning, Magistral is also an effective creative assistant. Early tests showed it excels at creative writing and storytelling, producing coherent narratives or even intentionally eccentric content on demand. Its reasoning capabilities help it maintain plot consistency, character development, and narrative structure across long-form content. The Flash Answer mode makes it particularly efficient for rapid content generation when speed is essential."
+        },
+        {
+          "title": "Multilingual Reasoning Tasks",
+          "content": "Magistral's multilingual proficiency makes it useful for reasoning in languages such as English, French, German, Italian, Arabic, Chinese, and more. This is particularly valuable for international enterprises that need consistent reasoning quality across different language contexts. The model maintains its transparent chain-of-thought capability across languages, making it possible to verify reasoning regardless of the working language."
+        }
+      ],
+      "summary": "Choose Magistral Medium 1.2 when you need transparent, verifiable reasoning for enterprise applications. It's particularly strong for applications in legal, financial, and healthcare domains where understanding the reasoning process is as important as the final answer. The combination of fast generation (Flash mode) and deep reasoning makes it efficient for both high-throughput applications and complex problem-solving. For organizations that prioritize transparency and explainability in AI systems, Magistral offers a unique value proposition."
+    },
+    "pricing_detail": {
+      "tiers": [
+        {
+          "name": "Free Tier",
+          "price": "Free",
+          "description": "Mistral AI provides a free tier with limited access to their models including Magistral. This allows users to experiment with the reasoning capabilities and evaluate whether the model fits their needs. The free tier has usage limits and may have restricted access to advanced features like Flash Answer mode."
+        },
+        {
+          "name": "Pro Plan",
+          "price": "$14.99/month",
+          "description": "The Pro plan offers extended AI and agent capabilities with higher usage limits. This tier provides full access to Magistral Medium 1.2 including Flash Answer mode, suitable for individual professionals and small businesses. The Pro plan includes access to Le Chat platform and API usage within monthly quotas."
+        },
+        {
+          "name": "Team Plan",
+          "price": "$24.99/user/month",
+          "description": "The Team plan adds collaboration features and increased limits, designed for organizations with multiple users. This includes shared workspaces, team management tools, and higher usage quotas per user. Ideal for development teams, research groups, or departments that need coordinated access to Magistral's capabilities."
+        },
+        {
+          "name": "Enterprise Plan",
+          "price": "Custom pricing",
+          "description": "Enterprises can negotiate custom pricing for private deployments or on-premise solutions. This tier offers the highest usage limits, dedicated support, SLA guarantees, and the ability to deploy Magistral Medium in private cloud or on-premise environments. Custom integrations and fine-tuning options may also be available at this tier."
+        },
+        {
+          "name": "Open-Source Alternative (Magistral Small)",
+          "price": "Free (self-hosting costs only)",
+          "description": "Notably, the smaller Magistral Small 1.2 is open-source under Apache 2.0 license and can be self-hosted at no cost, making it possible to experiment with Magistral's reasoning approach freely. While not as powerful as the Medium model, it provides a cost-effective entry point for organizations that want to test the reasoning paradigm or have budget constraints. The Medium model's weights are available through Mistral's platform or enterprise offerings."
+        }
+      ],
+      "summary": "Mistral's pricing strategy balances accessibility with enterprise features. The free tier allows experimentation, while paid plans scale from individual use ($14.99/month) to team collaboration ($24.99/user/month) to full enterprise deployment. The availability of open-source Magistral Small provides an alternative for budget-conscious users, though the full power of Medium is reserved for paid tiers. This tiered approach makes Magistral accessible to a wide range of users while supporting Mistral's continued development."
+    },
+    "developer_info": "Developer: Mistral AI – an AI research and product company known for its focus on \"thinking\" models. Based in France, Mistral AI has quickly established itself as a leading European AI company. Mistral AI developed Magistral as its first dedicated reasoning LLM, training it with advanced techniques including supervised fine-tuning on reasoning traces and reinforcement learning to achieve transparent, verifiable reasoning. The developer has a track record of open-sourcing smaller models (like Magistral Small) to foster community innovation, while offering larger versions (like Magistral Medium) for enterprise use. This dual approach allows Mistral to contribute to the open-source AI ecosystem while maintaining a sustainable business model. The company's focus on transparency and explainability in AI reasoning sets it apart in the competitive LLM market.",
+    "category": "Multimodal Reasoning LLM (Enterprise)",
+    "tags": ["Reasoning Model", "Chain-of-Thought", "Multimodal", "Enterprise AI", "Mistral AI"],
+    "rating_detail": {
+      "speed_explanation": "Magistral Medium offers excellent generation speed on Mistral's infrastructure, especially with the innovative Flash Answer mode that delivers up to 10× faster token generation compared to many competitors. This makes it one of the fastest reasoning models available, addressing a common criticism of thinking models – that they're too slow for production use. The combination of deep reasoning and fast generation is achieved through architectural optimizations and efficient inference infrastructure. Even in standard mode, the model maintains competitive speed while performing complex reasoning tasks. The 128k context window is processed efficiently, allowing for rapid analysis of lengthy documents.",
+      "quality_explanation": "Magistral Medium delivers very strong reasoning quality, evidenced by its 73.6% performance on the AIME2024 reasoning benchmark. The transparent chain-of-thought capability means reasoning steps are visible and verifiable, which adds a quality dimension beyond simple accuracy. However, it's rated 4/5 rather than 5/5 because it may not quite match the absolute best frontier models like GPT-5 or Claude Sonnet 4.5 on all tasks. That said, for reasoning-specific tasks, it's highly competitive and the transparency it offers can be more valuable than marginal improvements in raw performance. Early users report excellent results in logical problem-solving, coding, and structured analysis tasks.",
+      "cost_explanation": "The cost efficiency is strong – at $14.99/month for individual Pro access, Magistral offers excellent value compared to many competing reasoning models. The availability of a free tier for experimentation and an open-source Small variant makes it accessible to a wide range of users. For enterprises, the custom pricing ensures they can negotiate terms that fit their usage patterns. Compared to pay-per-token models that can become expensive with heavy usage, Mistral's subscription model provides predictable costs. The combination of reasonable subscription prices and the availability of an open-source alternative earns a solid 4/5 rating for cost efficiency."
+    }
+  },
+  {
     "id": "gpt-4-class",
     "name": "GPT-4 Class",
     "provider": "OpenAI",
