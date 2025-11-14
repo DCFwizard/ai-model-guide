@@ -51,6 +51,9 @@ export function ModelsPage() {
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
               Search, filter, and find the perfect model for your needs.
             </p>
+            <p className="mt-4 max-w-3xl mx-auto text-base md:text-lg text-slate-600 dark:text-slate-400">
+              Compare key capabilities across leading AI models — including reasoning performance, coding ability, multimodal features, context window size, and pricing tiers. Use the model cards to quickly assess strengths and limitations for tasks such as writing, coding, research, agents, and automation.
+            </p>
           </div>
           <div className="mt-12 space-y-8">
             <div className="flex flex-col md:flex-row gap-4">
