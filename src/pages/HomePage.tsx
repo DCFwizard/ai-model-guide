@@ -26,6 +26,9 @@ export function HomePage() {
               <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300">
                 A practical, no-hype guide to choosing the right model for your task. Compare capabilities, costs, and use cases to build better with AI.
               </p>
+              <p className="mt-4 max-w-3xl mx-auto text-base md:text-lg text-slate-600 dark:text-slate-400">
+                Stay updated with comprehensive evaluations of leading AI models including ChatGPT, Claude, Gemini, Llama, DeepSeek, Kimi, and more. Compare real-world performance, speed, context length, pricing tiers, and capabilities to identify the most effective AI tool for writing, coding, research, automation, and business applications.
+              </p>
               <div className="mt-10 flex justify-center gap-4">
                 <Button size="lg" asChild className="bg-sky-600 hover:bg-sky-700">
                   <Link to="/models">Explore All Models</Link>
