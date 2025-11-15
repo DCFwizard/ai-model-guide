@@ -139,6 +139,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://whichaimodeltouseforwhat.com/models/apriel-2-0</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://whichaimodeltouseforwhat.com/models/gpt-4-class</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -176,12 +182,6 @@
   </url>
   <url>
     <loc>https://whichaimodeltouseforwhat.com/models/phi-3-class</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/apriel-2-0</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
