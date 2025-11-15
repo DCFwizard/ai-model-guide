@@ -987,6 +987,93 @@
     }
   },
   {
+    "id": "glm-4-6",
+    "name": "GLM-4.6",
+    "provider": "Zhipu AI (Z.ai)",
+    "description": "Cutting-edge large language model designed for intelligent agent applications with 355 billion total parameters (32B active using MoE). Features expanded 200K token context window, exceptional coding performance, advanced reasoning capabilities, and built-in tool use support. State-of-the-art open model excelling in agent tasks, code generation, and long-context reasoning.",
+    "modalities": ["text"],
+    "context_window": "very long",
+    "strengths": ["coding", "reasoning", "agentic", "tool use", "long context", "efficiency", "open-source", "alignment"],
+    "best_for": ["AI coding assistant and IDE plugins", "Autonomous agents with tool integration", "Complex reasoning and analytical tasks", "Creative content generation and role-playing", "Long-form document analysis"],
+    "consider_if": "You need a powerful open-source model for coding assistance, building AI agents, or handling extremely long contexts with advanced reasoning capabilities.",
+    "limitations": "Full model requires robust hardware infrastructure. Running 355B parameters demands significant compute resources.",
+    "cost_tier": "$",
+    "open_weight": true,
+    "pricing": "Free (open-source on Hugging Face) | Z.ai Chat (free tier) | Lite $3/month | Pro $15/month | Self-hosted (infrastructure costs only)",
+    "tasks": ["Code generation and debugging", "Front-end development and UI code", "Multi-step agent workflows", "Tool and API integration", "Web search and data retrieval", "Long-form analysis and reasoning", "Financial report analysis", "Legal reasoning", "Creative writing and storytelling", "Role-playing and dialogue systems"],
+    "industries": ["Software Development", "Research", "Finance", "Legal", "Content Creation", "AI Development", "Enterprise Automation"],
+    "release_date": "2024",
+    "rating": {
+      "speed": 8,
+      "quality": 10,
+      "cost": 10
+    },
+    "links": {
+      "site": "https://z.ai",
+      "docs": "https://huggingface.co/zai-org/GLM-4.6"
+    },
+    "detailed_description": "GLM-4.6 is the latest iteration of the Generative Language Model (GLM) series by Zhipu AI (branded as Z.ai). It is a cutting-edge large language model designed for intelligent agent applications, with 355 billion total parameters (of which 32 billion are active at inference time, using a Mixture-of-Experts architecture). GLM-4.6 builds upon the prior GLM-4.5, bringing significant improvements: an expanded context window of 200K tokens (up from 128K) for handling extremely long inputs, substantially better performance on coding tasks (it excels in code generation and can produce polished front-end code outputs), and advanced reasoning capabilities with built-in tool use support. The model also demonstrates more 'agentic' behavior – it's better at using tools, performing web searches, and integrating into agent frameworks, making it ideal for creating AI agents that can plan and act. Additionally, GLM-4.6 shows refined natural language generation with improved alignment to human preferences, producing clearer, more readable, and more contextually appropriate responses (even in complex role-playing scenarios). Zhipu has open-sourced the model weights, so GLM-4.6 is one of the most powerful open models currently available, achieving state-of-the-art results among open LLMs – it outperforms many domestic and international models (like DeepSeek-V3.2 and others) on agent, reasoning, and coding benchmarks, and comes close to Anthropic's Claude 4.5 on certain coding evaluations.",
+    "use_cases_detail": {
+      "sections": [
+        {
+          "title": "AI Coding Assistant",
+          "content": "GLM-4.6 delivers high performance in code understanding and generation. It can be used in IDE plugins or coding tools to write code, fix bugs, generate functions, and even create user interface code (it was tested in integrations like Claude Code and showed strong results in front-end page generation). Its coding prowess makes it a viable alternative to proprietary models for software development support."
+        },
+        {
+          "title": "Autonomous Agents & Tool Use",
+          "content": "The model's architecture enables it to act as an agent that uses tools and APIs during inference. Developers can build agents that have GLM-4.6 at their core, capable of searching the web, calling external APIs, or controlling other software to accomplish multi-step tasks. In tests, GLM-4.6 had stronger performance in tool-using and search-based agent tasks than previous GLM versions. For example, it can be part of an AI workflow that reads and summarizes documents, then queries databases or performs calculations as needed."
+        },
+        {
+          "title": "Complex Reasoning Tasks",
+          "content": "Thanks to improved reasoning and a huge context window, GLM-4.6 is well-suited for long-form analytical tasks. It can handle complex problem-solving like analyzing lengthy financial reports, performing multi-turn reasoning (e.g. legal reasoning or scientific analysis), and maintaining context over very large conversations or documents. Researchers and analysts can use it to get insights from massive text datasets or to manage conversations that require remembering extensive detail."
+        },
+        {
+          "title": "Creative and Conversational AI",
+          "content": "GLM-4.6 has been fine-tuned for better alignment with human style and preferences. This makes it capable of high-quality content creation – it can write stories, essays, or marketing copy with an improved sense of style. It also shines in role-playing or dialogue scenarios, producing more natural and contextually appropriate responses for chatbots or virtual assistants that need to maintain personas."
+        }
+      ],
+      "summary": "GLM-4.6 was purpose-built to power AI agents and coding assistants. Use it when you need exceptional coding support, autonomous agent capabilities with tool integration, complex long-form reasoning over massive contexts, or high-quality creative content generation with strong alignment to human preferences."
+    },
+    "pricing_detail": {
+      "tiers": [
+        {
+          "name": "Open-Source (Free)",
+          "price": "Free",
+          "description": "The model's weights are openly available (hosted on Hugging Face and ModelScope for free download), which means anyone with sufficient hardware can deploy it at no cost. This makes GLM-4.6 one of the most accessible state-of-the-art models available."
+        },
+        {
+          "name": "Z.ai Chat (Free Tier)",
+          "price": "Free",
+          "description": "For users who prefer a hosted solution, Z.ai offers a Chat platform that allows free usage of GLM-4.6 for casual interactions (with some limitations). This is ideal for testing and light usage without any costs."
+        },
+        {
+          "name": "GLM Coding Plan - Lite",
+          "price": "$3/month",
+          "description": "An affordable subscription that provides a generous quota (approximately 120 code generations per 5-hour cycle) for individual developers. This tier offers Claude-level coding assistance at a fraction of the cost, making professional-grade AI coding accessible to all developers."
+        },
+        {
+          "name": "GLM Coding Plan - Pro",
+          "price": "$15/month",
+          "description": "The Pro tier offers higher usage (around 5× the prompts of Lite, approximately 600 per 5-hour window) for power users or teams. This plan is designed for developers who need extensive coding assistance and API access throughout their workday."
+        },
+        {
+          "name": "Self-Hosted",
+          "price": "Infrastructure costs only",
+          "description": "Organizations can deploy GLM-4.6 on their own servers with no license fee. Note that the full model is large (355B parameters), so operational costs involve computing infrastructure rather than subscription fees. The active 32B parameters make it more efficient than comparable dense models."
+        }
+      ],
+      "summary": "One of GLM-4.6's advantages is its accessible pricing. The open-source nature allows free deployment, while the Z.ai platform offers remarkably affordable subscription plans starting at just $3/month for professional coding assistance. Even at the Pro tier ($15/month), GLM-4.6 remains far more cost-effective than competing coding assistants while delivering comparable or superior performance."
+    },
+    "developer_info": "Developer: Zhipu AI, a Chinese AI company operating under the Z.ai brand for international offerings, is the creator of GLM-4.6. The company's mission is to advance AGI in an open and beneficial way. Zhipu has been at the forefront of open-source LLM development – prior versions like GLM-130B and GLM-4.5 were widely recognized in the research community. For GLM-4.6, Zhipu's team introduced innovative training techniques (e.g., a hybrid MoE architecture with 16 experts, grouped-query attention, multi-token prediction decoding) and leveraged a massive amount of training data to push the model's capabilities. The result is a model that competes with the best from OpenAI, Anthropic, and others, while remaining open. Zhipu also provides the Z.ai developer platform where this model can be integrated via API, and actively maintains documentation and support for the developer community.",
+    "category": "Large Language Model – Agentic/Coding Focus (Open-Source)",
+    "tags": ["Agentic AI", "Coding", "Open-source", "Long context", "MoE", "Tool use", "Autonomous agents", "Reasoning"],
+    "rating_detail": {
+      "speed_explanation": "GLM-4.6 achieves high throughput and efficiency – it uses approximately 15% fewer tokens than its predecessor to solve tasks, and supports high parallelism. The MoE architecture with 32B active parameters (out of 355B total) provides excellent efficiency. However, running the full model still requires robust hardware infrastructure, so while it's fast for its capabilities, it's not instantaneous. Overall speed is well-balanced for a model of this power.",
+      "quality_explanation": "GLM-4.6's quality is top-tier among open models, excelling in coding and reasoning to the point of nearing closed-source leaders. It outperforms many models (like DeepSeek-V3.2) on agent, reasoning, and coding benchmarks, and comes close to Anthropic's Claude 4.5 on certain coding evaluations. The model demonstrates state-of-the-art performance among open LLMs with exceptional alignment, making it one of the highest-quality open models available.",
+      "cost_explanation": "GLM-4.6 is outstanding in cost-effectiveness. The open availability means no licensing fees, and the ultra-low-cost subscription plans ($3-15/month for professional coding assistance) make it one of the most cost-effective advanced LLMs on the market. Organizations can self-host for free or use affordable cloud services, making professional-grade AI accessible at unprecedented price points. This represents exceptional value for the performance delivered."
+    }
+  },
+  {
     "id": "gpt-4-class",
     "name": "GPT-4 Class",
     "provider": "OpenAI",
