@@ -1013,5 +1013,83 @@
     "cost_tier": "$",
     "open_weight": true,
     "links": { "site": "#", "docs": "#", "pricing": "#" }
+  },
+  {
+    "id": "exaone-4",
+    "name": "EXAONE 4.0",
+    "provider": "LG AI Research",
+    "description": "LG AI Research's flagship hybrid large language model with dual-mode architecture featuring fast Non-Reasoning mode for quick tasks and deep Reasoning mode for complex problem-solving. Available in 32B and 1.2B parameter versions with extended 128K token context window.",
+    "modalities": ["text"],
+    "context_window": "very long",
+    "strengths": ["reasoning", "coding", "hybrid dual-mode", "multilingual", "efficiency", "tool use", "long context", "on-device"],
+    "best_for": ["Complex problem-solving requiring step-by-step analysis", "Code generation and debugging", "Multilingual applications (Korean, English, Spanish)", "On-device AI for privacy-sensitive tasks", "Agentic workflows with tool integration"],
+    "consider_if": "You need a flexible model that can switch between fast responses and deep reasoning, or require on-device deployment with the 1.2B version.",
+    "limitations": "Top-tier proprietary models may still lead in some specialized areas. Reasoning mode trades speed for depth.",
+    "cost_tier": "$-$$",
+    "open_weight": true,
+    "pricing": "Free (open-weight on Hugging Face) | Enterprise via FriendliAI (pay-as-you-go)",
+    "tasks": ["Complex mathematics and coding challenges", "Medical question answering", "Multi-step problem solving", "Agentic tool use and API integration", "Multilingual conversations", "On-device AI applications", "Domain-specific tasks (finance, law, tech)"],
+    "industries": ["Software Development", "Healthcare", "Finance", "Legal", "IoT", "Consumer Electronics", "Research"],
+    "release_date": "2024",
+    "rating": {
+      "speed": 8,
+      "quality": 8,
+      "cost": 10
+    },
+    "links": {
+      "site": "https://www.lgresearch.ai/",
+      "docs": "https://huggingface.co/LGAI-EXAONE",
+      "pricing": "https://friendli.ai/"
+    },
+    "detailed_description": "EXAONE 4.0 is a flagship large language model from LG AI Research, notable for its hybrid dual-mode architecture. It integrates two operating modes within a single system: a fast 'Non-Reasoning' mode for quick, straightforward tasks, and a deep 'Reasoning' mode for complex problem-solving that requires step-by-step analysis. The model is available in two sizes – a high-performance 32B-parameter model and a lightweight 1.2B-parameter model designed for on-device use (e.g. in smartphones or appliances). Both versions are multilingual, supporting at least English, Korean, and Spanish fluently. EXAONE 4.0 features an extended context window (up to 128K tokens) enabled by an efficient sliding window attention mechanism, allowing it to handle very long documents while maintaining low computational overhead. This model is considered Korea's first hybrid AI of its kind, and LG optimized its training pipeline with a blend of supervised fine-tuning (including code and tool use) and advanced reasoning reinforcement learning to achieve high-quality, reliable outputs. In benchmarks, EXAONE 4.0 has demonstrated state-of-the-art results in certain domains – outperforming some rival models from Alibaba, Microsoft, and Mistral on science, math, and coding tests – while remaining more computationally efficient than much larger models (it attains comparable performance to models 5–20× its size in knowledge tasks).",
+    "use_cases_detail": {
+      "sections": [
+        {
+          "title": "Everyday Queries and Conversations",
+          "content": "In its fast Non-Reasoning mode, EXAONE excels at handling simple Q&A, casual dialogue, and routine tasks with minimal latency. This is useful for chatbots or voice assistants that need to deliver quick responses."
+        },
+        {
+          "title": "Complex Problem Solving",
+          "content": "For tasks like complex mathematics, coding challenges, or medical question answering, the model can switch into Reasoning mode to produce carefully deliberated, multi-step solutions. This makes it valuable for domains requiring thorough analysis (e.g. debugging code, solving engineering problems, or providing clinical decision support)."
+        },
+        {
+          "title": "Agentic Tool Use",
+          "content": "EXAONE 4.0 was built with agent capabilities in mind, including integrating external tools and APIs. It can be used to develop AI agents that perform multi-step workflows, use tools, or interact with software (for example, an AI agent that executes database queries or controls IoT devices as part of its responses)."
+        },
+        {
+          "title": "Multilingual and Domain-Specific Tasks",
+          "content": "With native support for Korean, English, and Spanish, EXAONE is suitable for companies operating in multilingual environments. It also offers professional-grade expertise in specialized domains (the training included diverse data), making it useful for domain-specific assistants in finance, law, or tech. The smaller 1.2B model enables on-device AI applications for privacy-sensitive or offline scenarios – for instance, running a private assistant on a smartphone or an appliance without cloud connectivity."
+        }
+      ],
+      "summary": "EXAONE 4.0's dual modes make it versatile for a wide range of applications. Use it when you need flexibility to switch between fast everyday queries and deep reasoning for complex tasks, especially in multilingual contexts or when on-device deployment is required for privacy or offline scenarios."
+    },
+    "pricing_detail": {
+      "tiers": [
+        {
+          "name": "Open-Weight (Free)",
+          "price": "Free",
+          "description": "The EXAONE 4.0 model is open-weight and freely available for research and academic use. LG AI Research has released the model on Hugging Face, allowing developers to download the 32B and 1.2B versions without licensing fees."
+        },
+        {
+          "name": "Enterprise API (FriendliAI)",
+          "price": "Pay-as-you-go",
+          "description": "For enterprise deployment, LG has partnered with FriendliAI to offer EXAONE 4.0 via a scalable API service. Companies can access the model through FriendliAI's serverless endpoints on a usage-based billing model, avoiding the need to host the model themselves."
+        },
+        {
+          "name": "Self-Hosted",
+          "price": "Infrastructure costs only",
+          "description": "Organizations can deploy EXAONE 4.0 on their own infrastructure (cloud or on-premise) and pay only for compute resources. The smaller 1.2B version can run efficiently on affordable hardware or specialized NPUs."
+        }
+      ],
+      "summary": "Organizations can experiment with EXAONE for free locally, and then opt for paid usage on the cloud if they need production-level scaling. There are no traditional subscription plans directly from LG; instead, cost comes into play when using third-party services like FriendliAI or if deploying on cloud hardware, but API token pricing details are usage-dependent and not fixed."
+    },
+    "developer_info": "Developer: LG AI Research (the artificial intelligence R&D arm of LG Group) is the primary developer of EXAONE 4.0. LG AI Research has been focusing on foundation models and AI infrastructures, aiming this model at B2B applications rather than direct consumer use. The development was in collaboration with partners (e.g., the model references Nemotron technology from NVIDIA for certain components, and LG has worked with hardware startups like FuriosaAI to run EXAONE efficiently on specialized NPUs). The result is a model built to be enterprise-grade: scalable, with a strategic roadmap that includes multimodal extensions (e.g. EXAONE Vision Language) and domain-specific versions (like healthcare-focused EXAONE Path).",
+    "category": "Hybrid Reasoning LLM (Dual-Mode, Multilingual)",
+    "tags": ["Hybrid dual-mode", "Multilingual", "Open-weight", "On-device AI", "Large Multimodal Model", "Agentic AI", "Korean AI"],
+    "rating_detail": {
+      "speed_explanation": "EXAONE 4.0 delivers fast performance for everyday queries in its Non-Reasoning mode and employs efficient strategies (like hybrid attention) for long contexts. Heavy reasoning tasks in Reasoning mode will be slower as the model performs deeper analysis, but overall speed is well-balanced for its capabilities.",
+      "quality_explanation": "EXAONE 4.0 achieves state-of-the-art results on many tasks, particularly in science, math, and coding benchmarks. It bridges quick intuition with deep analysis effectively. While top-tier proprietary models still lead in some specialized areas, EXAONE's quality is excellent for its size and approach.",
+      "cost_explanation": "EXAONE 4.0 is outstanding in cost-effectiveness. The model is fully open-source with no licensing fees, and organizations can run the smaller 1.2B version on affordable hardware. For cloud deployment, pay-as-you-go pricing through FriendliAI means you only pay for actual usage. This makes it one of the most accessible high-quality models available."
+    }
   }
 ]
