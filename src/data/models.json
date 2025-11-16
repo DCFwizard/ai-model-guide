@@ -1174,7 +1174,8 @@
     },
     "links": {
       "site": "https://replit.com",
-      "docs": "https://replit.com/ai"
+      "docs": "https://replit.com/ai",
+      "pricing": "https://replit.com/pricing"
     },
     "detailed_description": "Replit's AI features combine Ghostwriter – an AI-powered coding assistant – and the newer Replit Agent. Ghostwriter is integrated into Replit's browser-based IDE to help developers write code faster and more efficiently by generating context-aware code suggestions in real time. It understands project context and can predict next lines of code or even explain and debug code, acting as a pair programmer within the IDE. In September 2024, Replit introduced the Replit Agent, an AI agent for automating software development tasks via natural language commands. This evolution turned Replit into an AI-powered software creation platform where users can build complete applications just by describing them in plain English. In summary, Replit AI provides an end-to-end coding assistant that not only auto-completes code but can also create entire apps from a prompt, leveraging cloud compute and Replit's collaborative IDE environment.",
     "use_cases_detail": {
