@@ -6,9 +6,9 @@
     "icon": "BookText",
     "overview": "Summarization is the task of creating a short, accurate, and coherent version of a longer text document. AI models excel at this by identifying key points and generating fluent summaries, saving significant time and effort in processing large volumes of information.",
     "recommendations": {
-      "premium": { "model_id": "claude-3-class", "reason": "Best-in-class for handling very long documents and producing nuanced, high-quality summaries." },
-      "balanced": { "model_id": "gpt-4-class", "reason": "Excellent all-rounder with strong comprehension and generation, suitable for most summary tasks." },
-      "budget": { "model_id": "mistral-class", "reason": "Offers a great balance of speed, cost, and quality, ideal for summarizing at scale." }
+      "premium": { "model_id": "gpt-5", "reason": "Handles extremely long documents with very low hallucinations, giving accurate, coherent summaries." },
+      "balanced": { "model_id": "claude-sonnet-4-5", "reason": "Strong at extracting key points and writing clear, well-structured summaries over long contexts." },
+      "budget": { "model_id": "gemini-2-5-pro", "reason": "Large context and \"Deep Research\" style workflows make it excellent for summarizing many sources at once." }
     },
     "evaluation_criteria": [
       { "title": "Context Window", "description": "Can the model handle the full length of your documents? Models like Claude 3 are ideal for very long inputs." },
