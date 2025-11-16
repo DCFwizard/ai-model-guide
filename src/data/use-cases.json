@@ -75,9 +75,9 @@
     "icon": "PenTool",
     "overview": "Text generation involves creating human-like text for various purposes, such as writing articles, marketing copy, emails, or creative fiction. Models are evaluated on their creativity, coherence, and ability to adopt a specific style or tone.",
     "recommendations": {
-      "premium": { "model_id": "gpt-4-class", "reason": "Unmatched for creative and technical writing, producing highly coherent and nuanced text." },
-      "balanced": { "model_id": "claude-3-class", "reason": "Excels at long-form writing and maintaining a consistent, thoughtful tone throughout." },
-      "budget": { "model_id": "llama-3-class", "reason": "A powerful open-weight option that can be fine-tuned for specific writing styles." }
+      "premium": { "model_id": "gpt-5", "reason": "General-purpose frontier model with top-tier quality for articles, essays and structured long-form text." },
+      "balanced": { "model_id": "gemini-2-5-pro", "reason": "Excels at creative and structured writing, leveraging multimodal understanding and very long context." },
+      "budget": { "model_id": "llama-4", "reason": "Open-weight multimodal model with strong general text quality and huge context, ideal for custom fine-tunes." }
     },
     "evaluation_criteria": [
       { "title": "Creativity & Style", "description": "Can the model generate text that is engaging, original, and matches your desired tone (e.g., formal, witty, technical)?" },
