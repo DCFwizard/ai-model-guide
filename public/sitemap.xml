@@ -163,48 +163,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/gpt-4-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/claude-3-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/gemini-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/llama-3-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/mistral-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/cohere-command-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://whichaimodeltouseforwhat.com/models/phi-3-class</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://whichaimodeltouseforwhat.com/use-cases/summarization</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
