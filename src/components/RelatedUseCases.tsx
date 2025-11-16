@@ -34,9 +34,9 @@ export function RelatedUseCases({ modelId }: RelatedUseCasesProps) {
         {relatedUseCases.map((useCase) => {
           // Determine which tier this model is recommended at
           const tier =
-            useCase.recommendations.premium.model_id === modelId ? 'Premium' :
-            useCase.recommendations.balanced.model_id === modelId ? 'Balanced' :
-            'Budget';
+            useCase.recommendations.premium.model_id === modelId ? '1' :
+            useCase.recommendations.balanced.model_id === modelId ? '2' :
+            '3';
 
           return (
             <Link key={useCase.slug} to={`/use-cases/${useCase.slug}`}>
@@ -46,7 +46,7 @@ export function RelatedUseCases({ modelId }: RelatedUseCasesProps) {
                     <CardTitle className="group-hover:text-sky-600 transition-colors">
                       {useCase.title}
                     </CardTitle>
-                    <Badge variant={tier === 'Premium' ? 'default' : 'secondary'}>
+                    <Badge variant={tier === '1' ? 'default' : 'secondary'}>
                       {tier}
                     </Badge>
                   </div>

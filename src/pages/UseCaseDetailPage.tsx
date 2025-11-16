@@ -18,9 +18,9 @@ export function UseCaseDetailPage() {
   const models = modelsData as AIModel[];
   const getModelById = (id: string) => models.find(m => m.id === id);
   const recommendations = [
-    { tier: 'Premium', ...useCase.recommendations.premium },
-    { tier: 'Balanced', ...useCase.recommendations.balanced },
-    { tier: 'Budget / Open', ...useCase.recommendations.budget },
+    { tier: '1', ...useCase.recommendations.premium },
+    { tier: '2', ...useCase.recommendations.balanced },
+    { tier: '3', ...useCase.recommendations.budget },
   ];
   const faqSchema = {
     "@context": "https://schema.org",
