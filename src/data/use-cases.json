@@ -119,9 +119,9 @@
     "icon": "Bot",
     "overview": "AI agents are systems that use LLMs as their 'brain' to reason, plan, and execute a sequence of actions to achieve a goal. They can use 'tools' (like calling an API, searching the web, or running code) to interact with the outside world and complete complex, multi-step tasks autonomously.",
     "recommendations": {
-      "premium": { "model_id": "gpt-4-class", "reason": "The best model for complex reasoning, planning, and reliable tool use, making it the top choice for robust agents." },
-      "balanced": { "model_id": "claude-3-class", "reason": "Strong reasoning and a large context window make it excellent for agents that need to process a lot of information." },
-      "budget": { "model_id": "llama-3-class", "reason": "A very capable open-weight model that can be fine-tuned for specific agentic behaviors and tool sets." }
+      "premium": { "model_id": "genspark-ai", "reason": "\"Super Agent\" workspace combining multiple models and 80+ tools to execute complex multi-step tasks end-to-end." },
+      "balanced": { "model_id": "claude-sonnet-4-5", "reason": "Very strong backbone for agents: tool use, computer control and long-running reasoning for complex workflows." },
+      "budget": { "model_id": "manus-ai", "reason": "Autonomous agent platform that takes high-level goals and independently plans and executes multi-step jobs." }
     },
     "evaluation_criteria": [
       { "title": "Reasoning & Planning", "description": "Can the model break down a complex goal into a logical sequence of smaller, executable steps?" },
