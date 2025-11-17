@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Open-Source (Free)",
+      "price": "Free",
+      "description": "The model's weights are openly available (hosted on Hugging Face and ModelScope for free download), which means anyone with sufficient hardware can deploy it at no cost. This makes GLM-4.6 one of the most accessible state-of-the-art models available."
+    },
+    {
+      "name": "Z.ai Chat (Free Tier)",
+      "price": "Free",
+      "description": "For users who prefer a hosted solution, Z.ai offers a Chat platform that allows free usage of GLM-4.6 for casual interactions (with some limitations). This is ideal for testing and light usage without any costs."
+    },
+    {
+      "name": "GLM Coding Plan - Lite",
+      "price": "$3/month",
+      "description": "An affordable subscription that provides a generous quota (approximately 120 code generations per 5-hour cycle) for individual developers. This tier offers Claude-level coding assistance at a fraction of the cost, making professional-grade AI coding accessible to all developers."
+    },
+    {
+      "name": "GLM Coding Plan - Pro",
+      "price": "$15/month",
+      "description": "The Pro tier offers higher usage (around 5× the prompts of Lite, approximately 600 per 5-hour window) for power users or teams. This plan is designed for developers who need extensive coding assistance and API access throughout their workday."
+    },
+    {
+      "name": "Self-Hosted",
+      "price": "Infrastructure costs only",
+      "description": "Organizations can deploy GLM-4.6 on their own servers with no license fee. Note that the full model is large (355B parameters), so operational costs involve computing infrastructure rather than subscription fees. The active 32B parameters make it more efficient than comparable dense models."
+    }
+  ],
+  "summary": "One of GLM-4.6's advantages is its accessible pricing. The open-source nature allows free deployment, while the Z.ai platform offers remarkably affordable subscription plans starting at just $3/month for professional coding assistance. Even at the Pro tier ($15/month), GLM-4.6 remains far more cost-effective than competing coding assistants while delivering comparable or superior performance."
+}

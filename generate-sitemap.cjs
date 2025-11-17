@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -327,7 +327,36 @@ function loadModels() {
     developer_info: magistralMedium12Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, ...modelsFromJson];
+  // Load GLM-4.6 from its folder
+  const glm46Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/glm-4-6/index.json'), 'utf8')
+  );
+  const glm46Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/glm-4-6/description.md'), 'utf8'
+  ).trim();
+  const glm46UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/glm-4-6/use-cases.json'), 'utf8')
+  );
+  const glm46Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/glm-4-6/pricing.json'), 'utf8')
+  );
+  const glm46Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/glm-4-6/rating.json'), 'utf8')
+  );
+  const glm46Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/glm-4-6/developer.md'), 'utf8'
+  ).trim();
+
+  const glm46Model = {
+    ...glm46Index,
+    detailed_description: glm46Description,
+    use_cases_detail: glm46UseCases,
+    pricing_detail: glm46Pricing,
+    rating_detail: glm46Rating,
+    developer_info: glm46Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();
