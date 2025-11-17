@@ -1,0 +1,35 @@
+{
+  "tiers": [
+    {
+      "name": "Free Trial",
+      "price": "Free (7 days)",
+      "description": "New users can start with a 7-day free trial during which you can run up to five full tasks (e.g., generate a few articles or have it complete some projects) to experience the platform. This trial provides full access to Genspark's core agent functionalities."
+    },
+    {
+      "name": "Starter",
+      "price": "$19/month",
+      "description": "Entry-level plan allowing a single user to generate up to ~50,000 words of content (or an equivalent workload in other task types) per month. Includes core AI agent functionalities, SEO mode for content, and basic use of the various tools. Suitable for occasional agent use."
+    },
+    {
+      "name": "Creator",
+      "price": "$39/month",
+      "description": "Raises the limit to ~100,000 words/month and adds features like SERP analysis and an outline builder (useful for content creation workflows), plus the ability to manage a few separate projects in the workspace. Designed for regular content creators."
+    },
+    {
+      "name": "Pro",
+      "price": "$79/month",
+      "description": "Geared toward heavy users (e.g., bloggers, power users) – offers ~250,000 words or equivalent task credits per month. Unlocks advanced features such as internal linking tools (for content SEO) and direct export integrations (to Google Docs, WordPress, etc.). Ideal for professionals with substantial workloads."
+    },
+    {
+      "name": "Agency",
+      "price": "$199/month",
+      "description": "Designed for teams or enterprise scale use, providing 1,000,000+ words (essentially unlimited for most practical purposes) and supporting multi-user collaboration, custom AI model options, and bulk operation tools. Perfect for agencies managing multiple clients."
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom pricing",
+      "description": "For larger businesses with custom requirements. Includes additional enterprise-specific integrations, possibly dedicated infrastructure, enhanced capacity, and custom solutions. Tailored for organizations that need maximum scale and specialized features."
+    }
+  ],
+  "summary": "Genspark is considered competitively priced among AI platforms – its base prices are lower or on par with similar 'AI agent' or advanced content generation tools, and importantly it doesn't hide features behind add-on fees (every plan's features are clearly defined). The pricing is primarily subscription-based with usage limits in terms of content length or task complexity. This makes it straightforward – choose a plan based on how much you plan to use it, rather than worrying about per-call charges. With a $19 entry point, Genspark offers an accessible way to get started, and scales up to professional and enterprise needs with the higher tiers."
+}
