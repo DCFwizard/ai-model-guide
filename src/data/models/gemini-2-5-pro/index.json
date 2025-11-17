@@ -1,0 +1,58 @@
+{
+  "id": "gemini-2-5-pro",
+  "name": "Gemini 2.5 Pro",
+  "provider": "Google DeepMind",
+  "description": "Google DeepMind's next-generation 'thinking model' with advanced reasoning processes and multimodal capabilities. Features a massive 1 million token context window (2M coming soon), native multimodal understanding (text, images, audio, video), and state-of-the-art performance across coding, math, science, and creative writing.",
+  "modalities": ["text", "vision", "speech", "video"],
+  "context_window": "very long",
+  "strengths": ["reasoning", "coding", "multimodal", "context awareness", "math", "science", "search grounding", "web design"],
+  "best_for": [
+    "Complex problem solving and reasoning",
+    "Coding and software development",
+    "Document analysis at scale",
+    "Multimodal tasks",
+    "Google ecosystem integration"
+  ],
+  "consider_if": "You need the most demanding projects with massive context requirements, multimodal understanding, or deep integration with Google tools and services.",
+  "limitations": "Can be slower with maximum context usage. Higher API output token costs. Primarily optimized for Google ecosystem.",
+  "cost_tier": "$-$$$",
+  "open_weight": false,
+  "pricing": "Free tier available | Google AI Pro $19.99/month | Google AI Ultra $249.99/month | Vertex AI pay-as-you-go (~$1.25-$10 per million tokens)",
+  "tasks": [
+    "Complex reasoning and analytics",
+    "Code generation and web app design",
+    "Large-scale document analysis",
+    "Multimodal content understanding",
+    "Scientific problem solving",
+    "Creative writing",
+    "Google Workspace integration"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Enterprise",
+    "Healthcare",
+    "Education",
+    "Content Creation",
+    "Data Analysis"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 10,
+    "cost": 7
+  },
+  "links": {
+    "site": "https://gemini.google.com",
+    "docs": "https://ai.google.dev/gemini-api/docs",
+    "pricing": "https://gemini.google/subscriptions/"
+  },
+  "category": "Multimodal Large Language Model (Enterprise-grade)",
+  "tags": [
+    "Thinking AI",
+    "Generative AI",
+    "Code Assistant",
+    "Long-context AI",
+    "Multimodal"
+  ]
+}

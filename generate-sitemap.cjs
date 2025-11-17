@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -95,7 +95,36 @@ function loadModels() {
     developer_info: claudeSonnet45Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, ...modelsFromJson];
+  // Load Gemini 2.5 Pro from its folder
+  const gemini25ProIndex = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-2-5-pro/index.json'), 'utf8')
+  );
+  const gemini25ProDescription = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gemini-2-5-pro/description.md'), 'utf8'
+  ).trim();
+  const gemini25ProUseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-2-5-pro/use-cases.json'), 'utf8')
+  );
+  const gemini25ProPricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-2-5-pro/pricing.json'), 'utf8')
+  );
+  const gemini25ProRating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-2-5-pro/rating.json'), 'utf8')
+  );
+  const gemini25ProDeveloper = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gemini-2-5-pro/developer.md'), 'utf8'
+  ).trim();
+
+  const gemini25ProModel = {
+    ...gemini25ProIndex,
+    detailed_description: gemini25ProDescription,
+    use_cases_detail: gemini25ProUseCases,
+    pricing_detail: gemini25ProPricing,
+    rating_detail: gemini25ProRating,
+    developer_info: gemini25ProDeveloper,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

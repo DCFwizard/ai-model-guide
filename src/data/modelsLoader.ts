@@ -25,6 +25,14 @@ import claudeSonnet45Pricing from './models/claude-sonnet-4-5/pricing.json';
 import claudeSonnet45Rating from './models/claude-sonnet-4-5/rating.json';
 import claudeSonnet45Developer from './models/claude-sonnet-4-5/developer.md?raw';
 
+// Import Gemini 2.5 Pro data from separate files
+import gemini25ProIndex from './models/gemini-2-5-pro/index.json';
+import gemini25ProDescription from './models/gemini-2-5-pro/description.md?raw';
+import gemini25ProUseCases from './models/gemini-2-5-pro/use-cases.json';
+import gemini25ProPricing from './models/gemini-2-5-pro/pricing.json';
+import gemini25ProRating from './models/gemini-2-5-pro/rating.json';
+import gemini25ProDeveloper from './models/gemini-2-5-pro/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -55,14 +63,25 @@ const claudeSonnet45Model: AIModel = {
   developer_info: claudeSonnet45Developer.trim(),
 } as AIModel;
 
+// Combine Gemini 2.5 Pro data from separate files
+const gemini25ProModel: AIModel = {
+  ...gemini25ProIndex,
+  detailed_description: gemini25ProDescription.trim(),
+  use_cases_detail: gemini25ProUseCases,
+  pricing_detail: gemini25ProPricing,
+  rating_detail: gemini25ProRating,
+  developer_info: gemini25ProDeveloper.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
   gpt5Model,
   grok4Model,
   claudeSonnet45Model,
+  gemini25ProModel,
   ...modelsFromJson
 ];
 
