@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => m.id !== 'gpt-5'); // Exclude GPT-5 as it's in its own folder
+  ).filter(m => !['gpt-5', 'grok-4'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -37,7 +37,36 @@ function loadModels() {
     developer_info: gpt5Developer,
   };
 
-  return [gpt5Model, ...modelsFromJson];
+  // Load Grok 4 from its folder
+  const grok4Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/grok-4/index.json'), 'utf8')
+  );
+  const grok4Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/grok-4/description.md'), 'utf8'
+  ).trim();
+  const grok4UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/grok-4/use-cases.json'), 'utf8')
+  );
+  const grok4Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/grok-4/pricing.json'), 'utf8')
+  );
+  const grok4Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/grok-4/rating.json'), 'utf8')
+  );
+  const grok4Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/grok-4/developer.md'), 'utf8'
+  ).trim();
+
+  const grok4Model = {
+    ...grok4Index,
+    detailed_description: grok4Description,
+    use_cases_detail: grok4UseCases,
+    pricing_detail: grok4Pricing,
+    rating_detail: grok4Rating,
+    developer_info: grok4Developer,
+  };
+
+  return [gpt5Model, grok4Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();
