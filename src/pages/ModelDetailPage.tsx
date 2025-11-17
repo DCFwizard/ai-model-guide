@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, CheckCircle, XCircle, FileText, DollarSign, Zap, Star, DollarSign as CostIcon } from 'lucide-react';
-import modelsData from '@/data/models.json';
+import modelsData from '@/data/modelsLoader';
 import { AIModel } from '@/types';
 export function ModelDetailPage() {
   const { id } = useParams<{ id: string }>();

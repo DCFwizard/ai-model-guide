@@ -7,7 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import useCasesData from '@/data/use-cases.json';
-import modelsData from '@/data/models.json';
+import modelsData from '@/data/modelsLoader';
 import { UseCase, AIModel } from '@/types';
 export function UseCaseDetailPage() {
   const { slug } = useParams<{ slug: string }>();

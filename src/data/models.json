@@ -1,112 +1,53 @@
 [
   {
-    "id": "gpt-5",
-    "name": "GPT-5",
-    "provider": "OpenAI",
-    "description": "OpenAI's most advanced large language model with multi-model design (Main, Mini, Nano) and intelligent routing. Features 45% fewer factual errors than GPT-4, up to 80% fewer hallucinations in thinking mode, and handles hundreds of thousands of tokens with multimodal capabilities.",
-    "modalities": ["text", "vision", "speech"],
-    "context_window": "very long",
-    "strengths": ["reasoning", "coding", "accuracy", "low hallucination", "multimodal", "context awareness"],
-    "best_for": ["Software development and debugging", "Complex reasoning and analytics", "Content generation and creative writing", "Multi-step problem-solving", "Domain-specific expertise (healthcare, law)"],
-    "consider_if": "You need the highest-quality, most reliable AI outputs for demanding tasks like important content drafting, hard coding/math problems, or applications requiring advanced reasoning.",
-    "limitations": "Pro tier ($200/month) required for heaviest usage. Complex queries in thinking mode can take longer. Free tier has usage limits.",
-    "cost_tier": "$-$$$",
-    "open_weight": false,
-    "pricing": "Free tier available | ChatGPT Plus $20/month | ChatGPT Pro $200/month | Team $30/user/month | Enterprise (custom)",
-    "tasks": ["Code generation and debugging", "Content writing and editing", "Complex reasoning and research", "Math and logic problems", "Personal assistant tasks", "Domain expertise (healthcare, law)", "Tutoring and education"],
-    "industries": ["Software Development", "Healthcare", "Legal", "Education", "Finance", "Content Creation", "Research"],
-    "release_date": "2025",
-    "rating": {
-      "speed": 8,
-      "quality": 10,
-      "cost": 8
-    },
-    "links": {
-      "site": "https://openai.com",
-      "docs": "https://platform.openai.com/docs",
-      "pricing": "https://openai.com/pricing"
-    },
-    "detailed_description": "GPT-5 is OpenAI's most advanced large language model, succeeding GPT-4. It features a multi-model design: a family of sub-models (GPT-5 Main, Mini, Nano, etc.) that a routing system chooses among based on the task complexity. This allows GPT-5 to provide both deep reasoning when needed and faster responses for simple prompts. It boasts state-of-the-art improvements in accuracy and context-awareness, with OpenAI reporting ~45% fewer factual errors than GPT-4 and up to 80% fewer hallucinations in its \"thinking\" mode. GPT-5 can handle extremely long prompts (hundreds of thousands of tokens) and even accept images as input, enabling multimodal interactions. It's adept at coding (e.g. generating full apps from a single prompt) and can produce more \"natural and humanlike\" conversational responses than prior models.",
-    "use_cases_detail": {
-      "sections": [
-        {
-          "title": "Coding and Debugging",
-          "content": "It excels at software development tasks, generating and explaining code across languages. Developers use it for building apps from specs and fixing bugs."
-        },
-        {
-          "title": "Content Generation",
-          "content": "GPT-5 produces high-quality writing—emails, articles, creative fiction—adapting to the desired tone and style more smoothly than GPT-4. It maintains coherent structure even for lengthy documents."
-        },
-        {
-          "title": "Complex Reasoning & Research",
-          "content": "In \"thinking mode,\" GPT-5 can perform multi-step logical reasoning for analytics, decision support, and problem-solving. It set new records on challenging benchmarks like AIME math exams (100% score)."
-        },
-        {
-          "title": "Personal Assistant",
-          "content": "With improved context memory and personalized responses, it's useful for summarizing information, scheduling, tutoring, and general Q&A."
-        },
-        {
-          "title": "Domain Expertise",
-          "content": "GPT-5's knowledge has been enhanced for areas like healthcare and law, providing more accurate and cautious answers in specialized domains (though always with the caveat that it's not a certified professional)."
-        }
-      ],
-      "summary": "Users should use GPT-5 when they need the highest-quality, most reliable AI outputs—such as drafting important content, tackling hard coding or math problems, or powering applications that require advanced reasoning. For simpler or less critical tasks, lighter models (like GPT-5 Mini or older versions) might suffice, but GPT-5 shines for demanding, complex assignments."
-    },
-    "pricing_detail": {
-      "tiers": [
-        {
-          "name": "Free Tier",
-          "price": "Free",
-          "description": "OpenAI made GPT-5 accessible even to free users of ChatGPT, demonstrating its commitment to broad AI benefits. Free users can try GPT-5 with certain usage limits (which may adjust based on demand)."
-        },
-        {
-          "name": "ChatGPT Plus",
-          "price": "$20/month",
-          "description": "Plus subscribers get larger usage allowances and priority access. GPT-5 is the default model, with faster response times and the ability to use the image input features."
-        },
-        {
-          "name": "ChatGPT Pro",
-          "price": "$200/month",
-          "description": "Pro plan users receive higher quotas and the GPT-5 Pro model for even more powerful reasoning on complex tasks. Pro users also gain early access to new features."
-        },
-        {
-          "name": "Team Plan",
-          "price": "$30/user/month or $240/year",
-          "description": "Designed for organizations, this plan offers Plus-level features per user with centralized billing."
-        },
-        {
-          "name": "Enterprise Plan",
-          "price": "Custom pricing",
-          "description": "Enterprises can get custom pricing for unlimited or prioritized access, security features, and deployment in their own environment."
-        }
-      ],
-      "summary": "Importantly, GPT-5's basic capabilities are available to everyone, even without payment, albeit at lower volume. Higher-tier plans primarily increase the usage limits and reliability of access, which is valuable for professional use."
-    },
-    "developer_info": "Developer: OpenAI (U.S.) – the organization led by Sam Altman (at launch time) that also created GPT-3, GPT-4, and ChatGPT. OpenAI developed GPT-5 in 2025 as part of its mission to ensure artificial general intelligence benefits all humanity.",
-    "category": "General-purpose Large Language Model (Multimodal LLM)",
-    "tags": ["AI assistant", "Generative Pre-trained Transformer (GPT)", "Multimodal LLM"],
-    "rating_detail": {
-      "speed_explanation": "GPT-5 is fairly fast given its complexity, thanks to the smart routing among sub-models. Simple questions get near-instant answers via the lightweight components, but very large or complex \"thinking mode\" queries can still take a bit longer as the model reasons more deeply.",
-      "quality_explanation": "It currently leads in overall quality for coding, reasoning, and coherence. GPT-5 produces highly accurate, well-structured responses with significantly fewer errors than previous models.",
-      "cost_explanation": "OpenAI provides an unprecedented free access to GPT-5, and the $20/month Plus plan is affordable for individuals. However, heavy users or businesses may need the Pro or Enterprise plans, which are a substantial investment. Given its advanced capabilities, many find GPT-5's value justifies the cost."
-    }
-  },
-  {
     "id": "grok-4",
     "name": "Grok 4 (xAI)",
     "provider": "xAI",
     "description": "xAI's flagship large language model with native tool use and real-time search capabilities. Touted as 'the world's most intelligent model,' Grok 4 can autonomously perform web searches, run code, and use external tools. Features a massive 2 million token context window and multimodal input (text, images, voice).",
-    "modalities": ["text", "vision", "speech"],
+    "modalities": [
+      "text",
+      "vision",
+      "speech"
+    ],
     "context_window": "very long",
-    "strengths": ["reasoning", "coding", "tool use", "real-time search", "agentic", "multimodal", "context awareness"],
-    "best_for": ["Autonomous research and troubleshooting", "Complex coding and debugging", "Multi-agent workflows", "Real-time information gathering", "Long-context tasks"],
+    "strengths": [
+      "reasoning",
+      "coding",
+      "tool use",
+      "real-time search",
+      "agentic",
+      "multimodal",
+      "context awareness"
+    ],
+    "best_for": [
+      "Autonomous research and troubleshooting",
+      "Complex coding and debugging",
+      "Multi-agent workflows",
+      "Real-time information gathering",
+      "Long-context tasks"
+    ],
     "consider_if": "You need an AI that can autonomously use tools, search the web in real-time, and handle complex multi-step tasks with the latest information.",
     "limitations": "Premium pricing ($30-$300/month). No free tier. Personality can be more playful/edgy than traditional models.",
     "cost_tier": "$$-$$$",
     "open_weight": false,
     "pricing": "Grok Standard $30/month | SuperGrok Heavy $300/month | API pay-as-you-go (~$3-$15 per million tokens)",
-    "tasks": ["Web research and fact-checking", "Code generation and debugging", "Multi-agent collaboration", "Content writing", "Problem-solving with tool use", "Automated workflows", "Technical troubleshooting"],
-    "industries": ["Software Development", "Research", "Finance", "Content Creation", "Data Analysis", "Automation"],
+    "tasks": [
+      "Web research and fact-checking",
+      "Code generation and debugging",
+      "Multi-agent collaboration",
+      "Content writing",
+      "Problem-solving with tool use",
+      "Automated workflows",
+      "Technical troubleshooting"
+    ],
+    "industries": [
+      "Software Development",
+      "Research",
+      "Finance",
+      "Content Creation",
+      "Data Analysis",
+      "Automation"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 9,
@@ -162,7 +103,12 @@
     },
     "developer_info": "Developer: xAI (United States) – Elon Musk's AI venture launched in 2023. The team includes former researchers from DeepMind, OpenAI, and academia. \"Grok\" is xAI's family of models, and version 4 was announced in July 2025. Musk has described Grok's development as an effort to create a maximally curious and truth-seeking AI, somewhat inspired by the HHGttG's Guide (\"Grok\" meaning to deeply understand). The Grok 4 Heavy multi-agent system reflects xAI's cutting-edge research in scaling AI reasoning via multiple cooperating models.",
     "category": "Large Language Model with Tools (Agentic LLM)",
-    "tags": ["AI Assistant", "Retrieval-Augmented Generation", "Multimodal AI", "Mixture-of-Experts"],
+    "tags": [
+      "AI Assistant",
+      "Retrieval-Augmented Generation",
+      "Multimodal AI",
+      "Mixture-of-Experts"
+    ],
     "rating_detail": {
       "speed_explanation": "Grok 4 is remarkably fast for its capabilities. Thanks to optimizations and its \"fast\" mode variant, it can generate answers quickly even with a huge 2M token context. The model's architecture (mixture-of-experts and tool use) means it doesn't waste time on brute-force reasoning if it can call a tool or search the web. Simple queries feel instantaneous. That said, extremely long or complex agentic tasks (e.g. reading an entire codebase) may still take significant time as Grok methodically works through them.",
       "quality_explanation": "Grok's outputs are highly intelligent and often on par with other top-tier models like GPT-4.5 or Claude 2. It performs especially well on reasoning benchmarks and has superb coding abilities, as xAI demonstrated with live problem-solving. Its answers are generally detailed and correct, and it benefits from real-time data access to enhance accuracy. Grok occasionally shows a bit more \"personality\" (witty or edgy comments) due to Musk's tuning, but it stays factual for professional use. Only a few models (like GPT-5) might edge Grok out slightly in certain domains, but Grok 4 is unquestionably among the best in quality.",
@@ -174,17 +120,51 @@
     "name": "Claude Sonnet 4.5",
     "provider": "Anthropic",
     "description": "Anthropic's most advanced Claude-series model optimized for coding, complex reasoning, and agentic tasks. Described as 'the best coding model in the world' and 'the strongest model for building complex agents' with enhanced tool use, computer control, and extended thinking modes. Features up to 1 million token context window.",
-    "modalities": ["text", "vision"],
+    "modalities": [
+      "text",
+      "vision"
+    ],
     "context_window": "very long",
-    "strengths": ["coding", "reasoning", "agentic", "tool use", "alignment", "safety", "context awareness", "long-form writing"],
-    "best_for": ["Software development and debugging", "Autonomous agents and task automation", "Complex Q&A and advisory roles", "Creative and long-form writing", "Agent-assisted data analysis"],
+    "strengths": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "tool use",
+      "alignment",
+      "safety",
+      "context awareness",
+      "long-form writing"
+    ],
+    "best_for": [
+      "Software development and debugging",
+      "Autonomous agents and task automation",
+      "Complex Q&A and advisory roles",
+      "Creative and long-form writing",
+      "Agent-assisted data analysis"
+    ],
     "consider_if": "You need a challenging, multi-step task or an AI to act with a high degree of autonomy and reliability, particularly for enterprise settings.",
     "limitations": "Can be overly cautious in responses. Extended thinking mode can slow down complex queries.",
     "cost_tier": "$-$$$",
     "open_weight": false,
     "pricing": "Free tier available | Claude Pro $20/month | Claude Max $100-$200/month | Team $25-$30/user/month | Enterprise (custom)",
-    "tasks": ["Code generation and debugging", "Autonomous agent tasks", "Complex reasoning and research", "Long-form content writing", "Data analysis and transformation", "Document review and analysis", "Customer service automation"],
-    "industries": ["Software Development", "Enterprise", "Finance", "Legal", "Healthcare", "Customer Service", "Research"],
+    "tasks": [
+      "Code generation and debugging",
+      "Autonomous agent tasks",
+      "Complex reasoning and research",
+      "Long-form content writing",
+      "Data analysis and transformation",
+      "Document review and analysis",
+      "Customer service automation"
+    ],
+    "industries": [
+      "Software Development",
+      "Enterprise",
+      "Finance",
+      "Legal",
+      "Healthcare",
+      "Customer Service",
+      "Research"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 8,
@@ -254,7 +234,12 @@
     },
     "developer_info": "Developer: Anthropic (USA) – An AI safety-focused startup co-founded by ex-OpenAI researchers. Anthropic's \"Claude\" series is their answer to GPT. Claude 4.5 was released in September 2025. Notably, Anthropic developed Claude with an emphasis on \"Constitutional AI\", a technique where the AI is trained to follow a set of principles (a \"constitution\") to ensure helpful and harmless behavior. The Claude Sonnet line specifically involved close collaboration with partners like Google (it's available on Google Cloud Vertex AI and Amazon Bedrock). Anthropic's team has continually iterated on Claude, with 4.5 being the latest major upgrade before a potential Claude 5.",
     "category": "Large Language Model (AI Assistant) – specialized in coding & tool use",
-    "tags": ["Frontier model", "Autonomy/Agents", "Multimodal", "Constitutional AI"],
+    "tags": [
+      "Frontier model",
+      "Autonomy/Agents",
+      "Multimodal",
+      "Constitutional AI"
+    ],
     "rating_detail": {
       "speed_explanation": "Claude 4.5 is generally fast, especially in normal chatting or coding tasks. Anthropic improved its throughput; for many queries it can output answers in near real-time. However, when \"extended thinking\" mode is enabled for very hard problems, it deliberately slows down to reason step-by-step, which can make complex answers take longer (this mode is off by default unless needed). In agentic operations using many tool calls, Claude might also take some time as it iteratively works (just as a human would). Overall, for most uses it feels snappy, but it's not the absolute fastest model in all situations, given its large size and deep reasoning orientation.",
       "quality_explanation": "Claude Sonnet 4.5 delivers top-tier quality. Its coding output is state-of-the-art, often catching tricky bugs and writing well-structured code better than other models. It's excellent at complex reasoning, keeping track of long conversations, and giving thoughtful, structured answers. It's also notably aligned and safe, rarely going off the rails or producing disallowed content compared to some peers. The only reason it's not 10/10 is that a few extremely complex tasks might still see GPT-5 or Gemini 2.5 slightly outperform it – but in many domains (especially coding, multi-step reasoning) Claude 4.5 is essentially as good as it gets. For an enterprise looking for a reliable and intelligent assistant, Claude 4.5's quality is outstanding.",
@@ -266,17 +251,53 @@
     "name": "Gemini 2.5 Pro",
     "provider": "Google DeepMind",
     "description": "Google DeepMind's next-generation 'thinking model' with advanced reasoning processes and multimodal capabilities. Features a massive 1 million token context window (2M coming soon), native multimodal understanding (text, images, audio, video), and state-of-the-art performance across coding, math, science, and creative writing.",
-    "modalities": ["text", "vision", "speech", "video"],
+    "modalities": [
+      "text",
+      "vision",
+      "speech",
+      "video"
+    ],
     "context_window": "very long",
-    "strengths": ["reasoning", "coding", "multimodal", "context awareness", "math", "science", "search grounding", "web design"],
-    "best_for": ["Complex problem solving and reasoning", "Coding and software development", "Document analysis at scale", "Multimodal tasks", "Google ecosystem integration"],
+    "strengths": [
+      "reasoning",
+      "coding",
+      "multimodal",
+      "context awareness",
+      "math",
+      "science",
+      "search grounding",
+      "web design"
+    ],
+    "best_for": [
+      "Complex problem solving and reasoning",
+      "Coding and software development",
+      "Document analysis at scale",
+      "Multimodal tasks",
+      "Google ecosystem integration"
+    ],
     "consider_if": "You need the most demanding projects with massive context requirements, multimodal understanding, or deep integration with Google tools and services.",
     "limitations": "Can be slower with maximum context usage. Higher API output token costs. Primarily optimized for Google ecosystem.",
     "cost_tier": "$-$$$",
     "open_weight": false,
     "pricing": "Free tier available | Google AI Pro $19.99/month | Google AI Ultra $249.99/month | Vertex AI pay-as-you-go (~$1.25-$10 per million tokens)",
-    "tasks": ["Complex reasoning and analytics", "Code generation and web app design", "Large-scale document analysis", "Multimodal content understanding", "Scientific problem solving", "Creative writing", "Google Workspace integration"],
-    "industries": ["Software Development", "Research", "Enterprise", "Healthcare", "Education", "Content Creation", "Data Analysis"],
+    "tasks": [
+      "Complex reasoning and analytics",
+      "Code generation and web app design",
+      "Large-scale document analysis",
+      "Multimodal content understanding",
+      "Scientific problem solving",
+      "Creative writing",
+      "Google Workspace integration"
+    ],
+    "industries": [
+      "Software Development",
+      "Research",
+      "Enterprise",
+      "Healthcare",
+      "Education",
+      "Content Creation",
+      "Data Analysis"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 8,
@@ -346,7 +367,13 @@
     },
     "developer_info": "Developer: Google DeepMind (U.S./UK) – Gemini is a collaborative effort between Google Research and DeepMind (which merged into one unit in 2023). The project is led by AI luminaries like Demis Hassabis. Notably, the Gemini name reflects combining different capabilities (much like the Gemini constellation has twin stars) – specifically combining Google's AlphaGo-like planning with large language understanding. Gemini 2.5 Pro was released in March 2025. It's part of Google's strategy to regain leadership in AI; Sundar Pichai announced it as \"our most intelligent model\". The model leverages Google's TPU v5 hardware and enormous training datasets (text, code, images, YouTube transcripts, etc.). Google has an entire \"Gemini family\" of models – e.g., Gemini Nano for lightweight tasks, Gemini Flash for fast responses – but 2.5 Pro is the top-tier intended to rival or exceed OpenAI's best.",
     "category": "Multimodal Large Language Model (Enterprise-grade)",
-    "tags": ["Thinking AI", "Generative AI", "Code Assistant", "Long-context AI", "Multimodal"],
+    "tags": [
+      "Thinking AI",
+      "Generative AI",
+      "Code Assistant",
+      "Long-context AI",
+      "Multimodal"
+    ],
     "rating_detail": {
       "speed_explanation": "Gemini 2.5 Pro is extremely powerful, but the sheer scale of its processing (and the large context) means it's not the absolute fastest model for single-turn latency. In interactive usage, it's still impressively quick thanks to Google's optimized TPUs – short answers come nearly instantly, and even long essays are generated in a reasonable time. However, if you feed it maximum context (hundreds of thousands of tokens), it will understandably take longer to process and respond. Google mitigates this with Flash and batch modes – e.g., Gemini Flash-Lite is a faster, cost-efficient model for quick tasks. Overall, for most tasks Gemini Pro feels responsive, but it can slow down on the largest jobs.",
       "quality_explanation": "Simply put, Gemini 2.5 Pro is at the very pinnacle of AI quality in 2025. Its benchmark dominance (beating GPT-4.5 and Claude on many tests) and its ability to reason through problems give it a clear edge. Users find it produces very coherent, correct answers with fewer mistakes, especially in coding and reasoning domains. It also has great creativity and style adaptation – likely on par or better than GPT-4 in generating human-like, contextually appropriate text. With multimodal understanding and huge context, it can do things in one shot that other models can't. All this warrants a full score in quality.",
@@ -358,17 +385,51 @@
     "name": "Qwen3-Max",
     "provider": "Alibaba Cloud Intelligence",
     "description": "Alibaba's most powerful AI model with unprecedented scale: a trillion-parameter (1T) Mixture-of-Experts architecture trained on 36 trillion tokens. Features 1 million token context window, state-of-the-art coding performance (69.6 on SWE-Bench), and top-tier tool-use capabilities. OpenAI API-compatible and optimized for enterprise deployment.",
-    "modalities": ["text", "vision"],
+    "modalities": [
+      "text",
+      "vision"
+    ],
     "context_window": "very long",
-    "strengths": ["coding", "reasoning", "tool use", "agentic", "context awareness", "multilingual", "cost efficiency", "enterprise"],
-    "best_for": ["Enterprise knowledge management", "Complex code generation", "AI agents and automation", "Big data natural language queries", "Multilingual applications"],
+    "strengths": [
+      "coding",
+      "reasoning",
+      "tool use",
+      "agentic",
+      "context awareness",
+      "multilingual",
+      "cost efficiency",
+      "enterprise"
+    ],
+    "best_for": [
+      "Enterprise knowledge management",
+      "Complex code generation",
+      "AI agents and automation",
+      "Big data natural language queries",
+      "Multilingual applications"
+    ],
     "consider_if": "You need top-tier AI performance with massive context, strong coding capabilities, or an alternative to Western models with competitive pricing and China-compliant deployment.",
     "limitations": "Resource-intensive (cloud API only). Less fine-tuned personality than Western models. Primarily optimized for Chinese market.",
     "cost_tier": "$-$$",
     "open_weight": false,
     "pricing": "Pay-as-you-go (~$0.86-$3.44 per million tokens) | Free trial (1M tokens, 90 days) | Batch processing (50% discount) | Enterprise custom",
-    "tasks": ["Code generation and debugging", "AI agent development", "Large-scale document analysis", "Tool-use and automation", "Multilingual translation", "Enterprise data analysis", "Natural language database queries"],
-    "industries": ["Software Development", "Enterprise", "Finance", "Legal", "Research", "Manufacturing", "E-commerce"],
+    "tasks": [
+      "Code generation and debugging",
+      "AI agent development",
+      "Large-scale document analysis",
+      "Tool-use and automation",
+      "Multilingual translation",
+      "Enterprise data analysis",
+      "Natural language database queries"
+    ],
+    "industries": [
+      "Software Development",
+      "Enterprise",
+      "Finance",
+      "Legal",
+      "Research",
+      "Manufacturing",
+      "E-commerce"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 8,
@@ -438,7 +499,12 @@
     },
     "developer_info": "Developer: Alibaba Cloud Intelligence (China) – specifically the Alibaba DAMO Academy (Academy for Discovery, Adventure, Momentum and Outlook) which is Alibaba's R&D division. They also brand under Alibaba AI (Tongyi): \"Tongyi Qianwen\" is the Chinese name for the Qwen models. Qwen3-Max was announced at Alibaba's annual Aspara Conference in Sept 2025, by Alibaba Cloud CTO Zhou Jingren. It's part of Alibaba's huge investment in AI (they pledged $2B+ over three years to AI development). The company's strategy is to build world-class AI to fuel its cloud services and enterprise solutions in China and globally. Qwen3-Max's release shows Alibaba's commitment to open up advanced AI capabilities on their cloud platform, somewhat analogous to Amazon's approach with Titan or Bedrock. Notably, Qwen stands for \"Quantum Wen\" (Wen means language/text in Chinese) – earlier Qwen-7B and 14B were open-source. Qwen3-Max is not open-source due to its size, but the devs made it API-compatible with OpenAI to ease adoption.",
     "category": "Giant-Scale Large Language Model (Enterprise AI)",
-    "tags": ["Mixture-of-Experts", "Cloud AI Service", "Chinese & Multilingual LLM", "Long-Context AI"],
+    "tags": [
+      "Mixture-of-Experts",
+      "Cloud AI Service",
+      "Chinese & Multilingual LLM",
+      "Long-Context AI"
+    ],
     "rating_detail": {
       "speed_explanation": "Given its MoE design, Qwen3-Max is actually more efficient than its trillion-parameter size implies. Only ~37B parameters are active per token, so generation speed is comparable to other ~30B models, which is reasonable. Alibaba also introduced optimizations (ChunkFlow, etc.) to handle long inputs faster. In practice, on Alibaba Cloud, Qwen3-Max responds in a few seconds for standard prompts, but very large contexts or extremely complex tasks might still be slow. It's not as quick as smaller models (like Mistral 13B or such), but for its capability class, it's quite speedy. Real-time usage for chat is feasible; for massive jobs, batch mode may be used where speed is less critical.",
       "quality_explanation": "Qwen3-Max is clearly among the best in quality. Its performance on coding and reasoning benchmarks places it at the elite level. It often matches or surpasses models like GPT-4.5 or Claude 2 on evaluations. Early reports highlight its coding skill and ability to handle tools well, which means it produces not just accurate answers but can follow through with actions. Why not 10? Possibly only because by late 2025, GPT-5 and Gemini Pro are marginally ahead in some frontier benchmarks. But Qwen3-Max is extremely close – likely within a few percentage points – and for many tasks, you'd find it equally effective. It's especially strong for Chinese language tasks, given Alibaba's focus (so if you need bilingual excellence, Qwen might even outperform others). On coherence and creativity, it's top-tier as well, though some users note slight differences in style.",
@@ -450,17 +516,50 @@
     "name": "DeepSeek-V3",
     "provider": "DeepSeek Inc.",
     "description": "Pioneering open-weight large language model with unique Mixture-of-Experts architecture (671B parameters, 37B active per token). Known for exceptional speed (60 tokens/sec - 3× faster than V2), cost-efficiency, and being fully open-source. Features 128K context window and extended thinking mode for reliable reasoning.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "long",
-    "strengths": ["speed", "cost efficiency", "open-source", "reasoning", "coding", "multilingual", "tool use", "self-hostable"],
-    "best_for": ["Self-hosted AI assistants", "High-throughput applications", "Budget-constrained development", "Tool-augmented agent systems", "Multilingual applications"],
+    "strengths": [
+      "speed",
+      "cost efficiency",
+      "open-source",
+      "reasoning",
+      "coding",
+      "multilingual",
+      "tool use",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Self-hosted AI assistants",
+      "High-throughput applications",
+      "Budget-constrained development",
+      "Tool-augmented agent systems",
+      "Multilingual applications"
+    ],
     "consider_if": "You need a high-performing open-source model under your control, want to avoid vendor lock-in, need on-premises deployment, or require cost-effective AI at scale.",
     "limitations": "Slightly behind top proprietary models in absolute quality. Requires GPU infrastructure for self-hosting. Less fine-tuned personality than commercial models.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Open-source (free) | Self-hosting (hardware costs only) | DeepSeek API pay-as-you-go (~$0.27-$1.10 per million tokens) | Free tier available",
-    "tasks": ["General conversation and writing", "Code generation and explanation", "Reasoning and problem-solving", "Agent development with tools", "Multilingual translation", "High-throughput serving", "Research and experimentation"],
-    "industries": ["Software Development", "Research", "Education", "Startups", "Enterprise (on-premises)", "Gaming", "Customer Service"],
+    "tasks": [
+      "General conversation and writing",
+      "Code generation and explanation",
+      "Reasoning and problem-solving",
+      "Agent development with tools",
+      "Multilingual translation",
+      "High-throughput serving",
+      "Research and experimentation"
+    ],
+    "industries": [
+      "Software Development",
+      "Research",
+      "Education",
+      "Startups",
+      "Enterprise (on-premises)",
+      "Gaming",
+      "Customer Service"
+    ],
     "release_date": "2024-2025",
     "rating": {
       "speed": 9,
@@ -525,7 +624,12 @@
     },
     "developer_info": "Developer: DeepSeek, Inc. (with contributions from an open-source community). DeepSeek is a smaller AI company, established around 2023, known for focusing on \"inclusive AGI\" and openness. They embraced a philosophy similar to OpenAI's early days but chose to open-source their models. The V3 series was spearheaded by them but saw community involvement (the model's weights and training code were on GitHub, with external contributions). Notably, the core team's background included ex-Google Brain researchers and enthusiasts from the open-source AI community. DeepSeek is incorporated (likely in the US or possibly Europe), and they monetize by offering premium services (like the API, fine-tuning services, support contracts) on top of the free models. Their business model is akin to companies like Stability AI or Hugging Face – providing free tools to build adoption, then offering paid enterprise services. DeepSeek-V3 was officially released on Dec 26, 2024, with the latest minor version V3.2 in September 2025. It was accompanied by technical reports (even an arXiv paper). The developer's openness has won them goodwill; the model is sometimes referenced by academics because it's easy to analyze/modify.",
     "category": "Open-Source Large Language Model (Mixture-of-Experts architecture)",
-    "tags": ["High-speed LLM", "Cost-efficient AI", "OpenAI-alternative", "Open-Source AGI"],
+    "tags": [
+      "High-speed LLM",
+      "Cost-efficient AI",
+      "OpenAI-alternative",
+      "Open-Source AGI"
+    ],
     "rating_detail": {
       "speed_explanation": "DeepSeek-V3 is one of the fastest large models available. Its architecture and optimizations give it a real advantage in generation speed. Many users noted that it felt \"snappier\" than even some smaller closed models. The only reason it's not 10 is that ultra-small models (like 7B or 13B param ones) can still beat it in latency on modest hardware. But considering V3's capabilities, its speed is outstanding. On proper hardware (with multi-GPU setups leveraging the MoE), it can churn out tokens extremely quickly, which is crucial for interactive use and high-throughput scenarios.",
       "quality_explanation": "DeepSeek-V3 offers excellent quality, especially given it's open. It reliably answers a wide range of questions, performs reasoning quite well, and produces coherent, contextually accurate text. It was the first open model to really close the gap with models like GPT-4 to within striking distance. That said, it's perhaps one notch below the absolute state-of-the-art (frontier closed models might score slightly higher on very challenging benchmarks or complex creative tasks). Also, some specialized areas (like intricate common-sense puzzles or highly domain-specific knowledge) might reveal minor weaknesses relative to the top closed models. But for most practical purposes, it's high quality – better than or equal to many paid models. In coding, it might be a bit behind Claude 4.5 or Gemini, but still strong. In general conversation and writing, it's very good, with only rare lapses.",
@@ -537,17 +641,55 @@
     "name": "Llama 4",
     "provider": "Meta AI",
     "description": "Meta AI's latest open-source multimodal language model with mixture-of-experts architecture. Features two variants: Scout (smaller, high-speed) and Maverick (17B active parameters with 128 experts, ~2T total parameters). Supports up to 10 million token context, multimodal input (text and images), and 8 languages. Released under community license for free commercial and research use.",
-    "modalities": ["text", "vision"],
+    "modalities": [
+      "text",
+      "vision"
+    ],
     "context_window": "very long",
-    "strengths": ["open-source", "multimodal", "long context", "MoE", "reasoning", "coding", "multilingual", "customizable", "self-hostable"],
-    "best_for": ["Custom chatbots and assistants", "Embedded AI applications", "Research and education", "Creative content generation", "Multilingual communication", "Self-hosted enterprise solutions"],
+    "strengths": [
+      "open-source",
+      "multimodal",
+      "long context",
+      "MoE",
+      "reasoning",
+      "coding",
+      "multilingual",
+      "customizable",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Custom chatbots and assistants",
+      "Embedded AI applications",
+      "Research and education",
+      "Creative content generation",
+      "Multilingual communication",
+      "Self-hosted enterprise solutions"
+    ],
     "consider_if": "You need a cutting-edge model with full control, want to avoid vendor lock-in, require on-premises deployment, need extremely long context (up to 10M tokens), or want to fine-tune on proprietary data.",
     "limitations": "Requires significant computational resources (multiple GPUs for Maverick). Community license has some restrictions for very large companies. Not as fast as smaller models.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Free download under community license | Self-hosting (hardware costs only) | Cloud rental (pay cloud provider) | Third-party hosting available",
-    "tasks": ["Custom chatbot development", "Fine-tuning on proprietary data", "Research and experimentation", "Creative writing and content generation", "Multilingual translation", "Image understanding and description", "Educational AI tutors", "On-device AI applications"],
-    "industries": ["Research", "Education", "Enterprise (self-hosted)", "Software Development", "Content Creation", "Healthcare", "Legal", "Manufacturing"],
+    "tasks": [
+      "Custom chatbot development",
+      "Fine-tuning on proprietary data",
+      "Research and experimentation",
+      "Creative writing and content generation",
+      "Multilingual translation",
+      "Image understanding and description",
+      "Educational AI tutors",
+      "On-device AI applications"
+    ],
+    "industries": [
+      "Research",
+      "Education",
+      "Enterprise (self-hosted)",
+      "Software Development",
+      "Content Creation",
+      "Healthcare",
+      "Legal",
+      "Manufacturing"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 8,
@@ -616,7 +758,13 @@
     },
     "developer_info": "Developer: Meta AI (formerly Facebook AI Research). Meta's team (headed by Yann LeCun and others) developed Llama 4. It's the successor to Llama 3 (which was integrated into Meta's products like Facebook and WhatsApp as of late 2024). Llama 4's release in April 2025 was publicly announced on Meta's AI blog. Meta collaborates with academic partners as well – some aspects of Llama 4 (like the MoE routing) were based on recent research papers. Meta AI releases these models to maintain an open ecosystem and also to integrate into their own platforms (Instagram, WhatsApp, etc.). The developer's rationale is that by releasing powerful models openly, they undercut rivals and stimulate innovation that can benefit their AI platform. From a usage perspective, the community (like developers on Hugging Face) also becomes a sort of \"developer\" after release, because they contribute fine-tunes and support.",
     "category": "Open-Source Multimodal Large Language Model",
-    "tags": ["Meta AI", "MoE (Mixture-of-Experts) LLM", "Source-Available AI", "Long-context AI", "Vision-and-Language model"],
+    "tags": [
+      "Meta AI",
+      "MoE (Mixture-of-Experts) LLM",
+      "Source-Available AI",
+      "Long-context AI",
+      "Vision-and-Language model"
+    ],
     "rating_detail": {
       "speed_explanation": "Llama 4's Scout (109B) is relatively fast for its size due to optimizations. The Maverick MoE version means that even though total params are huge, only a subset fires each time (17B active), so it can generate faster than an equivalent dense model. However, it's still a large model – not as lightning-fast as a 7B or 13B model. Interactive use is smooth on proper hardware, but inference might incur some latency, especially if using the full 2T param mode with many experts across multiple GPUs. The long context support might slow it down if you actually feed it millions of tokens. Overall, it's impressively engineered and certainly not slow, but smaller specialized models could be faster in raw throughput.",
       "quality_explanation": "Llama 4 is top-tier in quality among open models and even competes with closed models. It's very good at reasoning (reportedly beating GPT-4 on some tests after fine-tuning), strong at coding and multilingual dialogue. The inclusion of expert modules likely improved specialized knowledge and reduced hallucinations. The only models that might edge it out are possibly GPT-5 or Gemini 2.5 in certain extremely complex domains. But practically, for most evaluations it's in the same league as the best. Since it's open, the community can fine-tune and ensemble it further, potentially even boosting its quality in niche areas beyond what closed models do.",
@@ -628,17 +776,54 @@
     "name": "MiniMax-M2",
     "provider": "MiniMax AI",
     "description": "Advanced open-source large language model with Mixture-of-Experts architecture focused on coding and agentic tool use. Features 230B total parameters with only 10B active per inference, achieving frontier-level intelligence at dramatically lower computational cost. Ranked #1 among open models on aggregate intelligence index, excels at autonomous agent tasks, tool use, and coding.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "long",
-    "strengths": ["agentic", "coding", "tool use", "reasoning", "efficiency", "open-source", "cost-effective", "multilingual", "self-hostable"],
-    "best_for": ["Enterprise AI assistants", "Developer copilots and automation", "Autonomous research agents", "Financial and data analysis", "Agent-based workflows", "Resource-constrained environments"],
+    "strengths": [
+      "agentic",
+      "coding",
+      "tool use",
+      "reasoning",
+      "efficiency",
+      "open-source",
+      "cost-effective",
+      "multilingual",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Enterprise AI assistants",
+      "Developer copilots and automation",
+      "Autonomous research agents",
+      "Financial and data analysis",
+      "Agent-based workflows",
+      "Resource-constrained environments"
+    ],
     "consider_if": "You need near state-of-the-art AI with full control, want to avoid vendor lock-in, require efficient agentic capabilities and tool use, or need cost-effective enterprise deployment with strong coding abilities.",
     "limitations": "Requires GPU infrastructure for self-hosting. Primarily text-focused (not inherently multimodal). May be slightly less polished in creative writing compared to heavily fine-tuned conversational models.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Free under MIT license | Self-hosting (hardware costs only) | Managed third-party services available | No licensing fees or royalties",
-    "tasks": ["Agentic task execution", "Code generation and debugging", "Autonomous research and analysis", "Tool-augmented workflows", "Data analysis and transformation", "Multi-step planning and execution", "API integration and automation", "Enterprise chatbot development"],
-    "industries": ["Software Development", "Enterprise", "Finance", "Research", "Data Analysis", "Automation", "Customer Service", "DevOps"],
+    "tasks": [
+      "Agentic task execution",
+      "Code generation and debugging",
+      "Autonomous research and analysis",
+      "Tool-augmented workflows",
+      "Data analysis and transformation",
+      "Multi-step planning and execution",
+      "API integration and automation",
+      "Enterprise chatbot development"
+    ],
+    "industries": [
+      "Software Development",
+      "Enterprise",
+      "Finance",
+      "Research",
+      "Data Analysis",
+      "Automation",
+      "Customer Service",
+      "DevOps"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 9,
@@ -711,7 +896,13 @@
     },
     "developer_info": "Developer: MiniMax AI – a Chinese AI startup founded around 2021/2022. They gained notice for their previous model (MiniMax-M1) and especially this M2 release. The company's mission focuses on \"full-stack self-developed model family\" and enabling agentic AI for real-world tasks. They are part of a wave of Chinese AI firms pushing open or semi-open models. MiniMax's team includes AI researchers and likely ex-big tech folks. They open-sourced M2 under MIT license, highlighting commitment to open community. They also made M2's weights available on multiple platforms (Hugging Face, GitHub, ModelScope). The company's site lists not just text LLMs but also speech, video, music models – they are building an ecosystem. MiniMax-M2 specifically was unveiled in October 2025. The developer presumably offers support and perhaps enterprise fine-tuning for clients using M2, but the open MIT release indicates they bank on widespread adoption to drive either consulting or a platform around it.",
     "category": "Open-Source Large Language Model (Agent & Coding Specialist)",
-    "tags": ["Mixture-of-Experts LLM", "Agentic AI", "Code Assistant", "Enterprise AI", "Open Model 2025"],
+    "tags": [
+      "Mixture-of-Experts LLM",
+      "Agentic AI",
+      "Code Assistant",
+      "Enterprise AI",
+      "Open Model 2025"
+    ],
     "rating_detail": {
       "speed_explanation": "MiniMax-M2's design prioritizes efficiency. With only 10B active params and streamlined architecture, it's extremely fast relative to its output quality. The team reported low latency and high throughput – it can generate tokens faster and handle complex agent loops more predictably than denser models. It can serve enterprise workloads on just a few GPUs. That said, it's still a fairly large model (10B active is akin to a 10B dense model in speed). Some tiny models (1-2B range or distilled models) might beat it in sheer speed, but they don't have comparable quality. Given the balance, M2 is about as fast as one could hope for something so capable – notably faster than GPT-4 or Claude, and maybe slightly faster than Llama 4 Maverick which has 17B active.",
       "quality_explanation": "For an open model, M2's quality is outstanding – essentially matching the best closed models in many tasks. It leads on open leaderboards and is only marginally behind frontier proprietary systems. It especially shines in code and reasoning. Early adopters found it solved tasks that previous open models couldn't. It might still be just a hair behind something like GPT-5 in certain extremes (since GPT-5 has more parameters and training on maybe more data). Also, M2 is tuned heavily for tools and code, so possibly its raw conversational ability or creative writing might be slightly less \"polished\" than a GPT that underwent heavy RLHF for those. But any gap is small – users report it feels nearly as good. M2 essentially represents state-of-art among open models and is extremely competitive overall.",
@@ -723,17 +914,54 @@
     "name": "Kimi K2",
     "provider": "Moonshot AI",
     "description": "State-of-the-art open-source large language model with exceptional reasoning abilities and massive scale. Features 1T total parameters with 32B activated per token using Mixture-of-Experts architecture. Set records on Humanity's Last Exam (44.9%), excelling at deep logical reasoning, coding, and multi-step tool use. Includes 'Thinking' mode variant for extended tool-augmented reasoning with hundreds of sequential steps.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "very long",
-    "strengths": ["reasoning", "coding", "agentic", "tool use", "long-horizon autonomy", "open-source", "efficiency", "self-hostable", "transparency"],
-    "best_for": ["Autonomous agents and co-pilots", "Advanced coding assistance", "Research and data analysis", "Strategic decision support", "Complex customer support", "Scientific discovery and simulations"],
+    "strengths": [
+      "reasoning",
+      "coding",
+      "agentic",
+      "tool use",
+      "long-horizon autonomy",
+      "open-source",
+      "efficiency",
+      "self-hostable",
+      "transparency"
+    ],
+    "best_for": [
+      "Autonomous agents and co-pilots",
+      "Advanced coding assistance",
+      "Research and data analysis",
+      "Strategic decision support",
+      "Complex customer support",
+      "Scientific discovery and simulations"
+    ],
     "consider_if": "You need the most powerful open AI with deep reasoning capabilities, want full control and transparency, require autonomous agents that can operate independently over long durations, or need to process complex multi-step tasks with tool integration.",
     "limitations": "Requires significant computational resources (multiple GPUs). Heavyweight model demanding ML ops expertise to deploy. May be overkill for simple tasks or short conversations.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Free under permissive license | Self-hosting (hardware costs only) | Third-party services available | No licensing fees",
-    "tasks": ["Autonomous agent development", "Complex code generation and review", "Research analysis and synthesis", "Strategic planning and decision support", "Multi-step problem solving", "Scientific simulations", "Data analysis and experimentation", "Long-context reasoning"],
-    "industries": ["Software Development", "Research", "Enterprise", "Data Science", "Healthcare", "Finance", "Strategic Consulting", "Scientific Research"],
+    "tasks": [
+      "Autonomous agent development",
+      "Complex code generation and review",
+      "Research analysis and synthesis",
+      "Strategic planning and decision support",
+      "Multi-step problem solving",
+      "Scientific simulations",
+      "Data analysis and experimentation",
+      "Long-context reasoning"
+    ],
+    "industries": [
+      "Software Development",
+      "Research",
+      "Enterprise",
+      "Data Science",
+      "Healthcare",
+      "Finance",
+      "Strategic Consulting",
+      "Scientific Research"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 8,
@@ -806,7 +1034,13 @@
     },
     "developer_info": "Developer: Moonshot AI (China). Moonshot is an AI lab founded by Yang Zhilin (a Tsinghua/Baidu alum) in 2023. They quickly grew to unicorn status by focusing on long-context and agentic AI. Moonshot was backed by big players like Alibaba, which hints at why K2 is so advanced – they had significant resources. They launched the Kimi platform (with Kimi 1.5 earlier, a 15B model, and then K2 at 1T params). Moonshot's approach is heavily on open research – publishing extensively and open-sourcing. They have a motto of \"transparency and control for enterprises\" in AI. Kimi K2's release was announced at a conference and on platforms like their WeChat blog and arXiv. The developer, by releasing K2, positioned themselves among top open AI providers like Meta's Llama. K2's performance forced even Western observers to acknowledge an open model exceeded some closed ones, which is a testament to Moonshot's team. Moonshot published an arXiv technical report titled \"Kimi K2: Open Agentic Intelligence\" detailing its architecture and alignment, demonstrating their commitment to transparency and advancing the field of open AI research.",
     "category": "Large Language Model (Agentic, Open-Source)",
-    "tags": ["Mixture-of-Experts LLM", "Long-term AI Agent", "Trillion-parameter model", "Open AGI", "Enterprise AI"],
+    "tags": [
+      "Mixture-of-Experts LLM",
+      "Long-term AI Agent",
+      "Trillion-parameter model",
+      "Open AGI",
+      "Enterprise AI"
+    ],
     "rating_detail": {
       "speed_explanation": "Kimi K2 is extremely powerful, but with 32B active parameters, it's a heavyweight to run. It's optimized to run on multi-GPU setups (they claim it runs on 8 A100 GPUs for the full model). Thanks to MoE, it's faster than an equivalent dense trillion-param model by far. Many routine queries it handles quickly like a 30B model would. However, if it's in \"Thinking mode\" doing 200-step tool calls, that obviously takes more wall-clock time. So for short Q&A, it's decently fast (maybe a couple tokens per second per GPU), but not as snappy as a 7B model. Considering its capability, it's impressively efficient. It's not tuned purely for speed – it's tuned for not giving up on tough tasks, which may involve being thorough rather than fast.",
       "quality_explanation": "Kimi K2 has a strong claim to be at the pinnacle of quality among all available models at its time. It scored above OpenAI's and Meta's offerings on some benchmarks, achieving 44.9% on Humanity's Last Exam (higher than GPT-5 Pro's ~42%). It's the \"most intelligent non-reasoning model\" in some evaluations, and with its \"Thinking\" variant, it likely ties or exceeds them on many tasks. Domain experts who tested it note it narrowing any gaps. It basically delivered AGI-like performance on certain tasks. It handles complex, domain-specific queries, has excellent coding and logic, and can maintain context over very long sequences. K2 arguably meets or even beats GPT-5 in some areas like HLE, making it a top-tier frontier model.",
@@ -818,17 +1052,50 @@
     "name": "EXAONE 4.0",
     "provider": "LG AI Research",
     "description": "LG AI Research's flagship hybrid large language model with dual-mode architecture featuring fast Non-Reasoning mode for quick tasks and deep Reasoning mode for complex problem-solving. Available in 32B and 1.2B parameter versions with extended 128K token context window.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "very long",
-    "strengths": ["reasoning", "coding", "hybrid dual-mode", "multilingual", "efficiency", "tool use", "long context", "on-device"],
-    "best_for": ["Complex problem-solving requiring step-by-step analysis", "Code generation and debugging", "Multilingual applications (Korean, English, Spanish)", "On-device AI for privacy-sensitive tasks", "Agentic workflows with tool integration"],
+    "strengths": [
+      "reasoning",
+      "coding",
+      "hybrid dual-mode",
+      "multilingual",
+      "efficiency",
+      "tool use",
+      "long context",
+      "on-device"
+    ],
+    "best_for": [
+      "Complex problem-solving requiring step-by-step analysis",
+      "Code generation and debugging",
+      "Multilingual applications (Korean, English, Spanish)",
+      "On-device AI for privacy-sensitive tasks",
+      "Agentic workflows with tool integration"
+    ],
     "consider_if": "You need a flexible model that can switch between fast responses and deep reasoning, or require on-device deployment with the 1.2B version.",
     "limitations": "Top-tier proprietary models may still lead in some specialized areas. Reasoning mode trades speed for depth.",
     "cost_tier": "$-$$",
     "open_weight": true,
     "pricing": "Free (open-weight on Hugging Face) | Enterprise via FriendliAI (pay-as-you-go)",
-    "tasks": ["Complex mathematics and coding challenges", "Medical question answering", "Multi-step problem solving", "Agentic tool use and API integration", "Multilingual conversations", "On-device AI applications", "Domain-specific tasks (finance, law, tech)"],
-    "industries": ["Software Development", "Healthcare", "Finance", "Legal", "IoT", "Consumer Electronics", "Research"],
+    "tasks": [
+      "Complex mathematics and coding challenges",
+      "Medical question answering",
+      "Multi-step problem solving",
+      "Agentic tool use and API integration",
+      "Multilingual conversations",
+      "On-device AI applications",
+      "Domain-specific tasks (finance, law, tech)"
+    ],
+    "industries": [
+      "Software Development",
+      "Healthcare",
+      "Finance",
+      "Legal",
+      "IoT",
+      "Consumer Electronics",
+      "Research"
+    ],
     "release_date": "2024",
     "rating": {
       "speed": 8,
@@ -883,7 +1150,15 @@
     },
     "developer_info": "Developer: LG AI Research (the artificial intelligence R&D arm of LG Group) is the primary developer of EXAONE 4.0. LG AI Research has been focusing on foundation models and AI infrastructures, aiming this model at B2B applications rather than direct consumer use. The development was in collaboration with partners (e.g., the model references Nemotron technology from NVIDIA for certain components, and LG has worked with hardware startups like FuriosaAI to run EXAONE efficiently on specialized NPUs). The result is a model built to be enterprise-grade: scalable, with a strategic roadmap that includes multimodal extensions (e.g. EXAONE Vision Language) and domain-specific versions (like healthcare-focused EXAONE Path).",
     "category": "Hybrid Reasoning LLM (Dual-Mode, Multilingual)",
-    "tags": ["Hybrid dual-mode", "Multilingual", "Open-weight", "On-device AI", "Large Multimodal Model", "Agentic AI", "Korean AI"],
+    "tags": [
+      "Hybrid dual-mode",
+      "Multilingual",
+      "Open-weight",
+      "On-device AI",
+      "Large Multimodal Model",
+      "Agentic AI",
+      "Korean AI"
+    ],
     "rating_detail": {
       "speed_explanation": "EXAONE 4.0 delivers fast performance for everyday queries in its Non-Reasoning mode and employs efficient strategies (like hybrid attention) for long contexts. Heavy reasoning tasks in Reasoning mode will be slower as the model performs deeper analysis, but overall speed is well-balanced for its capabilities.",
       "quality_explanation": "EXAONE 4.0 achieves state-of-the-art results on many tasks, particularly in science, math, and coding benchmarks. It bridges quick intuition with deep analysis effectively. While top-tier proprietary models still lead in some specialized areas, EXAONE's quality is excellent for its size and approach.",
@@ -895,17 +1170,53 @@
     "name": "Magistral Medium 1.2",
     "provider": "Mistral AI",
     "description": "Frontier-class multimodal reasoning language model with transparent chain-of-thought capabilities. Fine-tuned for step-by-step logical reasoning in multiple languages, achieving 73.6% on AIME2024 benchmark. Features 128k token context window and Flash Answer mode for up to 10× faster generation. Enterprise-focused model with strong performance in complex problem-solving.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "long",
-    "strengths": ["reasoning", "chain-of-thought", "multilingual", "speed", "transparency", "coding", "creative writing", "structured logic"],
-    "best_for": ["Complex reasoning and problem-solving", "Legal research and analysis", "Financial forecasting", "Healthcare decision support", "Coding and software design", "Creative writing and storytelling"],
+    "strengths": [
+      "reasoning",
+      "chain-of-thought",
+      "multilingual",
+      "speed",
+      "transparency",
+      "coding",
+      "creative writing",
+      "structured logic"
+    ],
+    "best_for": [
+      "Complex reasoning and problem-solving",
+      "Legal research and analysis",
+      "Financial forecasting",
+      "Healthcare decision support",
+      "Coding and software design",
+      "Creative writing and storytelling"
+    ],
     "consider_if": "You need transparent, verifiable reasoning for enterprise applications, require multi-step logical problem-solving, or want fast generation with strong reasoning capabilities across multiple languages.",
     "limitations": "Medium model is not open-source (enterprise/platform access only). Smaller than some frontier models. Quality rated 4/5 rather than 5/5.",
     "cost_tier": "$$",
     "open_weight": false,
     "pricing": "Free tier (limited) | Pro $14.99/month | Team $24.99/user/month | Enterprise (custom) | Small variant is open-source",
-    "tasks": ["Multi-step reasoning", "Structured calculations", "Data analysis", "Legal research", "Financial forecasting", "Healthcare analysis", "Code generation and design", "Creative writing", "Decision trees and rule-based logic"],
-    "industries": ["Legal", "Finance", "Healthcare", "Software Development", "Enterprise", "Research", "Creative Writing"],
+    "tasks": [
+      "Multi-step reasoning",
+      "Structured calculations",
+      "Data analysis",
+      "Legal research",
+      "Financial forecasting",
+      "Healthcare analysis",
+      "Code generation and design",
+      "Creative writing",
+      "Decision trees and rule-based logic"
+    ],
+    "industries": [
+      "Legal",
+      "Finance",
+      "Healthcare",
+      "Software Development",
+      "Enterprise",
+      "Research",
+      "Creative Writing"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 5,
@@ -979,7 +1290,13 @@
     },
     "developer_info": "Developer: Mistral AI – an AI research and product company known for its focus on \"thinking\" models. Based in France, Mistral AI has quickly established itself as a leading European AI company. Mistral AI developed Magistral as its first dedicated reasoning LLM, training it with advanced techniques including supervised fine-tuning on reasoning traces and reinforcement learning to achieve transparent, verifiable reasoning. The developer has a track record of open-sourcing smaller models (like Magistral Small) to foster community innovation, while offering larger versions (like Magistral Medium) for enterprise use. This dual approach allows Mistral to contribute to the open-source AI ecosystem while maintaining a sustainable business model. The company's focus on transparency and explainability in AI reasoning sets it apart in the competitive LLM market.",
     "category": "Multimodal Reasoning LLM (Enterprise)",
-    "tags": ["Reasoning Model", "Chain-of-Thought", "Multimodal", "Enterprise AI", "Mistral AI"],
+    "tags": [
+      "Reasoning Model",
+      "Chain-of-Thought",
+      "Multimodal",
+      "Enterprise AI",
+      "Mistral AI"
+    ],
     "rating_detail": {
       "speed_explanation": "Magistral Medium offers excellent generation speed on Mistral's infrastructure, especially with the innovative Flash Answer mode that delivers up to 10× faster token generation compared to many competitors. This makes it one of the fastest reasoning models available, addressing a common criticism of thinking models – that they're too slow for production use. The combination of deep reasoning and fast generation is achieved through architectural optimizations and efficient inference infrastructure. Even in standard mode, the model maintains competitive speed while performing complex reasoning tasks. The 128k context window is processed efficiently, allowing for rapid analysis of lengthy documents.",
       "quality_explanation": "Magistral Medium delivers very strong reasoning quality, evidenced by its 73.6% performance on the AIME2024 reasoning benchmark. The transparent chain-of-thought capability means reasoning steps are visible and verifiable, which adds a quality dimension beyond simple accuracy. However, it's rated 4/5 rather than 5/5 because it may not quite match the absolute best frontier models like GPT-5 or Claude Sonnet 4.5 on all tasks. That said, for reasoning-specific tasks, it's highly competitive and the transparency it offers can be more valuable than marginal improvements in raw performance. Early users report excellent results in logical problem-solving, coding, and structured analysis tasks.",
@@ -991,17 +1308,53 @@
     "name": "GLM-4.6",
     "provider": "Zhipu AI (Z.ai)",
     "description": "Cutting-edge large language model designed for intelligent agent applications with 355 billion total parameters (32B active using MoE). Features expanded 200K token context window, exceptional coding performance, advanced reasoning capabilities, and built-in tool use support. State-of-the-art open model excelling in agent tasks, code generation, and long-context reasoning.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "very long",
-    "strengths": ["coding", "reasoning", "agentic", "tool use", "long context", "efficiency", "open-source", "alignment"],
-    "best_for": ["AI coding assistant and IDE plugins", "Autonomous agents with tool integration", "Complex reasoning and analytical tasks", "Creative content generation and role-playing", "Long-form document analysis"],
+    "strengths": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "tool use",
+      "long context",
+      "efficiency",
+      "open-source",
+      "alignment"
+    ],
+    "best_for": [
+      "AI coding assistant and IDE plugins",
+      "Autonomous agents with tool integration",
+      "Complex reasoning and analytical tasks",
+      "Creative content generation and role-playing",
+      "Long-form document analysis"
+    ],
     "consider_if": "You need a powerful open-source model for coding assistance, building AI agents, or handling extremely long contexts with advanced reasoning capabilities.",
     "limitations": "Full model requires robust hardware infrastructure. Running 355B parameters demands significant compute resources.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Free (open-source on Hugging Face) | Z.ai Chat (free tier) | Lite $3/month | Pro $15/month | Self-hosted (infrastructure costs only)",
-    "tasks": ["Code generation and debugging", "Front-end development and UI code", "Multi-step agent workflows", "Tool and API integration", "Web search and data retrieval", "Long-form analysis and reasoning", "Financial report analysis", "Legal reasoning", "Creative writing and storytelling", "Role-playing and dialogue systems"],
-    "industries": ["Software Development", "Research", "Finance", "Legal", "Content Creation", "AI Development", "Enterprise Automation"],
+    "tasks": [
+      "Code generation and debugging",
+      "Front-end development and UI code",
+      "Multi-step agent workflows",
+      "Tool and API integration",
+      "Web search and data retrieval",
+      "Long-form analysis and reasoning",
+      "Financial report analysis",
+      "Legal reasoning",
+      "Creative writing and storytelling",
+      "Role-playing and dialogue systems"
+    ],
+    "industries": [
+      "Software Development",
+      "Research",
+      "Finance",
+      "Legal",
+      "Content Creation",
+      "AI Development",
+      "Enterprise Automation"
+    ],
     "release_date": "2024",
     "rating": {
       "speed": 8,
@@ -1066,7 +1419,16 @@
     },
     "developer_info": "Developer: Zhipu AI, a Chinese AI company operating under the Z.ai brand for international offerings, is the creator of GLM-4.6. The company's mission is to advance AGI in an open and beneficial way. Zhipu has been at the forefront of open-source LLM development – prior versions like GLM-130B and GLM-4.5 were widely recognized in the research community. For GLM-4.6, Zhipu's team introduced innovative training techniques (e.g., a hybrid MoE architecture with 16 experts, grouped-query attention, multi-token prediction decoding) and leveraged a massive amount of training data to push the model's capabilities. The result is a model that competes with the best from OpenAI, Anthropic, and others, while remaining open. Zhipu also provides the Z.ai developer platform where this model can be integrated via API, and actively maintains documentation and support for the developer community.",
     "category": "Large Language Model – Agentic/Coding Focus (Open-Source)",
-    "tags": ["Agentic AI", "Coding", "Open-source", "Long context", "MoE", "Tool use", "Autonomous agents", "Reasoning"],
+    "tags": [
+      "Agentic AI",
+      "Coding",
+      "Open-source",
+      "Long context",
+      "MoE",
+      "Tool use",
+      "Autonomous agents",
+      "Reasoning"
+    ],
     "rating_detail": {
       "speed_explanation": "GLM-4.6 achieves high throughput and efficiency – it uses approximately 15% fewer tokens than its predecessor to solve tasks, and supports high parallelism. The MoE architecture with 32B active parameters (out of 355B total) provides excellent efficiency. However, running the full model still requires robust hardware infrastructure, so while it's fast for its capabilities, it's not instantaneous. Overall speed is well-balanced for a model of this power.",
       "quality_explanation": "GLM-4.6's quality is top-tier among open models, excelling in coding and reasoning to the point of nearing closed-source leaders. It outperforms many models (like DeepSeek-V3.2) on agent, reasoning, and coding benchmarks, and comes close to Anthropic's Claude 4.5 on certain coding evaluations. The model demonstrates state-of-the-art performance among open LLMs with exceptional alignment, making it one of the highest-quality open models available.",
@@ -1078,17 +1440,58 @@
     "name": "Apriel 2.0",
     "provider": "ServiceNow & NVIDIA",
     "description": "Next-generation open-weight multimodal reasoning model built for enterprise workflows. Compact 15B parameters (Nemotron-based) delivering frontier-level intelligence with native multimodal capability (text, documents, screenshots, forms). Features transparent reasoning, safety guardrails, and low-latency performance for autonomous agents in regulated industries.",
-    "modalities": ["text", "vision"],
+    "modalities": [
+      "text",
+      "vision"
+    ],
     "context_window": "medium",
-    "strengths": ["reasoning", "multimodal", "enterprise", "transparency", "safety", "efficiency", "compliance", "low-latency", "open-source"],
-    "best_for": ["Enterprise workflow automation (IT support, HR, customer service)", "Document and data understanding with multimodal analysis", "Regulated industry AI (finance, healthcare, telecom)", "Autonomous agents with on-premises deployment", "Multi-step troubleshooting and decision-making"],
+    "strengths": [
+      "reasoning",
+      "multimodal",
+      "enterprise",
+      "transparency",
+      "safety",
+      "efficiency",
+      "compliance",
+      "low-latency",
+      "open-source"
+    ],
+    "best_for": [
+      "Enterprise workflow automation (IT support, HR, customer service)",
+      "Document and data understanding with multimodal analysis",
+      "Regulated industry AI (finance, healthcare, telecom)",
+      "Autonomous agents with on-premises deployment",
+      "Multi-step troubleshooting and decision-making"
+    ],
     "consider_if": "You need enterprise-grade AI with transparent reasoning for compliance, multimodal understanding of documents and forms, or autonomous agents in regulated environments.",
     "limitations": "Still relatively new (production-ready Q1 2026). Smaller size means less raw knowledge than frontier models, though optimized for reasoning accuracy.",
     "cost_tier": "$",
     "open_weight": true,
     "pricing": "Free (open-source MIT license on Hugging Face) | ServiceNow Platform integration (enterprise subscription) | Self-hosted (infrastructure costs only)",
-    "tasks": ["IT support automation", "HR inquiry processing", "Customer service resolution", "Contract review and analysis", "Insurance claims processing", "Loan application evaluation", "Network operations diagnosis", "Clinical decision support", "Risk assessment", "Equipment monitoring and reasoning", "Security log analysis", "Form processing and extraction"],
-    "industries": ["Enterprise IT", "Financial Services", "Healthcare", "Telecommunications", "Government", "Manufacturing", "Retail", "Insurance"],
+    "tasks": [
+      "IT support automation",
+      "HR inquiry processing",
+      "Customer service resolution",
+      "Contract review and analysis",
+      "Insurance claims processing",
+      "Loan application evaluation",
+      "Network operations diagnosis",
+      "Clinical decision support",
+      "Risk assessment",
+      "Equipment monitoring and reasoning",
+      "Security log analysis",
+      "Form processing and extraction"
+    ],
+    "industries": [
+      "Enterprise IT",
+      "Financial Services",
+      "Healthcare",
+      "Telecommunications",
+      "Government",
+      "Manufacturing",
+      "Retail",
+      "Insurance"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 10,
@@ -1143,7 +1546,17 @@
     },
     "developer_info": "Developer: ServiceNow, in partnership with NVIDIA, is behind Apriel 2.0. ServiceNow provided expertise in workflow automation and enterprise AI needs, while NVIDIA contributed its Nemotron family model architecture and computational power for training. The collaboration is an example of combining a leading enterprise software company's domain knowledge with a leading AI hardware and research company's technology. ServiceNow's AI engineering team has been building the Apriel model family (the original Apriel 1.0 was revealed at ServiceNow's Knowledge 2025 event earlier in the year), and Apriel 2.0 is the next major iteration. NVIDIA's involvement means the model is optimized for NVIDIA GPUs and integrates with NVIDIA's AI frameworks. For instance, Apriel 2.0 leverages the NVIDIA AI Factory reference design for efficient training and deployment in data centers. Both companies emphasize that Apriel was built with an 'open model, trusted AI' philosophy – ensuring that enterprises can inspect and tailor the model (ServiceNow even released a smaller Apriel 1.5 Thinker model for single-GPU use to encourage community development).",
     "category": "Enterprise Multimodal Reasoning LLM (Open Source)",
-    "tags": ["Enterprise AI", "Multimodal", "Reasoning", "Open-source", "Workflow automation", "Compliance", "Transparent AI", "Low-latency", "Autonomous agents"],
+    "tags": [
+      "Enterprise AI",
+      "Multimodal",
+      "Reasoning",
+      "Open-source",
+      "Workflow automation",
+      "Compliance",
+      "Transparent AI",
+      "Low-latency",
+      "Autonomous agents"
+    ],
     "rating_detail": {
       "speed_explanation": "Apriel 2.0 is designed to be highly efficient – its smaller size (15B parameters) and optimizations aim for faster inference and lower hardware requirements. The model delivers low-latency performance crucial for real-time enterprise applications and autonomous agents. It can operate on edge hardware and on-premises deployments without cloud connectivity, ensuring quick response times. This optimization makes it one of the fastest enterprise-grade reasoning models available.",
       "quality_explanation": "Apriel 2.0 delivers very strong reasoning performance, engineered to match the accuracy of much larger models at a fraction of their size. It provides transparent, step-by-step reasoning that can be audited – critical for enterprise trust and compliance. The multimodal capabilities allow it to understand documents, forms, and screenshots accurately. While it's tailored for accuracy and transparency in enterprise scenarios, it's still relatively new and will be refined as it reaches production readiness in Q1 2026. Quality is excellent for its size and purpose, though not quite at the absolute frontier level of the largest proprietary models.",
@@ -1155,17 +1568,49 @@
     "name": "Replit AI (Ghostwriter/Agent)",
     "provider": "Replit, Inc.",
     "description": "AI-powered coding assistant combining Ghostwriter for real-time code suggestions and Replit Agent for automated app development via natural language. Integrated into Replit's cloud-based IDE to help developers write, debug, and build complete applications faster.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "standard",
-    "strengths": ["coding", "prototyping", "learning", "debugging", "autocomplete", "app generation", "cloud-based", "IDE integration"],
-    "best_for": ["Rapid prototyping and MVPs", "Learning to code and tutorials", "Code autocomplete and generation", "Debugging and code explanation", "Building apps from natural language descriptions"],
+    "strengths": [
+      "coding",
+      "prototyping",
+      "learning",
+      "debugging",
+      "autocomplete",
+      "app generation",
+      "cloud-based",
+      "IDE integration"
+    ],
+    "best_for": [
+      "Rapid prototyping and MVPs",
+      "Learning to code and tutorials",
+      "Code autocomplete and generation",
+      "Debugging and code explanation",
+      "Building apps from natural language descriptions"
+    ],
     "consider_if": "You want an integrated coding assistant that not only autocompletes code but can also generate entire applications from prompts within a cloud IDE.",
     "limitations": "Requires internet connection (cloud-based). Heavy AI usage beyond included credits incurs additional costs. Complex projects still need human oversight.",
     "cost_tier": "$",
     "open_weight": false,
     "pricing": "Starter (Free with trial) | Core $20/month | Teams $35/user/month | Enterprise (Custom)",
-    "tasks": ["Code autocomplete", "Function generation", "Algorithm creation", "Code explanation", "Bug identification", "Debugging assistance", "App prototyping", "Project scaffolding", "Full app generation from descriptions"],
-    "industries": ["Software Development", "Education", "Startups", "Enterprise IT"],
+    "tasks": [
+      "Code autocomplete",
+      "Function generation",
+      "Algorithm creation",
+      "Code explanation",
+      "Bug identification",
+      "Debugging assistance",
+      "App prototyping",
+      "Project scaffolding",
+      "Full app generation from descriptions"
+    ],
+    "industries": [
+      "Software Development",
+      "Education",
+      "Startups",
+      "Enterprise IT"
+    ],
     "release_date": "2024",
     "rating": {
       "speed": 4,
@@ -1226,7 +1671,18 @@
     },
     "developer_info": "Developer: Replit, Inc. – an American tech company founded in 2016 by Amjad Masad and others, known for its cloud-based IDE. The company's mission is to make coding accessible, and with Ghostwriter/Agent they have integrated AI to accelerate software creation. Replit has become a leading platform for online coding education and collaborative development, serving millions of developers worldwide.",
     "category": "AI Coding Assistant (Integrated IDE)",
-    "tags": ["Coding assistant", "IDE", "Prototyping", "Learning", "Debugging", "Autocomplete", "Agent", "Cloud-based", "Collaborative", "App generation"],
+    "tags": [
+      "Coding assistant",
+      "IDE",
+      "Prototyping",
+      "Learning",
+      "Debugging",
+      "Autocomplete",
+      "Agent",
+      "Cloud-based",
+      "Collaborative",
+      "App generation"
+    ],
     "rating_detail": {
       "speed_explanation": "Replit AI provides fast, in-editor code completions and relatively quick project generation. Ghostwriter's suggestions appear in real-time as you type, and the Replit Agent benefits from cloud resources (4 vCPUs on Core plan) to expedite building and deploying apps. However, very large projects or heavy agent requests may take longer, and the system's reliance on cloud execution means you need an internet connection. Overall, performance is strong for most use cases but not instantaneous for complex tasks.",
       "quality_explanation": "The quality of code suggestions is high, with context-aware results that align with the developer's intent. Ghostwriter is adept at producing correct, functional code for a wide range of tasks and even explaining it, which improves coding accuracy and learning. The Replit Agent has shown impressive capability in generating working apps from descriptions, though it's a newer feature – there have been instances (as with any AI) of errors or misinterpreted requirements, so complex projects still need human oversight. Quality is very good but not perfect for highly complex scenarios.",
@@ -1238,17 +1694,59 @@
     "name": "Manus AI",
     "provider": "Butterfly Effect Technology",
     "description": "Autonomous AI agent platform designed to execute complex, multi-step tasks independently without continuous human guidance. Takes high-level goals in natural language and breaks them into actionable steps, handling research, data analysis, web interactions, and software operations autonomously.",
-    "modalities": ["text"],
+    "modalities": [
+      "text"
+    ],
     "context_window": "long",
-    "strengths": ["autonomous execution", "multi-step planning", "dynamic reasoning", "task automation", "web interaction", "data analysis", "proactive adaptation", "multi-model integration"],
-    "best_for": ["Market research and competitive analysis", "Financial data analysis and stock screening", "Academic research and document synthesis", "Travel itinerary planning with bookings", "Website and application prototyping", "Resume screening and candidate evaluation", "Business intelligence and dashboard creation", "Document automation and form filling"],
+    "strengths": [
+      "autonomous execution",
+      "multi-step planning",
+      "dynamic reasoning",
+      "task automation",
+      "web interaction",
+      "data analysis",
+      "proactive adaptation",
+      "multi-model integration"
+    ],
+    "best_for": [
+      "Market research and competitive analysis",
+      "Financial data analysis and stock screening",
+      "Academic research and document synthesis",
+      "Travel itinerary planning with bookings",
+      "Website and application prototyping",
+      "Resume screening and candidate evaluation",
+      "Business intelligence and dashboard creation",
+      "Document automation and form filling"
+    ],
     "consider_if": "You need an autonomous agent to carry out complex, multi-step tasks from start to finish, especially data-intensive work or tasks involving multiple applications and workflows.",
     "limitations": "Emerging technology that occasionally fails on simple real-world tasks. Can get stuck in loops on complex tasks. Requires supervision for mission-critical work. Credit-based system can be expensive for heavy usage.",
     "cost_tier": "$$",
     "open_weight": false,
     "pricing": "Free (1 task/day + 1,000 bonus credits) | Starter $39/month | Pro $199/month | Team $39/seat/month (min 5 seats)",
-    "tasks": ["Market research", "Competitive analysis", "Financial data screening", "Academic research", "Document summarization", "Travel planning", "App prototyping", "Resume screening", "Dashboard creation", "PDF data extraction", "Form automation", "Multi-source data synthesis"],
-    "industries": ["Research & Analytics", "Finance", "HR & Recruiting", "Business Intelligence", "Travel", "Academic", "Software Development", "Enterprise Productivity"],
+    "tasks": [
+      "Market research",
+      "Competitive analysis",
+      "Financial data screening",
+      "Academic research",
+      "Document summarization",
+      "Travel planning",
+      "App prototyping",
+      "Resume screening",
+      "Dashboard creation",
+      "PDF data extraction",
+      "Form automation",
+      "Multi-source data synthesis"
+    ],
+    "industries": [
+      "Research & Analytics",
+      "Finance",
+      "HR & Recruiting",
+      "Business Intelligence",
+      "Travel",
+      "Academic",
+      "Software Development",
+      "Enterprise Productivity"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 3,
@@ -1309,7 +1807,18 @@
     },
     "developer_info": "Developer: Butterfly Effect Technology, also known as Butterfly Effect Pte. Ltd., a Singapore-based startup founded by entrepreneur Xiao Hong and backed by notable investors (it attracted attention with a large seed funding). The development team has integrated models from other AI providers (like Anthropic's Claude family and others) into Manus's architecture, rather than building a new LLM from scratch, focusing on innovation in how the agent orchestrates tasks. The company launched Manus in early 2025 and has been iterating rapidly (Manus 1.5 was released by October 2025). Official website: manus.im – through this site, users can sign up for Manus, access the web app, or download the mobile apps (iOS and Android) for Manus.",
     "category": "Autonomous AI Agent (General-Purpose)",
-    "tags": ["Autonomous agent", "Task automation", "Multi-step planning", "Dynamic reasoning", "Web interaction", "Data analysis", "Productivity", "Workflow automation", "Multi-model", "Agentic AI"],
+    "tags": [
+      "Autonomous agent",
+      "Task automation",
+      "Multi-step planning",
+      "Dynamic reasoning",
+      "Web interaction",
+      "Data analysis",
+      "Productivity",
+      "Workflow automation",
+      "Multi-model",
+      "Agentic AI"
+    ],
     "rating_detail": {
       "speed_explanation": "Manus performs tasks in a reasonable time frame, especially simple ones, but because it handles complex, multi-step workflows, some tasks can take a while (it's doing things that might take a human hours, so a complex research task might run for several minutes). The platform does allow parallel task execution in higher tiers, which improves throughput for multiple jobs. For straightforward queries it's as responsive as a typical AI chatbot, but for big assignments (e.g., 'analyze these 10 files and draft a report'), expect it to churn for a bit. Early users have reported that Manus sometimes gets stuck in loops or stalls on particularly tough tasks, which can slow things down, though such issues have been improving with updates.",
       "quality_explanation": "The quality of Manus's output is generally high given what it attempts – it has demonstrated success in tasks like generating comprehensive analyses and handling diverse formats (code, text, etc.). On the GAIA benchmark for general AI agents, Manus scored 86.5%, indicating very strong performance on complex tasks. Experts have praised Manus as 'the closest thing to an autonomous AI agent' and noted it feels like collaborating with a smart, efficient assistant. However, it's not perfect: some reviewers found that Manus occasionally failed at 'simple' real-world tasks (e.g., booking a hotel or ordering food) and made incorrect assumptions or errors. These hiccups show it's a new technology and sometimes the reasoning can go awry. Overall, Manus's results are impressive, but you may need to double-check its work, especially for mission-critical tasks.",
@@ -1321,17 +1830,66 @@
     "name": "Genspark AI",
     "provider": "Genspark, Inc.",
     "description": "All-in-one 'Super Agent' workspace combining 9 AI models and 80+ specialized tools for autonomous task execution. Handles multi-modal tasks (text, voice, images, video) end-to-end, from planning trips and making phone calls to building presentations, analyzing data, and creating games – all from a single prompt.",
-    "modalities": ["text", "vision", "speech", "video"],
+    "modalities": [
+      "text",
+      "vision",
+      "speech",
+      "video"
+    ],
     "context_window": "long",
-    "strengths": ["autonomous execution", "multi-modal", "multi-model orchestration", "real-world actions", "voice calls", "content creation", "coding", "workflow automation", "reflection mechanism", "productivity suite"],
-    "best_for": ["Personal assistant tasks and vacation planning", "Business presentations and slide decks", "Automated phone calls and customer service", "Content creation (videos, marketing materials)", "Website and game development", "Data analysis and financial reports", "Workflow automation and form filling", "Research and fact-checking"],
+    "strengths": [
+      "autonomous execution",
+      "multi-modal",
+      "multi-model orchestration",
+      "real-world actions",
+      "voice calls",
+      "content creation",
+      "coding",
+      "workflow automation",
+      "reflection mechanism",
+      "productivity suite"
+    ],
+    "best_for": [
+      "Personal assistant tasks and vacation planning",
+      "Business presentations and slide decks",
+      "Automated phone calls and customer service",
+      "Content creation (videos, marketing materials)",
+      "Website and game development",
+      "Data analysis and financial reports",
+      "Workflow automation and form filling",
+      "Research and fact-checking"
+    ],
     "consider_if": "You need an AI to handle complex, multi-step projects end-to-end with minimal input, especially tasks requiring multiple modalities or real-world actions like phone calls.",
     "limitations": "Some intensive tasks may take longer due to multi-model orchestration. Real-world actions like phone calls introduce delays. Subscription required for regular use beyond trial.",
     "cost_tier": "$$",
     "open_weight": false,
     "pricing": "Free trial (7 days, 5 tasks) | Starter $19/month | Creator $39/month | Pro $79/month | Agency $199/month | Enterprise (Custom)",
-    "tasks": ["Trip planning and booking", "Presentation creation", "Phone calls and reservations", "Video generation", "Website development", "Game creation", "Data analysis", "Market research", "Content writing", "SEO optimization", "API integration", "Form automation", "Lead generation"],
-    "industries": ["Productivity", "Content Creation", "Marketing", "Business Intelligence", "Software Development", "Customer Service", "Travel", "E-commerce", "Enterprise Automation"],
+    "tasks": [
+      "Trip planning and booking",
+      "Presentation creation",
+      "Phone calls and reservations",
+      "Video generation",
+      "Website development",
+      "Game creation",
+      "Data analysis",
+      "Market research",
+      "Content writing",
+      "SEO optimization",
+      "API integration",
+      "Form automation",
+      "Lead generation"
+    ],
+    "industries": [
+      "Productivity",
+      "Content Creation",
+      "Marketing",
+      "Business Intelligence",
+      "Software Development",
+      "Customer Service",
+      "Travel",
+      "E-commerce",
+      "Enterprise Automation"
+    ],
     "release_date": "2025",
     "rating": {
       "speed": 4,
@@ -1402,7 +1960,20 @@
     },
     "developer_info": "Developer: Genspark, Inc., a company that pivoted from an AI search engine into autonomous agents in 2025. The company was founded by former Baidu executives Eric Jing and Kay Zhu, who used their experience in AI to create this new platform. Genspark gained significant investor backing (over $160M in funding) and quickly grew its user base – reaching 2 million users within 6 months of launch. Notably, Genspark worked closely with OpenAI during development; it leverages OpenAI's GPT-4.1 model for many tasks and was one of the first to integrate OpenAI's multimodal and real-time voice APIs into an agent. The developer can thus be seen as at the cutting edge of applied AI, combining models from OpenAI, Anthropic, Google (Gemini, etc.) into their product. Genspark, Inc. (with leadership from ex-Baidu AI researchers) continues to develop the platform, adding features and keeping it integrated with the latest AI model advancements. Official website: genspark.ai – a web-based interface that includes tools like AI Slides, AI Chat, AI Sheets, and AI Docs, all powered by the Super Agent.",
     "category": "Autonomous AI Agent & Multi-Modal Productivity Suite",
-    "tags": ["Super Agent", "Autonomous agent", "Multi-modal", "Multi-model", "Voice calls", "Content creation", "Productivity suite", "Workflow automation", "Real-world actions", "Reflection mechanism", "Coding", "Video generation"],
+    "tags": [
+      "Super Agent",
+      "Autonomous agent",
+      "Multi-modal",
+      "Multi-model",
+      "Voice calls",
+      "Content creation",
+      "Productivity suite",
+      "Workflow automation",
+      "Real-world actions",
+      "Reflection mechanism",
+      "Coding",
+      "Video generation"
+    ],
     "rating_detail": {
       "speed_explanation": "Considering the complexity of what Genspark does, it is quite efficient. The system is optimized with techniques like parallel model execution and caching to reduce latency. For example, when tasked with building a presentation or making a phone call, it orchestrates multiple steps quickly (often completing tasks in minutes that would take a human hours). Simple queries or tasks are handled nearly instantly, akin to a standard AI chatbot. However, because it might involve multiple AI models and tools working together, some intensive tasks (like video generation or very large research projects) may take a bit longer to complete end-to-end. Using multiple models and performing real-world actions (like waiting for a phone call to connect) introduces some delays that pure text-based models don't have. Users generally find it impressively fast for what it accomplishes.",
       "quality_explanation": "Genspark's output quality is top-tier. It currently has the best score on the GAIA benchmark for general AI agents (87.8% correct on complex tasks), outperforming competitors like Manus (86.5%). This means it reliably produces correct and useful results in a wide variety of scenarios. The multi-model approach lets Genspark use the strengths of each AI model (for instance, using a code-oriented model for programming tasks, a reasoning model for planning, etc.), resulting in high-quality outcomes. Users have noted that slide decks created by Genspark were narrative-driven and on-point, phone call interactions sound natural, and coding output often runs correctly on the first try. The reflection mechanism, where multiple models cross-verify answers, provides excellent quality control. Like any AI, it's not infallible, but its quality is industry-leading.",

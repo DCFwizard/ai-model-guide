@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "title": "Coding and Debugging",
+      "content": "It excels at software development tasks, generating and explaining code across languages. Developers use it for building apps from specs and fixing bugs."
+    },
+    {
+      "title": "Content Generation",
+      "content": "GPT-5 produces high-quality writing—emails, articles, creative fiction—adapting to the desired tone and style more smoothly than GPT-4. It maintains coherent structure even for lengthy documents."
+    },
+    {
+      "title": "Complex Reasoning & Research",
+      "content": "In \"thinking mode,\" GPT-5 can perform multi-step logical reasoning for analytics, decision support, and problem-solving. It set new records on challenging benchmarks like AIME math exams (100% score)."
+    },
+    {
+      "title": "Personal Assistant",
+      "content": "With improved context memory and personalized responses, it's useful for summarizing information, scheduling, tutoring, and general Q&A."
+    },
+    {
+      "title": "Domain Expertise",
+      "content": "GPT-5's knowledge has been enhanced for areas like healthcare and law, providing more accurate and cautious answers in specialized domains (though always with the caveat that it's not a certified professional)."
+    }
+  ],
+  "summary": "Users should use GPT-5 when they need the highest-quality, most reliable AI outputs—such as drafting important content, tackling hard coding or math problems, or powering applications that require advanced reasoning. For simpler or less critical tasks, lighter models (like GPT-5 Mini or older versions) might suffice, but GPT-5 shines for demanding, complex assignments."
+}

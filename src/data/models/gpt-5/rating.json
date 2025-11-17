@@ -1,0 +1,5 @@
+{
+  "speed_explanation": "GPT-5 is fairly fast given its complexity, thanks to the smart routing among sub-models. Simple questions get near-instant answers via the lightweight components, but very large or complex \"thinking mode\" queries can still take a bit longer as the model reasons more deeply.",
+  "quality_explanation": "It currently leads in overall quality for coding, reasoning, and coherence. GPT-5 produces highly accurate, well-structured responses with significantly fewer errors than previous models.",
+  "cost_explanation": "OpenAI provides an unprecedented free access to GPT-5, and the $20/month Plus plan is affordable for individuals. However, heavy users or businesses may need the Pro or Enterprise plans, which are a substantial investment. Given its advanced capabilities, many find GPT-5's value justifies the cost."
+}

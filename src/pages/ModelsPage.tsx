@@ -4,7 +4,7 @@ import { ModelCard } from '@/components/ModelCard';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
-import modelsData from '@/data/models.json';
+import modelsData from '@/data/modelsLoader';
 import { AIModel, Modality } from '@/types';
 type FilterType = 'all' | 'open_weight' | Modality;
 export function ModelsPage() {

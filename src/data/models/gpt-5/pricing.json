@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Free Tier",
+      "price": "Free",
+      "description": "OpenAI made GPT-5 accessible even to free users of ChatGPT, demonstrating its commitment to broad AI benefits. Free users can try GPT-5 with certain usage limits (which may adjust based on demand)."
+    },
+    {
+      "name": "ChatGPT Plus",
+      "price": "$20/month",
+      "description": "Plus subscribers get larger usage allowances and priority access. GPT-5 is the default model, with faster response times and the ability to use the image input features."
+    },
+    {
+      "name": "ChatGPT Pro",
+      "price": "$200/month",
+      "description": "Pro plan users receive higher quotas and the GPT-5 Pro model for even more powerful reasoning on complex tasks. Pro users also gain early access to new features."
+    },
+    {
+      "name": "Team Plan",
+      "price": "$30/user/month or $240/year",
+      "description": "Designed for organizations, this plan offers Plus-level features per user with centralized billing."
+    },
+    {
+      "name": "Enterprise Plan",
+      "price": "Custom pricing",
+      "description": "Enterprises can get custom pricing for unlimited or prioritized access, security features, and deployment in their own environment."
+    }
+  ],
+  "summary": "Importantly, GPT-5's basic capabilities are available to everyone, even without payment, albeit at lower volume. Higher-tier plans primarily increase the usage limits and reliability of access, which is valuable for professional use."
+}

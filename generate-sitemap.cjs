@@ -2,10 +2,45 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read data files
-const modelsData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-);
+// Load models from both sources (models.json + individual model folders)
+function loadModels() {
+  const modelsFromJson = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
+  ).filter(m => m.id !== 'gpt-5'); // Exclude GPT-5 as it's in its own folder
+
+  // Load GPT-5 from its folder
+  const gpt5Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gpt-5/index.json'), 'utf8')
+  );
+  const gpt5Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gpt-5/description.md'), 'utf8'
+  ).trim();
+  const gpt5UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gpt-5/use-cases.json'), 'utf8')
+  );
+  const gpt5Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gpt-5/pricing.json'), 'utf8')
+  );
+  const gpt5Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gpt-5/rating.json'), 'utf8')
+  );
+  const gpt5Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gpt-5/developer.md'), 'utf8'
+  ).trim();
+
+  const gpt5Model = {
+    ...gpt5Index,
+    detailed_description: gpt5Description,
+    use_cases_detail: gpt5UseCases,
+    pricing_detail: gpt5Pricing,
+    rating_detail: gpt5Rating,
+    developer_info: gpt5Developer,
+  };
+
+  return [gpt5Model, ...modelsFromJson];
+}
+
+const modelsData = loadModels();
 const useCasesData = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src/data/use-cases.json'), 'utf8')
 );
