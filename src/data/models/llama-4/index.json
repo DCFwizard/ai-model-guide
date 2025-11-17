@@ -1,0 +1,73 @@
+{
+  "id": "llama-4",
+  "name": "Llama 4",
+  "provider": "Meta AI",
+  "description": "Meta AI's latest open-source multimodal language model with mixture-of-experts architecture. Features two variants: Scout (smaller, high-speed) and Maverick (17B active parameters with 128 experts, ~2T total parameters). Supports up to 10 million token context, multimodal input (text and images), and 8 languages. Released under community license for free commercial and research use.",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "context_window": "very long",
+  "strengths": [
+    "open-source",
+    "multimodal",
+    "long context",
+    "MoE",
+    "reasoning",
+    "coding",
+    "multilingual",
+    "customizable",
+    "self-hostable"
+  ],
+  "best_for": [
+    "Custom chatbots and assistants",
+    "Embedded AI applications",
+    "Research and education",
+    "Creative content generation",
+    "Multilingual communication",
+    "Self-hosted enterprise solutions"
+  ],
+  "consider_if": "You need a cutting-edge model with full control, want to avoid vendor lock-in, require on-premises deployment, need extremely long context (up to 10M tokens), or want to fine-tune on proprietary data.",
+  "limitations": "Requires significant computational resources (multiple GPUs for Maverick). Community license has some restrictions for very large companies. Not as fast as smaller models.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Free download under community license | Self-hosting (hardware costs only) | Cloud rental (pay cloud provider) | Third-party hosting available",
+  "tasks": [
+    "Custom chatbot development",
+    "Fine-tuning on proprietary data",
+    "Research and experimentation",
+    "Creative writing and content generation",
+    "Multilingual translation",
+    "Image understanding and description",
+    "Educational AI tutors",
+    "On-device AI applications"
+  ],
+  "industries": [
+    "Research",
+    "Education",
+    "Enterprise (self-hosted)",
+    "Software Development",
+    "Content Creation",
+    "Healthcare",
+    "Legal",
+    "Manufacturing"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 9,
+    "cost": 10
+  },
+  "links": {
+    "site": "https://www.llama.com/",
+    "docs": "https://www.llama.com/docs/overview/"
+  },
+  "category": "Open-Source Multimodal Large Language Model",
+  "tags": [
+    "Meta AI",
+    "MoE (Mixture-of-Experts) LLM",
+    "Source-Available AI",
+    "Long-context AI",
+    "Vision-and-Language model"
+  ]
+}

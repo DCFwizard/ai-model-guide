@@ -49,6 +49,14 @@ import deepseekV3Pricing from './models/deepseek-v3/pricing.json';
 import deepseekV3Rating from './models/deepseek-v3/rating.json';
 import deepseekV3Developer from './models/deepseek-v3/developer.md?raw';
 
+// Import Llama 4 data from separate files
+import llama4Index from './models/llama-4/index.json';
+import llama4Description from './models/llama-4/description.md?raw';
+import llama4UseCases from './models/llama-4/use-cases.json';
+import llama4Pricing from './models/llama-4/pricing.json';
+import llama4Rating from './models/llama-4/rating.json';
+import llama4Developer from './models/llama-4/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -109,8 +117,18 @@ const deepseekV3Model: AIModel = {
   developer_info: deepseekV3Developer.trim(),
 } as AIModel;
 
+// Combine Llama 4 data from separate files
+const llama4Model: AIModel = {
+  ...llama4Index,
+  detailed_description: llama4Description.trim(),
+  use_cases_detail: llama4UseCases,
+  pricing_detail: llama4Pricing,
+  rating_detail: llama4Rating,
+  developer_info: llama4Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -120,6 +138,7 @@ export const models: AIModel[] = [
   gemini25ProModel,
   qwen3MaxModel,
   deepseekV3Model,
+  llama4Model,
   ...modelsFromJson
 ];
 
