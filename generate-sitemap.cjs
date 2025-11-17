@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -124,7 +124,36 @@ function loadModels() {
     developer_info: gemini25ProDeveloper,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, ...modelsFromJson];
+  // Load Qwen3-Max from its folder
+  const qwen3MaxIndex = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/qwen3-max/index.json'), 'utf8')
+  );
+  const qwen3MaxDescription = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/qwen3-max/description.md'), 'utf8'
+  ).trim();
+  const qwen3MaxUseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/qwen3-max/use-cases.json'), 'utf8')
+  );
+  const qwen3MaxPricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/qwen3-max/pricing.json'), 'utf8')
+  );
+  const qwen3MaxRating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/qwen3-max/rating.json'), 'utf8')
+  );
+  const qwen3MaxDeveloper = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/qwen3-max/developer.md'), 'utf8'
+  ).trim();
+
+  const qwen3MaxModel = {
+    ...qwen3MaxIndex,
+    detailed_description: qwen3MaxDescription,
+    use_cases_detail: qwen3MaxUseCases,
+    pricing_detail: qwen3MaxPricing,
+    rating_detail: qwen3MaxRating,
+    developer_info: qwen3MaxDeveloper,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

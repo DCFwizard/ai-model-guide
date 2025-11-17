@@ -33,6 +33,14 @@ import gemini25ProPricing from './models/gemini-2-5-pro/pricing.json';
 import gemini25ProRating from './models/gemini-2-5-pro/rating.json';
 import gemini25ProDeveloper from './models/gemini-2-5-pro/developer.md?raw';
 
+// Import Qwen3-Max data from separate files
+import qwen3MaxIndex from './models/qwen3-max/index.json';
+import qwen3MaxDescription from './models/qwen3-max/description.md?raw';
+import qwen3MaxUseCases from './models/qwen3-max/use-cases.json';
+import qwen3MaxPricing from './models/qwen3-max/pricing.json';
+import qwen3MaxRating from './models/qwen3-max/rating.json';
+import qwen3MaxDeveloper from './models/qwen3-max/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -73,8 +81,18 @@ const gemini25ProModel: AIModel = {
   developer_info: gemini25ProDeveloper.trim(),
 } as AIModel;
 
+// Combine Qwen3-Max data from separate files
+const qwen3MaxModel: AIModel = {
+  ...qwen3MaxIndex,
+  detailed_description: qwen3MaxDescription.trim(),
+  use_cases_detail: qwen3MaxUseCases,
+  pricing_detail: qwen3MaxPricing,
+  rating_detail: qwen3MaxRating,
+  developer_info: qwen3MaxDeveloper.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -82,6 +100,7 @@ export const models: AIModel[] = [
   grok4Model,
   claudeSonnet45Model,
   gemini25ProModel,
+  qwen3MaxModel,
   ...modelsFromJson
 ];
 
