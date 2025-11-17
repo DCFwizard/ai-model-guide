@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -356,7 +356,36 @@ function loadModels() {
     developer_info: glm46Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, ...modelsFromJson];
+  // Load Apriel 2.0 from its folder
+  const apriel20Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/apriel-2-0/index.json'), 'utf8')
+  );
+  const apriel20Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/apriel-2-0/description.md'), 'utf8'
+  ).trim();
+  const apriel20UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/apriel-2-0/use-cases.json'), 'utf8')
+  );
+  const apriel20Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/apriel-2-0/pricing.json'), 'utf8')
+  );
+  const apriel20Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/apriel-2-0/rating.json'), 'utf8')
+  );
+  const apriel20Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/apriel-2-0/developer.md'), 'utf8'
+  ).trim();
+
+  const apriel20Model = {
+    ...apriel20Index,
+    detailed_description: apriel20Description,
+    use_cases_detail: apriel20UseCases,
+    pricing_detail: apriel20Pricing,
+    rating_detail: apriel20Rating,
+    developer_info: apriel20Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();
