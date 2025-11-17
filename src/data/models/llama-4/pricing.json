@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Download/License Cost",
+      "price": "Free",
+      "description": "Meta does not charge for downloading Llama 4 weights. You do, however, have to agree to the Llama 4 Community License which places some usage restrictions (e.g., you can't use it to improve other large models for commercial sale, and companies above a certain size or product DAU may need separate agreement). But for the vast majority of users and companies, it's effectively free to use."
+    },
+    {
+      "name": "Self-Hosting Costs",
+      "price": "Hardware costs only",
+      "description": "If you run Llama 4 on your own hardware, you'll incur hardware costs. Llama 4 Maverick (the large MoE one) might require multiple high-memory GPUs (like 8×A100 80GB) to run smoothly in FP16. Scout (the smaller one) might run on 2–4 GPUs. If you quantize to 4-bit, you could possibly fit Scout on a single 48GB GPU. These costs are one-time (if you own hardware) or ongoing (if on cloud, you pay hourly). For example, running a beefy 8×GPU server might cost ~$10–20/hour on a cloud. But since you're not paying usage fees, this can still be more economical at scale than API charges from other providers."
+    },
+    {
+      "name": "Cloud Services",
+      "price": "Pay cloud provider rates",
+      "description": "Some cloud providers or startups might offer Llama 4 as a hosted service. For instance, Azure or AWS could have Llama 4 available through their marketplaces (similar to how they offered Llama 2). These offerings might charge a fee or be integrated into their existing pricing. Generally, those costs would be to cover the computing. For instance, an Azure VM with Llama might charge per second or token but ideally lower than proprietary models. Hugging Face might allow you to use it with paid \"Inference Endpoint\" credits which usually are cheaper than other API rates."
+    },
+    {
+      "name": "Community Access",
+      "price": "Free (with limitations)",
+      "description": "Like with Llama 2 and 3, one can expect that Hugging Face or other platforms will host demo endpoints for Llama 4. There will be many free public demos (with limited throughput) and you might even run it on consumer hardware (with slower speeds) – that's free aside from your electricity. This allows anyone to experiment with Llama 4 without any upfront costs."
+    },
+    {
+      "name": "Fine-tuning Cost",
+      "price": "Variable (compute costs)",
+      "description": "If you want to fine-tune Llama 4 on your data, you might invest in compute for that. But Meta often provides efficient fine-tuning recipes (like LoRA adapters). The community and platforms like Replit, Hugging Face, etc., often subsidize or simplify this process for a low cost or free for small jobs. This turns what could be a variable API expense (that grows with usage) into a fixed infrastructure expense that you can optimize."
+    }
+  ],
+  "summary": "There is no official pricing plan for Llama 4 because it's not a commercial service – it's a freely released model. You handle cost by provisioning your own compute. This is attractive for many businesses because it turns what could be a variable API expense into a fixed infrastructure expense that they can optimize. For example, a company might spend $50k upfront on building a server rig for Llama 4 and then have no incremental cost serving millions of queries, versus paying per query to an API forever. Using Llama 4 in-house, you might pay $0.003 or less per 1K tokens in electricity/hardware amortization – an order of magnitude cheaper than commercial APIs after initial setup."
+}

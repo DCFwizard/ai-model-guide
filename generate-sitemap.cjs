@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -182,7 +182,36 @@ function loadModels() {
     developer_info: deepseekV3Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, ...modelsFromJson];
+  // Load Llama 4 from its folder
+  const llama4Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/llama-4/index.json'), 'utf8')
+  );
+  const llama4Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/llama-4/description.md'), 'utf8'
+  ).trim();
+  const llama4UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/llama-4/use-cases.json'), 'utf8')
+  );
+  const llama4Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/llama-4/pricing.json'), 'utf8')
+  );
+  const llama4Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/llama-4/rating.json'), 'utf8')
+  );
+  const llama4Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/llama-4/developer.md'), 'utf8'
+  ).trim();
+
+  const llama4Model = {
+    ...llama4Index,
+    detailed_description: llama4Description,
+    use_cases_detail: llama4UseCases,
+    pricing_detail: llama4Pricing,
+    rating_detail: llama4Rating,
+    developer_info: llama4Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();
