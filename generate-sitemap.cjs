@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -240,7 +240,36 @@ function loadModels() {
     developer_info: minimaxM2Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, ...modelsFromJson];
+  // Load Kimi K2 from its folder
+  const kimiK2Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/kimi-k2/index.json'), 'utf8')
+  );
+  const kimiK2Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/kimi-k2/description.md'), 'utf8'
+  ).trim();
+  const kimiK2UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/kimi-k2/use-cases.json'), 'utf8')
+  );
+  const kimiK2Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/kimi-k2/pricing.json'), 'utf8')
+  );
+  const kimiK2Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/kimi-k2/rating.json'), 'utf8')
+  );
+  const kimiK2Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/kimi-k2/developer.md'), 'utf8'
+  ).trim();
+
+  const kimiK2Model = {
+    ...kimiK2Index,
+    detailed_description: kimiK2Description,
+    use_cases_detail: kimiK2UseCases,
+    pricing_detail: kimiK2Pricing,
+    rating_detail: kimiK2Rating,
+    developer_info: kimiK2Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

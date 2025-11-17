@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Model License",
+      "price": "Free",
+      "description": "Kimi K2 is open-source under a permissive license (likely MIT-style or Apache), meaning there's no licensing fee to pay. Moonshot AI released it openly, allowing commercial use for free. Downloading the model weights (which might be huge, possibly hundreds of GBs) is free aside from bandwidth costs. This open availability makes it accessible to organizations of all sizes without any royalty or usage fees."
+    },
+    {
+      "name": "Hardware/Inference Costs",
+      "price": "Variable (compute costs)",
+      "description": "Running K2 is where costs come in. With 32B active params, running it is comparable to a 32B model inference – which typically requires at least one high-memory GPU or a couple of smaller ones in parallel. For good performance, you might use 4 or 8 GPUs. On cloud, 8 A100 80GB might cost ~$20-$30/hour, though 4 GPUs in 8-bit mode could work for $10-$15/hour. Despite being a trillion-parameter model, MoE architecture keeps inference manageable. Reports suggest it can run on as few as 8 A100 GPUs despite its massive scale."
+    },
+    {
+      "name": "Batching Efficiency",
+      "price": "Cost scales favorably with usage",
+      "description": "For heavy usage, you can batch queries. These MoE models often handle batch processing well, effectively serving many requests in parallel on that hardware, which amortizes the cost. So if you have lots of queries, the cost per query goes down drastically vs. using an external API that charges per call. At scale, costs can drop well under $0.001 per token, which is far below closed API rates."
+    },
+    {
+      "name": "Third-party Services",
+      "price": "Extremely low (if available)",
+      "description": "Possibly, services like Together.ai or others provide K2 as part of their offerings. If so, their pricing likely just covers compute. Some references suggest K2's effective input cost could be around $0.15/1M tokens compared to closed models charging $15/1M – a 100x cost advantage. This shows how open models can dramatically reduce costs compared to proprietary alternatives while delivering comparable or superior performance."
+    },
+    {
+      "name": "Fine-tuning Cost",
+      "price": "Variable (compute costs)",
+      "description": "If you fine-tune K2, you'll need to run training. Often LoRA fine-tunes for such big models can be done within a few hours on multi-GPU, which might cost a few hundred dollars at most – trivial compared to benefits. Because it's open, you also avoid any quotas or surge pricing that an API might impose. You invest in hardware and then you have consistent cost usage."
+    }
+  ],
+  "summary": "Kimi K2 is extremely cost-effective at scale, albeit with upfront or ongoing hardware investment. Many medium to large companies find it cheaper to have an AI cluster for K2 than to pay API fees to OpenAI/Anthropic for equivalent usage. For example, if a company used 1 million tokens with a closed model charging $15, using K2 that same million tokens might cost well under $1 in GPU time (depending on hardware and utilization). Over millions of tokens, that's huge savings. The license is free, running cost is determined by hardware, and on enterprise scale can be well under $0.001 per token – far below closed API rates."
+}

@@ -1,0 +1,72 @@
+{
+  "id": "kimi-k2",
+  "name": "Kimi K2",
+  "provider": "Moonshot AI",
+  "description": "State-of-the-art open-source large language model with exceptional reasoning abilities and massive scale. Features 1T total parameters with 32B activated per token using Mixture-of-Experts architecture. Set records on Humanity's Last Exam (44.9%), excelling at deep logical reasoning, coding, and multi-step tool use. Includes 'Thinking' mode variant for extended tool-augmented reasoning with hundreds of sequential steps.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "very long",
+  "strengths": [
+    "reasoning",
+    "coding",
+    "agentic",
+    "tool use",
+    "long-horizon autonomy",
+    "open-source",
+    "efficiency",
+    "self-hostable",
+    "transparency"
+  ],
+  "best_for": [
+    "Autonomous agents and co-pilots",
+    "Advanced coding assistance",
+    "Research and data analysis",
+    "Strategic decision support",
+    "Complex customer support",
+    "Scientific discovery and simulations"
+  ],
+  "consider_if": "You need the most powerful open AI with deep reasoning capabilities, want full control and transparency, require autonomous agents that can operate independently over long durations, or need to process complex multi-step tasks with tool integration.",
+  "limitations": "Requires significant computational resources (multiple GPUs). Heavyweight model demanding ML ops expertise to deploy. May be overkill for simple tasks or short conversations.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Free under permissive license | Self-hosting (hardware costs only) | Third-party services available | No licensing fees",
+  "tasks": [
+    "Autonomous agent development",
+    "Complex code generation and review",
+    "Research analysis and synthesis",
+    "Strategic planning and decision support",
+    "Multi-step problem solving",
+    "Scientific simulations",
+    "Data analysis and experimentation",
+    "Long-context reasoning"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Enterprise",
+    "Data Science",
+    "Healthcare",
+    "Finance",
+    "Strategic Consulting",
+    "Scientific Research"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 10,
+    "cost": 9
+  },
+  "links": {
+    "site": "https://www.moonshot.cn",
+    "docs": "https://platform.moonshot.ai/docs/introduction"
+  },
+  "category": "Large Language Model (Agentic, Open-Source)",
+  "tags": [
+    "Mixture-of-Experts LLM",
+    "Long-term AI Agent",
+    "Trillion-parameter model",
+    "Open AGI",
+    "Enterprise AI"
+  ]
+}
