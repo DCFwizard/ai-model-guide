@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -153,7 +153,36 @@ function loadModels() {
     developer_info: qwen3MaxDeveloper,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, ...modelsFromJson];
+  // Load DeepSeek-V3 from its folder
+  const deepseekV3Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/deepseek-v3/index.json'), 'utf8')
+  );
+  const deepseekV3Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/deepseek-v3/description.md'), 'utf8'
+  ).trim();
+  const deepseekV3UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/deepseek-v3/use-cases.json'), 'utf8')
+  );
+  const deepseekV3Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/deepseek-v3/pricing.json'), 'utf8')
+  );
+  const deepseekV3Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/deepseek-v3/rating.json'), 'utf8')
+  );
+  const deepseekV3Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/deepseek-v3/developer.md'), 'utf8'
+  ).trim();
+
+  const deepseekV3Model = {
+    ...deepseekV3Index,
+    detailed_description: deepseekV3Description,
+    use_cases_detail: deepseekV3UseCases,
+    pricing_detail: deepseekV3Pricing,
+    rating_detail: deepseekV3Rating,
+    developer_info: deepseekV3Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

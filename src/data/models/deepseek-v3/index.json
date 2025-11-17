@@ -1,0 +1,68 @@
+{
+  "id": "deepseek-v3",
+  "name": "DeepSeek-V3",
+  "provider": "DeepSeek Inc.",
+  "description": "Pioneering open-weight large language model with unique Mixture-of-Experts architecture (671B parameters, 37B active per token). Known for exceptional speed (60 tokens/sec - 3× faster than V2), cost-efficiency, and being fully open-source. Features 128K context window and extended thinking mode for reliable reasoning.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "long",
+  "strengths": [
+    "speed",
+    "cost efficiency",
+    "open-source",
+    "reasoning",
+    "coding",
+    "multilingual",
+    "tool use",
+    "self-hostable"
+  ],
+  "best_for": [
+    "Self-hosted AI assistants",
+    "High-throughput applications",
+    "Budget-constrained development",
+    "Tool-augmented agent systems",
+    "Multilingual applications"
+  ],
+  "consider_if": "You need a high-performing open-source model under your control, want to avoid vendor lock-in, need on-premises deployment, or require cost-effective AI at scale.",
+  "limitations": "Slightly behind top proprietary models in absolute quality. Requires GPU infrastructure for self-hosting. Less fine-tuned personality than commercial models.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Open-source (free) | Self-hosting (hardware costs only) | DeepSeek API pay-as-you-go (~$0.27-$1.10 per million tokens) | Free tier available",
+  "tasks": [
+    "General conversation and writing",
+    "Code generation and explanation",
+    "Reasoning and problem-solving",
+    "Agent development with tools",
+    "Multilingual translation",
+    "High-throughput serving",
+    "Research and experimentation"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Education",
+    "Startups",
+    "Enterprise (on-premises)",
+    "Gaming",
+    "Customer Service"
+  ],
+  "release_date": "2024-2025",
+  "rating": {
+    "speed": 9,
+    "quality": 8,
+    "cost": 10
+  },
+  "links": {
+    "site": "https://deepseek.com",
+    "docs": "https://api-docs.deepseek.com",
+    "pricing": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "category": "Open-Source Large Language Model (Mixture-of-Experts architecture)",
+  "tags": [
+    "High-speed LLM",
+    "Cost-efficient AI",
+    "OpenAI-alternative",
+    "Open-Source AGI"
+  ]
+}

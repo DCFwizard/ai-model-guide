@@ -41,6 +41,14 @@ import qwen3MaxPricing from './models/qwen3-max/pricing.json';
 import qwen3MaxRating from './models/qwen3-max/rating.json';
 import qwen3MaxDeveloper from './models/qwen3-max/developer.md?raw';
 
+// Import DeepSeek-V3 data from separate files
+import deepseekV3Index from './models/deepseek-v3/index.json';
+import deepseekV3Description from './models/deepseek-v3/description.md?raw';
+import deepseekV3UseCases from './models/deepseek-v3/use-cases.json';
+import deepseekV3Pricing from './models/deepseek-v3/pricing.json';
+import deepseekV3Rating from './models/deepseek-v3/rating.json';
+import deepseekV3Developer from './models/deepseek-v3/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -91,8 +99,18 @@ const qwen3MaxModel: AIModel = {
   developer_info: qwen3MaxDeveloper.trim(),
 } as AIModel;
 
+// Combine DeepSeek-V3 data from separate files
+const deepseekV3Model: AIModel = {
+  ...deepseekV3Index,
+  detailed_description: deepseekV3Description.trim(),
+  use_cases_detail: deepseekV3UseCases,
+  pricing_detail: deepseekV3Pricing,
+  rating_detail: deepseekV3Rating,
+  developer_info: deepseekV3Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -101,6 +119,7 @@ export const models: AIModel[] = [
   claudeSonnet45Model,
   gemini25ProModel,
   qwen3MaxModel,
+  deepseekV3Model,
   ...modelsFromJson
 ];
 
