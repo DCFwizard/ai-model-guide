@@ -1,0 +1,20 @@
+{
+  "tiers": [
+    {
+      "name": "Open-Weight (Free)",
+      "price": "Free",
+      "description": "The EXAONE 4.0 model is open-weight and freely available for research and academic use. LG AI Research has released the model on Hugging Face, allowing developers to download the 32B and 1.2B versions without licensing fees."
+    },
+    {
+      "name": "Enterprise API (FriendliAI)",
+      "price": "Pay-as-you-go",
+      "description": "For enterprise deployment, LG has partnered with FriendliAI to offer EXAONE 4.0 via a scalable API service. Companies can access the model through FriendliAI's serverless endpoints on a usage-based billing model, avoiding the need to host the model themselves."
+    },
+    {
+      "name": "Self-Hosted",
+      "price": "Infrastructure costs only",
+      "description": "Organizations can deploy EXAONE 4.0 on their own infrastructure (cloud or on-premise) and pay only for compute resources. The smaller 1.2B version can run efficiently on affordable hardware or specialized NPUs."
+    }
+  ],
+  "summary": "Organizations can experiment with EXAONE for free locally, and then opt for paid usage on the cloud if they need production-level scaling. There are no traditional subscription plans directly from LG; instead, cost comes into play when using third-party services like FriendliAI or if deploying on cloud hardware, but API token pricing details are usage-dependent and not fixed."
+}

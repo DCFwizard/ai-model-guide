@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -269,7 +269,36 @@ function loadModels() {
     developer_info: kimiK2Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, ...modelsFromJson];
+  // Load EXAONE 4.0 from its folder
+  const exaone4Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/exaone-4/index.json'), 'utf8')
+  );
+  const exaone4Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/exaone-4/description.md'), 'utf8'
+  ).trim();
+  const exaone4UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/exaone-4/use-cases.json'), 'utf8')
+  );
+  const exaone4Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/exaone-4/pricing.json'), 'utf8')
+  );
+  const exaone4Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/exaone-4/rating.json'), 'utf8')
+  );
+  const exaone4Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/exaone-4/developer.md'), 'utf8'
+  ).trim();
+
+  const exaone4Model = {
+    ...exaone4Index,
+    detailed_description: exaone4Description,
+    use_cases_detail: exaone4UseCases,
+    pricing_detail: exaone4Pricing,
+    rating_detail: exaone4Rating,
+    developer_info: exaone4Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();
