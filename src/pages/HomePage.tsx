@@ -3,12 +3,17 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { UseCaseCard } from '@/components/UseCaseCard';
 import { ModelCard } from '@/components/ModelCard';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Calendar, Clock } from 'lucide-react';
 import useCasesData from '@/data/use-cases.json';
 import modelsData from '@/data/models.json';
+import blogPostsData from '@/data/blog-posts.json';
 import { AIModel, UseCase } from '@/types';
 export function HomePage() {
   const topModels = (modelsData as AIModel[]).slice(0, 6);
   const popularUseCases = (useCasesData as UseCase[]).slice(0, 6);
+  const featuredArticle = (blogPostsData as any[]).find(post => post.slug === 'gemini-web-youtube-summarization-workflow');
   return (
     <>
       <SEO
@@ -87,6 +92,57 @@ export function HomePage() {
                 />
               </div>
             </div>
+
+            {/* Featured Articles Section */}
+            {featuredArticle && (
+              <div className="mt-16">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight">Featured Articles</h3>
+                  <p className="mt-2 text-muted-foreground">
+                    Insights and guides from the AI Model Guide team
+                  </p>
+                </div>
+                <div className="max-w-3xl mx-auto">
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <CardHeader className="space-y-3">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <Badge variant="outline" className="capitalize">
+                          {featuredArticle.category}
+                        </Badge>
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-4 w-4" />
+                            <time>{new Date(featuredArticle.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="h-4 w-4" />
+                            <span>{featuredArticle.readTime} min read</span>
+                          </div>
+                        </div>
+                      </div>
+                      <CardTitle className="text-2xl md:text-3xl leading-tight">
+                        <Link
+                          to={`/blog/${featuredArticle.slug}`}
+                          className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
+                        >
+                          {featuredArticle.title}
+                        </Link>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground leading-relaxed">
+                        {featuredArticle.excerpt}
+                      </p>
+                      <Button asChild variant="outline" className="w-full sm:w-auto">
+                        <Link to={`/blog/${featuredArticle.slug}`}>
+                          Read Full Article
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            )}
           </div>
         </section>
         {/* SEO Text Block */}
