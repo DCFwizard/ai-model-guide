@@ -81,6 +81,14 @@ import exaone4Pricing from './models/exaone-4/pricing.json';
 import exaone4Rating from './models/exaone-4/rating.json';
 import exaone4Developer from './models/exaone-4/developer.md?raw';
 
+// Import Magistral Medium 1.2 data from separate files
+import magistralMedium12Index from './models/magistral-medium-1-2/index.json';
+import magistralMedium12Description from './models/magistral-medium-1-2/description.md?raw';
+import magistralMedium12UseCases from './models/magistral-medium-1-2/use-cases.json';
+import magistralMedium12Pricing from './models/magistral-medium-1-2/pricing.json';
+import magistralMedium12Rating from './models/magistral-medium-1-2/rating.json';
+import magistralMedium12Developer from './models/magistral-medium-1-2/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -181,8 +189,18 @@ const exaone4Model: AIModel = {
   developer_info: exaone4Developer.trim(),
 } as AIModel;
 
+// Combine Magistral Medium 1.2 data from separate files
+const magistralMedium12Model: AIModel = {
+  ...magistralMedium12Index,
+  detailed_description: magistralMedium12Description.trim(),
+  use_cases_detail: magistralMedium12UseCases,
+  pricing_detail: magistralMedium12Pricing,
+  rating_detail: magistralMedium12Rating,
+  developer_info: magistralMedium12Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -196,6 +214,7 @@ export const models: AIModel[] = [
   minimaxM2Model,
   kimiK2Model,
   exaone4Model,
+  magistralMedium12Model,
   ...modelsFromJson
 ];
 

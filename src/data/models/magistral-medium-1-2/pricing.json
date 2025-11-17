@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Free Tier",
+      "price": "Free",
+      "description": "Mistral AI provides a free tier with limited access to their models including Magistral. This allows users to experiment with the reasoning capabilities and evaluate whether the model fits their needs. The free tier has usage limits and may have restricted access to advanced features like Flash Answer mode."
+    },
+    {
+      "name": "Pro Plan",
+      "price": "$14.99/month",
+      "description": "The Pro plan offers extended AI and agent capabilities with higher usage limits. This tier provides full access to Magistral Medium 1.2 including Flash Answer mode, suitable for individual professionals and small businesses. The Pro plan includes access to Le Chat platform and API usage within monthly quotas."
+    },
+    {
+      "name": "Team Plan",
+      "price": "$24.99/user/month",
+      "description": "The Team plan adds collaboration features and increased limits, designed for organizations with multiple users. This includes shared workspaces, team management tools, and higher usage quotas per user. Ideal for development teams, research groups, or departments that need coordinated access to Magistral's capabilities."
+    },
+    {
+      "name": "Enterprise Plan",
+      "price": "Custom pricing",
+      "description": "Enterprises can negotiate custom pricing for private deployments or on-premise solutions. This tier offers the highest usage limits, dedicated support, SLA guarantees, and the ability to deploy Magistral Medium in private cloud or on-premise environments. Custom integrations and fine-tuning options may also be available at this tier."
+    },
+    {
+      "name": "Open-Source Alternative (Magistral Small)",
+      "price": "Free (self-hosting costs only)",
+      "description": "Notably, the smaller Magistral Small 1.2 is open-source under Apache 2.0 license and can be self-hosted at no cost, making it possible to experiment with Magistral's reasoning approach freely. While not as powerful as the Medium model, it provides a cost-effective entry point for organizations that want to test the reasoning paradigm or have budget constraints. The Medium model's weights are available through Mistral's platform or enterprise offerings."
+    }
+  ],
+  "summary": "Mistral's pricing strategy balances accessibility with enterprise features. The free tier allows experimentation, while paid plans scale from individual use ($14.99/month) to team collaboration ($24.99/user/month) to full enterprise deployment. The availability of open-source Magistral Small provides an alternative for budget-conscious users, though the full power of Medium is reserved for paid tiers. This tiered approach makes Magistral accessible to a wide range of users while supporting Mistral's continued development."
+}

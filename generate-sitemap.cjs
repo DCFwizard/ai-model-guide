@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -298,7 +298,36 @@ function loadModels() {
     developer_info: exaone4Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, ...modelsFromJson];
+  // Load Magistral Medium 1.2 from its folder
+  const magistralMedium12Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/magistral-medium-1-2/index.json'), 'utf8')
+  );
+  const magistralMedium12Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/magistral-medium-1-2/description.md'), 'utf8'
+  ).trim();
+  const magistralMedium12UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/magistral-medium-1-2/use-cases.json'), 'utf8')
+  );
+  const magistralMedium12Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/magistral-medium-1-2/pricing.json'), 'utf8')
+  );
+  const magistralMedium12Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/magistral-medium-1-2/rating.json'), 'utf8')
+  );
+  const magistralMedium12Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/magistral-medium-1-2/developer.md'), 'utf8'
+  ).trim();
+
+  const magistralMedium12Model = {
+    ...magistralMedium12Index,
+    detailed_description: magistralMedium12Description,
+    use_cases_detail: magistralMedium12UseCases,
+    pricing_detail: magistralMedium12Pricing,
+    rating_detail: magistralMedium12Rating,
+    developer_info: magistralMedium12Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

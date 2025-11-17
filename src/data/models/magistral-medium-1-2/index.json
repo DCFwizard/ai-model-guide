@@ -1,0 +1,72 @@
+{
+  "id": "magistral-medium-1-2",
+  "name": "Magistral Medium 1.2",
+  "provider": "Mistral AI",
+  "description": "Frontier-class multimodal reasoning language model with transparent chain-of-thought capabilities. Fine-tuned for step-by-step logical reasoning in multiple languages, achieving 73.6% on AIME2024 benchmark. Features 128k token context window and Flash Answer mode for up to 10× faster generation. Enterprise-focused model with strong performance in complex problem-solving.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "long",
+  "strengths": [
+    "reasoning",
+    "chain-of-thought",
+    "multilingual",
+    "speed",
+    "transparency",
+    "coding",
+    "creative writing",
+    "structured logic"
+  ],
+  "best_for": [
+    "Complex reasoning and problem-solving",
+    "Legal research and analysis",
+    "Financial forecasting",
+    "Healthcare decision support",
+    "Coding and software design",
+    "Creative writing and storytelling"
+  ],
+  "consider_if": "You need transparent, verifiable reasoning for enterprise applications, require multi-step logical problem-solving, or want fast generation with strong reasoning capabilities across multiple languages.",
+  "limitations": "Medium model is not open-source (enterprise/platform access only). Smaller than some frontier models. Quality rated 4/5 rather than 5/5.",
+  "cost_tier": "$$",
+  "open_weight": false,
+  "pricing": "Free tier (limited) | Pro $14.99/month | Team $24.99/user/month | Enterprise (custom) | Small variant is open-source",
+  "tasks": [
+    "Multi-step reasoning",
+    "Structured calculations",
+    "Data analysis",
+    "Legal research",
+    "Financial forecasting",
+    "Healthcare analysis",
+    "Code generation and design",
+    "Creative writing",
+    "Decision trees and rule-based logic"
+  ],
+  "industries": [
+    "Legal",
+    "Finance",
+    "Healthcare",
+    "Software Development",
+    "Enterprise",
+    "Research",
+    "Creative Writing"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 5,
+    "quality": 4,
+    "cost": 4
+  },
+  "links": {
+    "site": "https://mistral.ai",
+    "docs": "https://docs.mistral.ai",
+    "pricing": "https://mistral.ai/pricing"
+  },
+  "category": "Multimodal Reasoning LLM (Enterprise)",
+  "tags": [
+    "Reasoning Model",
+    "Chain-of-Thought",
+    "Multimodal",
+    "Enterprise AI",
+    "Mistral AI"
+  ]
+}
