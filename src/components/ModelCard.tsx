@@ -48,7 +48,6 @@ export function ModelCard({ model }: ModelCardProps) {
               <CardDescription>{model.provider}</CardDescription>
             </div>
             <div className="flex flex-col items-end gap-2">
-              {model.open_weight && <Badge variant="secondary" className="whitespace-nowrap">Open-weight</Badge>}
               <div className="flex items-center gap-2">
                 <Checkbox
                   id={`compare-${model.id}`}
@@ -62,6 +61,7 @@ export function ModelCard({ model }: ModelCardProps) {
                   Compare
                 </label>
               </div>
+              {model.open_weight && <Badge variant="secondary" className="whitespace-nowrap">Open-weight</Badge>}
             </div>
           </div>
         </CardHeader>
