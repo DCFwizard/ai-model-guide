@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "title": "Software Development and Debugging",
+      "content": "This model is particularly tuned for coding tasks. Use it to write complex code from scratch, refactor legacy code, or debug and fix errors. Its coding capabilities are so advanced that early users integrated it into IDEs (e.g., it's used to power GitHub Copilot's agentic features). Claude 4.5 can handle an entire multi-file project in one prompt, maintaining context across files. For instance, you can ask it to review a repository for bugs, and it will hold the whole project in mind, find issues, and suggest patches."
+    },
+    {
+      "title": "Autonomous Agents and Task Automation",
+      "content": "If you need an AI agent to perform a task end-to-end, Claude Sonnet is built for that. It can operate for hours, planning out multi-step solutions. For example, an enterprise might use it to continuously monitor incoming support tickets and autonomously craft responses or even execute actions (with human oversight). Claude 4.5 is capable of tool use like browsing documentation, reading/writing to external files, and more during such agentic tasks."
+    },
+    {
+      "title": "Complex Q&A and Advisory Roles",
+      "content": "Claude's strong reasoning and large knowledge base make it great for expert-level Q&A. In fields like finance, law, or medicine, professionals can use Claude 4.5 as a research assistant (with the caution that AI is not a certified professional). Anthropic noted domain experts found Sonnet 4.5 \"dramatically better\" in domain-specific knowledge and reasoning than previous models. It can analyze lengthy documents (contracts, research papers) and provide summaries, critiques, or answer questions about them with cited references if requested."
+    },
+    {
+      "title": "Creative and Long-Form Writing",
+      "content": "The model can generate well-structured long texts (it was trained to keep coherence over very long outputs). Whether it's writing a detailed report, a short story, or even multi-scene scripts, Claude will maintain style and logical flow. It also excels at editing and refining text; you can ask it to act as an editor, and it will rewrite or correct a draft with minimal errors (Anthropic reports its internal editing benchmark error rate went from 9% with Sonnet 4 to 0% with Sonnet 4.5)."
+    },
+    {
+      "title": "Agent-Assisted Data Analysis",
+      "content": "Claude 4.5 can also interpret and transform data, especially when allowed to use tools. For example, you could give it a complicated spreadsheet and ask it to produce insights; Claude might generate Python code to analyze the data, run it (via an execution tool), and then return the results. It's been used in cybersecurity to autonomously patch vulnerabilities by writing and applying code fixes without human intervention."
+    }
+  ],
+  "summary": "Use Claude Sonnet 4.5 whenever you have a challenging, multi-step task or need an AI to act with a high degree of autonomy and reliability. It's particularly well-suited for enterprise settings (e.g. handling complex customer service dialogues, processing lengthy documents, or powering virtual assistants that perform actions). If you just need a quick casual chat or a short story, Claude Instant or simpler models might suffice – but for heavy-duty AI \"work\", Sonnet 4.5 is the top Claude."
+}

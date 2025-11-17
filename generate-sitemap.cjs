@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -66,7 +66,36 @@ function loadModels() {
     developer_info: grok4Developer,
   };
 
-  return [gpt5Model, grok4Model, ...modelsFromJson];
+  // Load Claude Sonnet 4.5 from its folder
+  const claudeSonnet45Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/claude-sonnet-4-5/index.json'), 'utf8')
+  );
+  const claudeSonnet45Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/claude-sonnet-4-5/description.md'), 'utf8'
+  ).trim();
+  const claudeSonnet45UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/claude-sonnet-4-5/use-cases.json'), 'utf8')
+  );
+  const claudeSonnet45Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/claude-sonnet-4-5/pricing.json'), 'utf8')
+  );
+  const claudeSonnet45Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/claude-sonnet-4-5/rating.json'), 'utf8')
+  );
+  const claudeSonnet45Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/claude-sonnet-4-5/developer.md'), 'utf8'
+  ).trim();
+
+  const claudeSonnet45Model = {
+    ...claudeSonnet45Index,
+    detailed_description: claudeSonnet45Description,
+    use_cases_detail: claudeSonnet45UseCases,
+    pricing_detail: claudeSonnet45Pricing,
+    rating_detail: claudeSonnet45Rating,
+    developer_info: claudeSonnet45Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

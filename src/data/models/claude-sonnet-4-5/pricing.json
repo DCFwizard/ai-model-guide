@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Free Tier",
+      "price": "Free",
+      "description": "Anyone can try Claude at claude.ai for free, with daily message limits. The free tier is great for light personal use or evaluations, though it might have waiting times during peak hours."
+    },
+    {
+      "name": "Claude Pro",
+      "price": "$20/month (or ~$17/month annually)",
+      "description": "The Pro subscription gives individual users about 5× the usage limits of the free tier – roughly 45 messages every 5 hours vs ~9 for free users. Pro users also get priority access (no or minimal wait times), the maximum 200k-token context window, and early access to new features. Claude Code (a tool for coding in the Claude app) and integrations to Google Drive/Calendar are included with Pro."
+    },
+    {
+      "name": "Claude Max",
+      "price": "$100/month or $200/month",
+      "description": "The Max plan is for power users. It comes in two levels offering either ~5× or ~20× the Pro usage limits. Max subscribers get the highest priority (fastest responses even at peak) and often are the first to access Claude's newest or most advanced models. Claude Sonnet 4.5 was initially rolled out to Claude Max users on launch. This plan is suited for users who rely on Claude heavily all day."
+    },
+    {
+      "name": "Team Plan",
+      "price": "$25/user/month (annually) or $30/user/month",
+      "description": "Teams of 5 or more can opt for this plan. Each user gets Pro-level features, plus admin controls for team leads. There's also a Team Premium option at $150/user for teams who need Claude's coding features and higher limits for certain users."
+    },
+    {
+      "name": "Enterprise Plan",
+      "price": "Custom pricing",
+      "description": "Large organizations can engage Anthropic for an enterprise license. This typically includes virtually unlimited usage, deployment options (Claude can be used via API in a private cloud or even on-premise for sensitive data), single sign-on (SSO), audit logs, and dedicated support. Enterprise customers also can get longer context windows or higher throughput instances of Claude Sonnet 4.5 as needed."
+    }
+  ],
+  "summary": "Anthropic's pricing strategy makes Claude 4.5 accessible: individuals can start free or at a reasonable $20, while heavy professional use scales up through Max and Enterprise options. API access to Claude 4.5 is also available for developers (with pay-per-token billing similar to OpenAI's, roughly $3 per million input tokens and $15 per million output). The key point is Anthropic's Claude.ai service offers tiers for all levels of usage: Free for light use, $20 Pro for daily users, $100-$200 Max for power users, and business plans for org-wide usage."
+}
