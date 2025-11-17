@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "Enterprise Workflow Automation",
+      "content": "Apriel can serve as the intelligent core of AI agents that handle tasks like IT support, HR inquiries, or customer service requests. For example, ServiceNow demonstrated agents for retail service (resolving issues like gift card replacements or POS system faults) and for government operations (tracking and fulfilling citizen requests) using Apriel's reasoning capabilities. It excels in multi-step troubleshooting and decision-making across enterprise systems, reducing manual effort."
+    },
+    {
+      "title": "Document and Data Understanding",
+      "content": "With its multimodal input, Apriel 2.0 can be used to analyze business documents, forms, and dashboards. In a single prompt, it could take a screenshot of a network diagram or a form, understand the content, and provide insights or answers. This is valuable for use cases like contract review (reading PDFs and giving a reasoning chain for approval decisions), processing forms in healthcare or finance (e.g. insurance claims, loan applications), or extracting and reasoning over data from spreadsheets and databases."
+    },
+    {
+      "title": "Regulated Industry AI",
+      "content": "Apriel was explicitly developed to meet the stringent requirements of regulated sectors such as financial services, healthcare, and telecom. It provides transparent and auditable reasoning, meaning every conclusion it reaches can be traced through logical steps – a critical feature for compliance and trust. Use cases here include risk assessment (e.g. reasoning over financial risk factors), clinical decision support (analysing patient data with explanations), or network operations in telecom (diagnosing network incidents while documenting the reasoning)."
+    },
+    {
+      "title": "Autonomous Agents with Low Latency",
+      "content": "Because Apriel 2.0 is smaller and optimized, it's suited for scenarios where AI agents need to operate in real-time or on edge hardware. Companies could deploy Apriel-powered agents on-premises (even without cloud connectivity) to ensure data privacy and quick response. This could empower, say, a manufacturing plant's monitoring system to reason about equipment sensor data on the fly, or a security system to analyze logs and make decisions without offloading data to external servers."
+    }
+  ],
+  "summary": "Apriel 2.0 is designed with enterprise applications in mind, especially where trust, traceability, and efficiency are paramount. Use it when you need intelligent workflow automation, multimodal document understanding, compliance-ready AI for regulated industries, or autonomous agents that operate with low latency on-premises or at the edge."
+}

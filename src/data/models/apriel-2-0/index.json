@@ -1,0 +1,80 @@
+{
+  "id": "apriel-2-0",
+  "name": "Apriel 2.0",
+  "provider": "ServiceNow & NVIDIA",
+  "description": "Next-generation open-weight multimodal reasoning model built for enterprise workflows. Compact 15B parameters (Nemotron-based) delivering frontier-level intelligence with native multimodal capability (text, documents, screenshots, forms). Features transparent reasoning, safety guardrails, and low-latency performance for autonomous agents in regulated industries.",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "context_window": "medium",
+  "strengths": [
+    "reasoning",
+    "multimodal",
+    "enterprise",
+    "transparency",
+    "safety",
+    "efficiency",
+    "compliance",
+    "low-latency",
+    "open-source"
+  ],
+  "best_for": [
+    "Enterprise workflow automation (IT support, HR, customer service)",
+    "Document and data understanding with multimodal analysis",
+    "Regulated industry AI (finance, healthcare, telecom)",
+    "Autonomous agents with on-premises deployment",
+    "Multi-step troubleshooting and decision-making"
+  ],
+  "consider_if": "You need enterprise-grade AI with transparent reasoning for compliance, multimodal understanding of documents and forms, or autonomous agents in regulated environments.",
+  "limitations": "Still relatively new (production-ready Q1 2026). Smaller size means less raw knowledge than frontier models, though optimized for reasoning accuracy.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Free (open-source MIT license on Hugging Face) | ServiceNow Platform integration (enterprise subscription) | Self-hosted (infrastructure costs only)",
+  "tasks": [
+    "IT support automation",
+    "HR inquiry processing",
+    "Customer service resolution",
+    "Contract review and analysis",
+    "Insurance claims processing",
+    "Loan application evaluation",
+    "Network operations diagnosis",
+    "Clinical decision support",
+    "Risk assessment",
+    "Equipment monitoring and reasoning",
+    "Security log analysis",
+    "Form processing and extraction"
+  ],
+  "industries": [
+    "Enterprise IT",
+    "Financial Services",
+    "Healthcare",
+    "Telecommunications",
+    "Government",
+    "Manufacturing",
+    "Retail",
+    "Insurance"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 10,
+    "quality": 8,
+    "cost": 10
+  },
+  "links": {
+    "site": "https://www.servicenow.com/",
+    "docs": "https://huggingface.co/ServiceNow-AI"
+  },
+  "category": "Enterprise Multimodal Reasoning LLM (Open Source)",
+  "tags": [
+    "Enterprise AI",
+    "Multimodal",
+    "Reasoning",
+    "Open-source",
+    "Workflow automation",
+    "Compliance",
+    "Transparent AI",
+    "Low-latency",
+    "Autonomous agents"
+  ]
+}

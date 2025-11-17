@@ -1,0 +1,20 @@
+{
+  "tiers": [
+    {
+      "name": "Open-Source (Free)",
+      "price": "Free",
+      "description": "Apriel 2.0 is open-source and free to use. ServiceNow and NVIDIA have released it as an open-weight model under a permissive MIT license on platforms like Hugging Face. Developers and organizations can download the weights at no cost and run Apriel on their own hardware or cloud infrastructure."
+    },
+    {
+      "name": "ServiceNow Platform Integration",
+      "price": "Enterprise subscription",
+      "description": "ServiceNow integrates Apriel's capabilities into the ServiceNow AI Platform for customers. This option includes Apriel as part of ServiceNow's licensed enterprise software offerings or AI services, providing managed deployment, support, and integration with ServiceNow workflows."
+    },
+    {
+      "name": "Self-Hosted Deployment",
+      "price": "Infrastructure costs only",
+      "description": "Organizations can deploy Apriel 2.0 on their own infrastructure with no licensing fees. The model is optimized to run on less expensive hardware compared to larger models, making it cost-efficient for on-premises or private cloud deployments. A smaller Apriel 1.5 Thinker model is available for single-GPU use to encourage community development."
+    }
+  ],
+  "summary": "No direct usage fees apply to Apriel 2.0; the primary costs would be infrastructure (compute resources to deploy it) or any ServiceNow platform subscription if one opts to use it via ServiceNow's products. The standalone model being open means even non-ServiceNow customers can experiment with it. As of the announcement, Apriel 2.0 is expected to be fully production-ready by Q1 2026, at which point more deployment options and possibly ServiceNow-hosted solutions will become available."
+}

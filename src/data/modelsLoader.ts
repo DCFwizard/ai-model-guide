@@ -97,6 +97,14 @@ import glm46Pricing from './models/glm-4-6/pricing.json';
 import glm46Rating from './models/glm-4-6/rating.json';
 import glm46Developer from './models/glm-4-6/developer.md?raw';
 
+// Import Apriel 2.0 data from separate files
+import apriel20Index from './models/apriel-2-0/index.json';
+import apriel20Description from './models/apriel-2-0/description.md?raw';
+import apriel20UseCases from './models/apriel-2-0/use-cases.json';
+import apriel20Pricing from './models/apriel-2-0/pricing.json';
+import apriel20Rating from './models/apriel-2-0/rating.json';
+import apriel20Developer from './models/apriel-2-0/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -217,8 +225,18 @@ const glm46Model: AIModel = {
   developer_info: glm46Developer.trim(),
 } as AIModel;
 
+// Combine Apriel 2.0 data from separate files
+const apriel20Model: AIModel = {
+  ...apriel20Index,
+  detailed_description: apriel20Description.trim(),
+  use_cases_detail: apriel20UseCases,
+  pricing_detail: apriel20Pricing,
+  rating_detail: apriel20Rating,
+  developer_info: apriel20Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -234,6 +252,7 @@ export const models: AIModel[] = [
   exaone4Model,
   magistralMedium12Model,
   glm46Model,
+  apriel20Model,
   ...modelsFromJson
 ];
 
