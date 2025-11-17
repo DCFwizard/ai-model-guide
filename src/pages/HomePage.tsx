@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { UseCaseCard } from '@/components/UseCaseCard';
 import { ModelCard } from '@/components/ModelCard';
 import useCasesData from '@/data/use-cases.json';
-import modelsData from '@/data/models/index.json';
+import modelsData from '@/data/models.json';
 import { AIModel, UseCase } from '@/types';
 export function HomePage() {
   const topModels = (modelsData as AIModel[]).slice(0, 6);

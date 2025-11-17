@@ -6,7 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Check, X, ArrowLeft } from 'lucide-react';
-import modelsData from '@/data/models/index.json';
+import modelsData from '@/data/models.json';
 import { AIModel } from '@/types';
 
 export function DynamicComparisonPage() {
