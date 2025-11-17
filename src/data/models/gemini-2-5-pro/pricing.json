@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Free Tier",
+      "price": "Free",
+      "description": "Google has a free tier for the Gemini app (as part of standard Google account services). On the free plan, you can access Gemini 2.5 Flash (a faster, lighter model) and have limited access to Gemini 2.5 Pro. Free users might only be able to make a few queries to the Pro model or only use Pro for certain features like the \"Deep Research\" mode with limits. The free tier lets you try Gemini and use its basic capabilities (including some image generation and NotebookLM features)."
+    },
+    {
+      "name": "Google AI Pro",
+      "price": "$19.99/month",
+      "description": "For individual users, Google AI Pro (part of Google One) gives you access to the Gemini app with high usage limits – including the ability to use Gemini 2.5 Pro in your chats, generate images/videos (with monthly credit allotments), and integrate Gemini into Gmail, Docs, etc. Pro users get thousands of grounded search queries per month included."
+    },
+    {
+      "name": "Google AI Ultra",
+      "price": "$249.99/month",
+      "description": "The Ultra tier offers even greater limits, priority, and extras like YouTube Premium and 30 TB Drive storage. Ultra users get the absolutely highest level of access, including a feature called \"Gemini 2.5 Deep Think\" (an even more advanced reasoning mode) and more credits for things like video generation. This is positioned somewhat like an enterprise individual plan for professionals who want the maximum."
+    },
+    {
+      "name": "Google Cloud Vertex AI",
+      "price": "Pay-as-you-go (~$1.25-$10 per million tokens)",
+      "description": "Enterprise and developer access to Gemini is offered through Google Cloud's Vertex AI platform. For Gemini 2.5 Pro, the paid tier costs about $1.25 per million input tokens and $10 per million output tokens for prompts up to 200k tokens. (Prompts beyond 200k tokens cost double per token.) There's a batch processing option at half-price per token for asynchronous jobs. New developers get some free tokens to start with, and Google often grants free usage up to a point before billing starts."
+    },
+    {
+      "name": "Enterprise Licensing",
+      "price": "Custom pricing",
+      "description": "Large Google Workspace or Cloud customers might get custom enterprise deals. For instance, a company could get Gemini 2.5 Pro integrated into their internal systems for a flat fee or as part of a bigger contract. Google's aim is to bundle Gemini AI features into its broader offerings (e.g., AI enhancements in Google Workspace are included for certain Workspace tiers without a separate charge)."
+    }
+  ],
+  "summary": "Individual users can start with free, then upgrade to ~$20/mo for heavy personal use. Power users or small businesses might consider the Ultra $250/mo if they really need a lot of AI output and additional perks. Meanwhile, developers and enterprises will likely use the Vertex AI metered model, where you pay per token consumed – which is roughly in line with OpenAI's GPT-4 pricing for inputs but higher for outputs. Google's platform gives fine control (you only pay for what you use, and there are options to reduce cost via batch mode or caching)."
+}

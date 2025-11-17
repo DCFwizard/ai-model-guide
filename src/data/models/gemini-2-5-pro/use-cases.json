@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "title": "Complex Problem Solving & Reasoning",
+      "content": "Thanks to its \"thinking\" approach, Gemini is ideal for complex analytical tasks. You can ask it multi-step logical questions, have it analyze scientific data or proofs, or solve intricate math problems. It's shown top-tier performance in math, science, and logic puzzles. For example, a researcher might use Gemini to work through a proof or derive insights from a large dataset/paper – feeding in the entire content and letting the model figure out connections."
+    },
+    {
+      "title": "Coding and Software Development",
+      "content": "Gemini 2.5 Pro is exceptional at coding tasks. It was built with coding in mind and \"excels at creating visually compelling web apps and agentic code\". If you need an app or game built from a prompt, Gemini can generate not just the code but even the UI/UX elements (it's known for front-end web design skill, producing functional HTML/CSS/JS that's surprisingly polished). It's also great at code transformation: e.g., converting code from one language to another, refactoring, or diagnosing bugs. On the SWE-Bench coding benchmark, it set a new state-of-the-art with 63.8% when using an agent approach."
+    },
+    {
+      "title": "Document Analysis and Summarization at Scale",
+      "content": "With a 1M-token window, Gemini Pro can ingest huge collections of documents – say all the filings for a legal case, or a large technical manual – and provide summaries, answer questions, or extract specific information. Enterprises can use it to power advanced chatbots that really remember everything in the knowledge base. Use Gemini when you have such massive context needs; for example, \"Here are 500 pages of earnings reports, what are the key trends?\" – Gemini can handle that in one go."
+    },
+    {
+      "title": "Multimodal Tasks",
+      "content": "If your task involves images or audio plus text, Gemini is built for it. For instance, you could give Gemini a complex diagram or schematic and ask questions about it in context with text. Or feed an audio transcript along with related documents for it to analyze (like summarizing a meeting where it also references a document discussed in the meeting). This makes it extremely useful for domains like medicine (imagine inputting a medical paper + an X-ray image; Gemini could cross-analyze), or business (feeding in a spreadsheet and a slide deck for a report)."
+    },
+    {
+      "title": "General AI Assistant",
+      "content": "Gemini is also used as the engine behind Google's Bard (especially the enterprise \"Gemini app\" version). It's excellent at day-to-day assistant tasks: composing emails, writing content, translating languages, brainstorming creative ideas, etc., with the added benefit that it can be given lots of personal or company-specific context to tailor its responses. It's like ChatGPT but with a much deeper memory and integrated with your Google apps (Gmail, Docs, etc. for context)."
+    }
+  ],
+  "summary": "Choose Gemini 2.5 Pro for the most demanding projects – when GPT-4 or others hit context limits, or when you need an AI to really \"think things through\" reliably. If you're within Google's ecosystem or need tight integration with Google tools (Cloud, Workspace), Gemini is an obvious choice since it's designed for that synergy. Also, if you prefer or require up-to-date info without manual browsing, note that Google has integrated search grounding into Gemini – it can perform internal Google searches as part of answering (with proper citations if needed), making it strong for current events or factual queries."
+}
