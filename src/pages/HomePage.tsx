@@ -36,7 +36,7 @@ export function HomePage() {
               </p>
               <div className="mt-10 flex justify-center gap-4">
                 <Button size="lg" asChild className="bg-sky-600 hover:bg-sky-700">
-                  <Link to="/models">Explore All Models</Link>
+                  <Link to="/models">Explore Top AI Models</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <Link to="/use-cases">Browse Use Cases</Link>

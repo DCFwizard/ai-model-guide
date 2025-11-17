@@ -205,7 +205,7 @@ export function DynamicComparisonPage() {
           {/* CTA */}
           <div className="mt-12 text-center">
             <Button size="lg" asChild>
-              <Link to="/models">Explore All Models</Link>
+              <Link to="/models">Explore Top AI Models</Link>
             </Button>
           </div>
         </div>
