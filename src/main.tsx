@@ -7,6 +7,8 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { RouteErrorBoundary } from '@/components/RouteErrorBoundary';
 import { SEOProvider } from '@/components/SEO';
 import { PageLoader } from '@/components/PageLoader';
+import { SearchProvider } from '@/contexts/SearchContext';
+import { CompareProvider } from '@/contexts/CompareContext';
 import '@/index.css';
 import { Layout } from '@/pages/Layout';
 
@@ -18,7 +20,7 @@ const UseCasesPage = lazy(() => import('@/pages/UseCasesPage').then(m => ({ defa
 const UseCaseDetailPage = lazy(() => import('@/pages/UseCaseDetailPage').then(m => ({ default: m.UseCaseDetailPage })));
 const ComparisonPage = lazy(() => import('@/pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })));
 const ComparisonsPage = lazy(() => import('@/pages/ComparisonsPage').then(m => ({ default: m.ComparisonsPage })));
-const DynamicComparisonPage = lazy(() => import('@/pages/DynamicComparisonPage').then(m => ({ default: m.DynamicComparisonPage })));
+const ModelComparePage = lazy(() => import('@/pages/ModelComparePage').then(m => ({ default: m.ModelComparePage })));
 const BlogPage = lazy(() => import('@/pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const BlogPostPage = lazy(() => import('@/pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
 const FaqPage = lazy(() => import('@/pages/FaqPage').then(m => ({ default: m.FaqPage })));
@@ -43,7 +45,7 @@ const router = createBrowserRouter([
       { path: 'use-cases/:slug', element: <Suspense fallback={<PageLoader />}><UseCaseDetailPage /></Suspense> },
       { path: 'comparisons', element: <Suspense fallback={<PageLoader />}><ComparisonsPage /></Suspense> },
       { path: 'comparisons/gpt-vs-claude', element: <Suspense fallback={<PageLoader />}><ComparisonPage /></Suspense> },
-      { path: 'compare', element: <Suspense fallback={<PageLoader />}><DynamicComparisonPage /></Suspense> },
+      { path: 'compare', element: <Suspense fallback={<PageLoader />}><ModelComparePage /></Suspense> },
       { path: 'blog', element: <Suspense fallback={<PageLoader />}><BlogPage /></Suspense> },
       { path: 'blog/:slug', element: <Suspense fallback={<PageLoader />}><BlogPostPage /></Suspense> },
       { path: 'faq', element: <Suspense fallback={<PageLoader />}><FaqPage /></Suspense> },
@@ -59,7 +61,11 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
       <SEOProvider>
-        <RouterProvider router={router} />
+        <SearchProvider>
+          <CompareProvider>
+            <RouterProvider router={router} />
+          </CompareProvider>
+        </SearchProvider>
       </SEOProvider>
     </ErrorBoundary>
   </StrictMode>
