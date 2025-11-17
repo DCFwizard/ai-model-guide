@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "Everyday Queries and Conversations",
+      "content": "In its fast Non-Reasoning mode, EXAONE excels at handling simple Q&A, casual dialogue, and routine tasks with minimal latency. This is useful for chatbots or voice assistants that need to deliver quick responses."
+    },
+    {
+      "title": "Complex Problem Solving",
+      "content": "For tasks like complex mathematics, coding challenges, or medical question answering, the model can switch into Reasoning mode to produce carefully deliberated, multi-step solutions. This makes it valuable for domains requiring thorough analysis (e.g. debugging code, solving engineering problems, or providing clinical decision support)."
+    },
+    {
+      "title": "Agentic Tool Use",
+      "content": "EXAONE 4.0 was built with agent capabilities in mind, including integrating external tools and APIs. It can be used to develop AI agents that perform multi-step workflows, use tools, or interact with software (for example, an AI agent that executes database queries or controls IoT devices as part of its responses)."
+    },
+    {
+      "title": "Multilingual and Domain-Specific Tasks",
+      "content": "With native support for Korean, English, and Spanish, EXAONE is suitable for companies operating in multilingual environments. It also offers professional-grade expertise in specialized domains (the training included diverse data), making it useful for domain-specific assistants in finance, law, or tech. The smaller 1.2B model enables on-device AI applications for privacy-sensitive or offline scenarios – for instance, running a private assistant on a smartphone or an appliance without cloud connectivity."
+    }
+  ],
+  "summary": "EXAONE 4.0's dual modes make it versatile for a wide range of applications. Use it when you need flexibility to switch between fast everyday queries and deep reasoning for complex tasks, especially in multilingual contexts or when on-device deployment is required for privacy or offline scenarios."
+}

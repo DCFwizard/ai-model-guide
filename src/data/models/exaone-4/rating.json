@@ -1,0 +1,5 @@
+{
+  "speed_explanation": "EXAONE 4.0 delivers fast performance for everyday queries in its Non-Reasoning mode and employs efficient strategies (like hybrid attention) for long contexts. Heavy reasoning tasks in Reasoning mode will be slower as the model performs deeper analysis, but overall speed is well-balanced for its capabilities.",
+  "quality_explanation": "EXAONE 4.0 achieves state-of-the-art results on many tasks, particularly in science, math, and coding benchmarks. It bridges quick intuition with deep analysis effectively. While top-tier proprietary models still lead in some specialized areas, EXAONE's quality is excellent for its size and approach.",
+  "cost_explanation": "EXAONE 4.0 is outstanding in cost-effectiveness. The model is fully open-source with no licensing fees, and organizations can run the smaller 1.2B version on affordable hardware. For cloud deployment, pay-as-you-go pricing through FriendliAI means you only pay for actual usage. This makes it one of the most accessible high-quality models available."
+}

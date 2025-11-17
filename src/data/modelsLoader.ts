@@ -73,6 +73,14 @@ import kimiK2Pricing from './models/kimi-k2/pricing.json';
 import kimiK2Rating from './models/kimi-k2/rating.json';
 import kimiK2Developer from './models/kimi-k2/developer.md?raw';
 
+// Import EXAONE 4.0 data from separate files
+import exaone4Index from './models/exaone-4/index.json';
+import exaone4Description from './models/exaone-4/description.md?raw';
+import exaone4UseCases from './models/exaone-4/use-cases.json';
+import exaone4Pricing from './models/exaone-4/pricing.json';
+import exaone4Rating from './models/exaone-4/rating.json';
+import exaone4Developer from './models/exaone-4/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -163,8 +171,18 @@ const kimiK2Model: AIModel = {
   developer_info: kimiK2Developer.trim(),
 } as AIModel;
 
+// Combine EXAONE 4.0 data from separate files
+const exaone4Model: AIModel = {
+  ...exaone4Index,
+  detailed_description: exaone4Description.trim(),
+  use_cases_detail: exaone4UseCases,
+  pricing_detail: exaone4Pricing,
+  rating_detail: exaone4Rating,
+  developer_info: exaone4Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -177,6 +195,7 @@ export const models: AIModel[] = [
   llama4Model,
   minimaxM2Model,
   kimiK2Model,
+  exaone4Model,
   ...modelsFromJson
 ];
 
