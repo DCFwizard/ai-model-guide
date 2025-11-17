@@ -1,0 +1,583 @@
+[
+  {
+    "id": "gpt-5",
+    "name": "GPT-5",
+    "provider": "OpenAI",
+    "description": "OpenAI's most advanced large language model with multi-model design (Main, Mini, Nano) and intelligent routing. Features 45% fewer factual errors than GPT-4, up to 80% fewer hallucinations in thinking mode, and handles hundreds of thousands of tokens with multimodal capabilities.",
+    "modalities": [
+      "text",
+      "vision",
+      "speech"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "reasoning",
+      "coding",
+      "accuracy",
+      "low hallucination",
+      "multimodal",
+      "context awareness"
+    ],
+    "best_for": [
+      "Software development and debugging",
+      "Complex reasoning and analytics",
+      "Content generation and creative writing",
+      "Multi-step problem-solving",
+      "Domain-specific expertise (healthcare, law)"
+    ],
+    "cost_tier": "$-$$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://openai.com",
+      "docs": "https://platform.openai.com/docs",
+      "pricing": "https://openai.com/pricing"
+    },
+    "pricing": "Free tier available | ChatGPT Plus $20/month | ChatGPT Pro $200/month | Team $30/user/month | Enterprise (custom)"
+  },
+  {
+    "id": "grok-4",
+    "name": "Grok 4 (xAI)",
+    "provider": "xAI",
+    "description": "xAI's flagship large language model with native tool use and real-time search capabilities. Touted as 'the world's most intelligent model,' Grok 4 can autonomously perform web searches, run code, and use external tools. Features a massive 2 million token context window and multimodal input (text, images, voice).",
+    "modalities": [
+      "text",
+      "vision",
+      "speech"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "reasoning",
+      "coding",
+      "tool use",
+      "real-time search",
+      "agentic",
+      "multimodal",
+      "context awareness"
+    ],
+    "best_for": [
+      "Autonomous research and troubleshooting",
+      "Complex coding and debugging",
+      "Multi-agent workflows",
+      "Real-time information gathering",
+      "Long-context tasks"
+    ],
+    "cost_tier": "$$-$$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://x.ai",
+      "docs": "https://docs.x.ai/docs/overview",
+      "pricing": "https://grok.com/plans"
+    },
+    "pricing": "Grok Standard $30/month | SuperGrok Heavy $300/month | API pay-as-you-go (~$3-$15 per million tokens)"
+  },
+  {
+    "id": "claude-sonnet-4-5",
+    "name": "Claude Sonnet 4.5",
+    "provider": "Anthropic",
+    "description": "Anthropic's most advanced Claude-series model optimized for coding, complex reasoning, and agentic tasks. Described as 'the best coding model in the world' and 'the strongest model for building complex agents' with enhanced tool use, computer control, and extended thinking modes. Features up to 1 million token context window.",
+    "modalities": [
+      "text",
+      "vision"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "tool use",
+      "alignment",
+      "safety",
+      "context awareness",
+      "long-form writing"
+    ],
+    "best_for": [
+      "Software development and debugging",
+      "Autonomous agents and task automation",
+      "Complex Q&A and advisory roles",
+      "Creative and long-form writing",
+      "Agent-assisted data analysis"
+    ],
+    "cost_tier": "$-$$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://claude.ai",
+      "docs": "https://docs.claude.com",
+      "pricing": "https://www.claude.com/pricing"
+    },
+    "pricing": "Free tier available | Claude Pro $20/month | Claude Max $100-$200/month | Team $25-$30/user/month | Enterprise (custom)"
+  },
+  {
+    "id": "gemini-2-5-pro",
+    "name": "Gemini 2.5 Pro",
+    "provider": "Google DeepMind",
+    "description": "Google DeepMind's next-generation 'thinking model' with advanced reasoning processes and multimodal capabilities. Features a massive 1 million token context window (2M coming soon), native multimodal understanding (text, images, audio, video), and state-of-the-art performance across coding, math, science, and creative writing.",
+    "modalities": [
+      "text",
+      "vision",
+      "speech",
+      "video"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "reasoning",
+      "coding",
+      "multimodal",
+      "context awareness",
+      "math",
+      "science",
+      "search grounding",
+      "web design"
+    ],
+    "best_for": [
+      "Complex problem solving and reasoning",
+      "Coding and software development",
+      "Document analysis at scale",
+      "Multimodal tasks",
+      "Google ecosystem integration"
+    ],
+    "cost_tier": "$-$$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://gemini.google.com",
+      "docs": "https://ai.google.dev/gemini-api/docs",
+      "pricing": "https://gemini.google/subscriptions/"
+    },
+    "pricing": "Free tier available | Google AI Pro $19.99/month | Google AI Ultra $249.99/month | Vertex AI pay-as-you-go (~$1.25-$10 per million tokens)"
+  },
+  {
+    "id": "qwen3-max",
+    "name": "Qwen3-Max",
+    "provider": "Alibaba Cloud Intelligence",
+    "description": "Alibaba's most powerful AI model with unprecedented scale: a trillion-parameter (1T) Mixture-of-Experts architecture trained on 36 trillion tokens. Features 1 million token context window, state-of-the-art coding performance (69.6 on SWE-Bench), and top-tier tool-use capabilities. OpenAI API-compatible and optimized for enterprise deployment.",
+    "modalities": [
+      "text",
+      "vision"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "coding",
+      "reasoning",
+      "tool use",
+      "agentic",
+      "context awareness",
+      "multilingual",
+      "cost efficiency",
+      "enterprise"
+    ],
+    "best_for": [
+      "Enterprise knowledge management",
+      "Complex code generation",
+      "AI agents and automation",
+      "Big data natural language queries",
+      "Multilingual applications"
+    ],
+    "cost_tier": "$-$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://chat.qwen.ai/",
+      "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+      "pricing": "https://qwen.ai/apiplatform"
+    },
+    "pricing": "Pay-as-you-go (~$0.86-$3.44 per million tokens) | Free trial (1M tokens, 90 days) | Batch processing (50% discount) | Enterprise custom"
+  },
+  {
+    "id": "deepseek-v3",
+    "name": "DeepSeek-V3",
+    "provider": "DeepSeek Inc.",
+    "description": "Pioneering open-weight large language model with unique Mixture-of-Experts architecture (671B parameters, 37B active per token). Known for exceptional speed (60 tokens/sec - 3× faster than V2), cost-efficiency, and being fully open-source. Features 128K context window and extended thinking mode for reliable reasoning.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "long",
+    "strengths": [
+      "speed",
+      "cost efficiency",
+      "open-source",
+      "reasoning",
+      "coding",
+      "multilingual",
+      "tool use",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Self-hosted AI assistants",
+      "High-throughput applications",
+      "Budget-constrained development",
+      "Tool-augmented agent systems",
+      "Multilingual applications"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://deepseek.com",
+      "docs": "https://api-docs.deepseek.com",
+      "pricing": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    "pricing": "Open-source (free) | Self-hosting (hardware costs only) | DeepSeek API pay-as-you-go (~$0.27-$1.10 per million tokens) | Free tier available"
+  },
+  {
+    "id": "llama-4",
+    "name": "Llama 4",
+    "provider": "Meta AI",
+    "description": "Meta AI's latest open-source multimodal language model with mixture-of-experts architecture. Features two variants: Scout (smaller, high-speed) and Maverick (17B active parameters with 128 experts, ~2T total parameters). Supports up to 10 million token context, multimodal input (text and images), and 8 languages. Released under community license for free commercial and research use.",
+    "modalities": [
+      "text",
+      "vision"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "open-source",
+      "multimodal",
+      "long context",
+      "MoE",
+      "reasoning",
+      "coding",
+      "multilingual",
+      "customizable",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Custom chatbots and assistants",
+      "Embedded AI applications",
+      "Research and education",
+      "Creative content generation",
+      "Multilingual communication",
+      "Self-hosted enterprise solutions"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://www.llama.com/",
+      "docs": "https://www.llama.com/docs/overview/"
+    },
+    "pricing": "Free download under community license | Self-hosting (hardware costs only) | Cloud rental (pay cloud provider) | Third-party hosting available"
+  },
+  {
+    "id": "minimax-m2",
+    "name": "MiniMax-M2",
+    "provider": "MiniMax AI",
+    "description": "Advanced open-source large language model with Mixture-of-Experts architecture focused on coding and agentic tool use. Features 230B total parameters with only 10B active per inference, achieving frontier-level intelligence at dramatically lower computational cost. Ranked #1 among open models on aggregate intelligence index, excels at autonomous agent tasks, tool use, and coding.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "long",
+    "strengths": [
+      "agentic",
+      "coding",
+      "tool use",
+      "reasoning",
+      "efficiency",
+      "open-source",
+      "cost-effective",
+      "multilingual",
+      "self-hostable"
+    ],
+    "best_for": [
+      "Enterprise AI assistants",
+      "Developer copilots and automation",
+      "Autonomous research agents",
+      "Financial and data analysis",
+      "Agent-based workflows",
+      "Resource-constrained environments"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://www.minimax.io/",
+      "docs": "https://huggingface.co/MiniMaxAI/MiniMax-M2"
+    },
+    "pricing": "Free under MIT license | Self-hosting (hardware costs only) | Managed third-party services available | No licensing fees or royalties"
+  },
+  {
+    "id": "kimi-k2",
+    "name": "Kimi K2",
+    "provider": "Moonshot AI",
+    "description": "State-of-the-art open-source large language model with exceptional reasoning abilities and massive scale. Features 1T total parameters with 32B activated per token using Mixture-of-Experts architecture. Set records on Humanity's Last Exam (44.9%), excelling at deep logical reasoning, coding, and multi-step tool use. Includes 'Thinking' mode variant for extended tool-augmented reasoning with hundreds of sequential steps.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "reasoning",
+      "coding",
+      "agentic",
+      "tool use",
+      "long-horizon autonomy",
+      "open-source",
+      "efficiency",
+      "self-hostable",
+      "transparency"
+    ],
+    "best_for": [
+      "Autonomous agents and co-pilots",
+      "Advanced coding assistance",
+      "Research and data analysis",
+      "Strategic decision support",
+      "Complex customer support",
+      "Scientific discovery and simulations"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://www.moonshot.cn",
+      "docs": "https://platform.moonshot.ai/docs/introduction"
+    },
+    "pricing": "Free under permissive license | Self-hosting (hardware costs only) | Third-party services available | No licensing fees"
+  },
+  {
+    "id": "exaone-4",
+    "name": "EXAONE 4.0",
+    "provider": "LG AI Research",
+    "description": "LG AI Research's flagship hybrid large language model with dual-mode architecture featuring fast Non-Reasoning mode for quick tasks and deep Reasoning mode for complex problem-solving. Available in 32B and 1.2B parameter versions with extended 128K token context window.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "reasoning",
+      "coding",
+      "hybrid dual-mode",
+      "multilingual",
+      "efficiency",
+      "tool use",
+      "long context",
+      "on-device"
+    ],
+    "best_for": [
+      "Complex problem-solving requiring step-by-step analysis",
+      "Code generation and debugging",
+      "Multilingual applications (Korean, English, Spanish)",
+      "On-device AI for privacy-sensitive tasks",
+      "Agentic workflows with tool integration"
+    ],
+    "cost_tier": "$-$$",
+    "open_weight": true,
+    "links": {
+      "site": "https://www.lgresearch.ai/",
+      "docs": "https://huggingface.co/LGAI-EXAONE"
+    },
+    "pricing": "Free (open-weight on Hugging Face) | Enterprise via FriendliAI (pay-as-you-go)"
+  },
+  {
+    "id": "magistral-medium-1-2",
+    "name": "Magistral Medium 1.2",
+    "provider": "Mistral AI",
+    "description": "Frontier-class multimodal reasoning language model with transparent chain-of-thought capabilities. Fine-tuned for step-by-step logical reasoning in multiple languages, achieving 73.6% on AIME2024 benchmark. Features 128k token context window and Flash Answer mode for up to 10× faster generation. Enterprise-focused model with strong performance in complex problem-solving.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "long",
+    "strengths": [
+      "reasoning",
+      "chain-of-thought",
+      "multilingual",
+      "speed",
+      "transparency",
+      "coding",
+      "creative writing",
+      "structured logic"
+    ],
+    "best_for": [
+      "Complex reasoning and problem-solving",
+      "Legal research and analysis",
+      "Financial forecasting",
+      "Healthcare decision support",
+      "Coding and software design",
+      "Creative writing and storytelling"
+    ],
+    "cost_tier": "$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://mistral.ai",
+      "docs": "https://docs.mistral.ai",
+      "pricing": "https://mistral.ai/pricing"
+    },
+    "pricing": "Free tier (limited) | Pro $14.99/month | Team $24.99/user/month | Enterprise (custom) | Small variant is open-source"
+  },
+  {
+    "id": "glm-4-6",
+    "name": "GLM-4.6",
+    "provider": "Zhipu AI (Z.ai)",
+    "description": "Cutting-edge large language model designed for intelligent agent applications with 355 billion total parameters (32B active using MoE). Features expanded 200K token context window, exceptional coding performance, advanced reasoning capabilities, and built-in tool use support. State-of-the-art open model excelling in agent tasks, code generation, and long-context reasoning.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "very long",
+    "strengths": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "tool use",
+      "long context",
+      "efficiency",
+      "open-source",
+      "alignment"
+    ],
+    "best_for": [
+      "AI coding assistant and IDE plugins",
+      "Autonomous agents with tool integration",
+      "Complex reasoning and analytical tasks",
+      "Creative content generation and role-playing",
+      "Long-form document analysis"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://z.ai",
+      "docs": "https://huggingface.co/zai-org/GLM-4.6"
+    },
+    "pricing": "Free (open-source on Hugging Face) | Z.ai Chat (free tier) | Lite $3/month | Pro $15/month | Self-hosted (infrastructure costs only)"
+  },
+  {
+    "id": "apriel-2-0",
+    "name": "Apriel 2.0",
+    "provider": "ServiceNow & NVIDIA",
+    "description": "Next-generation open-weight multimodal reasoning model built for enterprise workflows. Compact 15B parameters (Nemotron-based) delivering frontier-level intelligence with native multimodal capability (text, documents, screenshots, forms). Features transparent reasoning, safety guardrails, and low-latency performance for autonomous agents in regulated industries.",
+    "modalities": [
+      "text",
+      "vision"
+    ],
+    "context_window": "medium",
+    "strengths": [
+      "reasoning",
+      "multimodal",
+      "enterprise",
+      "transparency",
+      "safety",
+      "efficiency",
+      "compliance",
+      "low-latency",
+      "open-source"
+    ],
+    "best_for": [
+      "Enterprise workflow automation (IT support, HR, customer service)",
+      "Document and data understanding with multimodal analysis",
+      "Regulated industry AI (finance, healthcare, telecom)",
+      "Autonomous agents with on-premises deployment",
+      "Multi-step troubleshooting and decision-making"
+    ],
+    "cost_tier": "$",
+    "open_weight": true,
+    "links": {
+      "site": "https://www.servicenow.com/",
+      "docs": "https://huggingface.co/ServiceNow-AI"
+    },
+    "pricing": "Free (open-source MIT license on Hugging Face) | ServiceNow Platform integration (enterprise subscription) | Self-hosted (infrastructure costs only)"
+  },
+  {
+    "id": "replit-ai",
+    "name": "Replit AI (Ghostwriter/Agent)",
+    "provider": "Replit, Inc.",
+    "description": "AI-powered coding assistant combining Ghostwriter for real-time code suggestions and Replit Agent for automated app development via natural language. Integrated into Replit's cloud-based IDE to help developers write, debug, and build complete applications faster.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "standard",
+    "strengths": [
+      "coding",
+      "prototyping",
+      "learning",
+      "debugging",
+      "autocomplete",
+      "app generation",
+      "cloud-based",
+      "IDE integration"
+    ],
+    "best_for": [
+      "Rapid prototyping and MVPs",
+      "Learning to code and tutorials",
+      "Code autocomplete and generation",
+      "Debugging and code explanation",
+      "Building apps from natural language descriptions"
+    ],
+    "cost_tier": "$",
+    "open_weight": false,
+    "links": {
+      "site": "https://replit.com",
+      "docs": "https://replit.com/ai",
+      "pricing": "https://replit.com/pricing"
+    },
+    "pricing": "Starter (Free with trial) | Core $20/month | Teams $35/user/month | Enterprise (Custom)"
+  },
+  {
+    "id": "manus-ai",
+    "name": "Manus AI",
+    "provider": "Butterfly Effect Technology",
+    "description": "Autonomous AI agent platform designed to execute complex, multi-step tasks independently without continuous human guidance. Takes high-level goals in natural language and breaks them into actionable steps, handling research, data analysis, web interactions, and software operations autonomously.",
+    "modalities": [
+      "text"
+    ],
+    "context_window": "long",
+    "strengths": [
+      "autonomous execution",
+      "multi-step planning",
+      "dynamic reasoning",
+      "task automation",
+      "web interaction",
+      "data analysis",
+      "proactive adaptation",
+      "multi-model integration"
+    ],
+    "best_for": [
+      "Market research and competitive analysis",
+      "Financial data analysis and stock screening",
+      "Academic research and document synthesis",
+      "Travel itinerary planning with bookings",
+      "Website and application prototyping",
+      "Resume screening and candidate evaluation",
+      "Business intelligence and dashboard creation",
+      "Document automation and form filling"
+    ],
+    "cost_tier": "$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://manus.im",
+      "docs": "https://open.manus.ai/docs",
+      "pricing": "https://manus.im/pricing"
+    },
+    "pricing": "Free (1 task/day + 1,000 bonus credits) | Starter $39/month | Pro $199/month | Team $39/seat/month (min 5 seats)"
+  },
+  {
+    "id": "genspark-ai",
+    "name": "Genspark AI",
+    "provider": "Genspark, Inc.",
+    "description": "All-in-one 'Super Agent' workspace combining 9 AI models and 80+ specialized tools for autonomous task execution. Handles multi-modal tasks (text, voice, images, video) end-to-end, from planning trips and making phone calls to building presentations, analyzing data, and creating games – all from a single prompt.",
+    "modalities": [
+      "text",
+      "vision",
+      "speech",
+      "video"
+    ],
+    "context_window": "long",
+    "strengths": [
+      "autonomous execution",
+      "multi-modal",
+      "multi-model orchestration",
+      "real-world actions",
+      "voice calls",
+      "content creation",
+      "coding",
+      "workflow automation",
+      "reflection mechanism",
+      "productivity suite"
+    ],
+    "best_for": [
+      "Personal assistant tasks and vacation planning",
+      "Business presentations and slide decks",
+      "Automated phone calls and customer service",
+      "Content creation (videos, marketing materials)",
+      "Website and game development",
+      "Data analysis and financial reports",
+      "Workflow automation and form filling",
+      "Research and fact-checking"
+    ],
+    "cost_tier": "$$",
+    "open_weight": false,
+    "links": {
+      "site": "https://genspark.ai",
+      "docs": "https://www.genspark.ai/spark/api-documentation-importance/688bfd1b-2172-4eec-972b-e97f83266387",
+      "pricing": "https://www.genspark.ai/pricing"
+    },
+    "pricing": "Free trial (7 days, 5 tasks) | Starter $19/month | Creator $39/month | Pro $79/month | Agency $199/month | Enterprise (Custom)"
+  }
+]

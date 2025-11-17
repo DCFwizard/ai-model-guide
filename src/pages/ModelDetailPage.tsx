@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -6,11 +7,36 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, CheckCircle, XCircle, FileText, DollarSign, Zap, Star, DollarSign as CostIcon } from 'lucide-react';
-import modelsData from '@/data/models.json';
+import modelsIndex from '@/data/models/index.json';
 import { AIModel } from '@/types';
+
 export function ModelDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const model = (modelsData as AIModel[]).find(m => m.id === id);
+  const baseModel = (modelsIndex as AIModel[]).find(m => m.id === id);
+  const [modelDetails, setModelDetails] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!id) return;
+
+    // Dynamically import the model details
+    import(`@/data/models/${id}/details.json`)
+      .then((module) => {
+        setModelDetails(module.default);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Failed to load model details:', err);
+        setLoading(false);
+      });
+  }, [id]);
+
+  if (!baseModel) {
+    return <Navigate to="/404" replace />;
+  }
+
+  // Merge base model data with details
+  const model = { ...baseModel, ...modelDetails };
   if (!model) {
     return <Navigate to="/404" replace />;
   }
