@@ -113,6 +113,14 @@ import replitAiPricing from './models/replit-ai/pricing.json';
 import replitAiRating from './models/replit-ai/rating.json';
 import replitAiDeveloper from './models/replit-ai/developer.md?raw';
 
+// Import Manus AI data from separate files
+import manusAiIndex from './models/manus-ai/index.json';
+import manusAiDescription from './models/manus-ai/description.md?raw';
+import manusAiUseCases from './models/manus-ai/use-cases.json';
+import manusAiPricing from './models/manus-ai/pricing.json';
+import manusAiRating from './models/manus-ai/rating.json';
+import manusAiDeveloper from './models/manus-ai/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -253,8 +261,18 @@ const replitAiModel: AIModel = {
   developer_info: replitAiDeveloper.trim(),
 } as AIModel;
 
+// Combine Manus AI data from separate files
+const manusAiModel: AIModel = {
+  ...manusAiIndex,
+  detailed_description: manusAiDescription.trim(),
+  use_cases_detail: manusAiUseCases,
+  pricing_detail: manusAiPricing,
+  rating_detail: manusAiRating,
+  developer_info: manusAiDeveloper.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai', 'manus-ai'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -272,6 +290,7 @@ export const models: AIModel[] = [
   glm46Model,
   apriel20Model,
   replitAiModel,
+  manusAiModel,
   ...modelsFromJson
 ];
 

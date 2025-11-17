@@ -1,0 +1,83 @@
+{
+  "id": "manus-ai",
+  "name": "Manus AI",
+  "provider": "Butterfly Effect Technology",
+  "description": "Autonomous AI agent platform designed to execute complex, multi-step tasks independently without continuous human guidance. Takes high-level goals in natural language and breaks them into actionable steps, handling research, data analysis, web interactions, and software operations autonomously.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "long",
+  "strengths": [
+    "autonomous execution",
+    "multi-step planning",
+    "dynamic reasoning",
+    "task automation",
+    "web interaction",
+    "data analysis",
+    "proactive adaptation",
+    "multi-model integration"
+  ],
+  "best_for": [
+    "Market research and competitive analysis",
+    "Financial data analysis and stock screening",
+    "Academic research and document synthesis",
+    "Travel itinerary planning with bookings",
+    "Website and application prototyping",
+    "Resume screening and candidate evaluation",
+    "Business intelligence and dashboard creation",
+    "Document automation and form filling"
+  ],
+  "consider_if": "You need an autonomous agent to carry out complex, multi-step tasks from start to finish, especially data-intensive work or tasks involving multiple applications and workflows.",
+  "limitations": "Emerging technology that occasionally fails on simple real-world tasks. Can get stuck in loops on complex tasks. Requires supervision for mission-critical work. Credit-based system can be expensive for heavy usage.",
+  "cost_tier": "$$",
+  "open_weight": false,
+  "pricing": "Free (1 task/day + 1,000 bonus credits) | Starter $39/month | Pro $199/month | Team $39/seat/month (min 5 seats)",
+  "tasks": [
+    "Market research",
+    "Competitive analysis",
+    "Financial data screening",
+    "Academic research",
+    "Document summarization",
+    "Travel planning",
+    "App prototyping",
+    "Resume screening",
+    "Dashboard creation",
+    "PDF data extraction",
+    "Form automation",
+    "Multi-source data synthesis"
+  ],
+  "industries": [
+    "Research & Analytics",
+    "Finance",
+    "HR & Recruiting",
+    "Business Intelligence",
+    "Travel",
+    "Academic",
+    "Software Development",
+    "Enterprise Productivity"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 3,
+    "quality": 4,
+    "cost": 3
+  },
+  "links": {
+    "site": "https://manus.im",
+    "docs": "https://open.manus.ai/docs",
+    "pricing": "https://manus.im/pricing"
+  },
+  "category": "Autonomous AI Agent (General-Purpose)",
+  "tags": [
+    "Autonomous agent",
+    "Task automation",
+    "Multi-step planning",
+    "Dynamic reasoning",
+    "Web interaction",
+    "Data analysis",
+    "Productivity",
+    "Workflow automation",
+    "Multi-model",
+    "Agentic AI"
+  ]
+}
