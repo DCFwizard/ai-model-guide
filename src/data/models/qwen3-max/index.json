@@ -1,0 +1,69 @@
+{
+  "id": "qwen3-max",
+  "name": "Qwen3-Max",
+  "provider": "Alibaba Cloud Intelligence",
+  "description": "Alibaba's most powerful AI model with unprecedented scale: a trillion-parameter (1T) Mixture-of-Experts architecture trained on 36 trillion tokens. Features 1 million token context window, state-of-the-art coding performance (69.6 on SWE-Bench), and top-tier tool-use capabilities. OpenAI API-compatible and optimized for enterprise deployment.",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "context_window": "very long",
+  "strengths": [
+    "coding",
+    "reasoning",
+    "tool use",
+    "agentic",
+    "context awareness",
+    "multilingual",
+    "cost efficiency",
+    "enterprise"
+  ],
+  "best_for": [
+    "Enterprise knowledge management",
+    "Complex code generation",
+    "AI agents and automation",
+    "Big data natural language queries",
+    "Multilingual applications"
+  ],
+  "consider_if": "You need top-tier AI performance with massive context, strong coding capabilities, or an alternative to Western models with competitive pricing and China-compliant deployment.",
+  "limitations": "Resource-intensive (cloud API only). Less fine-tuned personality than Western models. Primarily optimized for Chinese market.",
+  "cost_tier": "$-$$",
+  "open_weight": false,
+  "pricing": "Pay-as-you-go (~$0.86-$3.44 per million tokens) | Free trial (1M tokens, 90 days) | Batch processing (50% discount) | Enterprise custom",
+  "tasks": [
+    "Code generation and debugging",
+    "AI agent development",
+    "Large-scale document analysis",
+    "Tool-use and automation",
+    "Multilingual translation",
+    "Enterprise data analysis",
+    "Natural language database queries"
+  ],
+  "industries": [
+    "Software Development",
+    "Enterprise",
+    "Finance",
+    "Legal",
+    "Research",
+    "Manufacturing",
+    "E-commerce"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 9,
+    "cost": 9
+  },
+  "links": {
+    "site": "https://chat.qwen.ai/",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+    "pricing": "https://qwen.ai/apiplatform"
+  },
+  "category": "Giant-Scale Large Language Model (Enterprise AI)",
+  "tags": [
+    "Mixture-of-Experts",
+    "Cloud AI Service",
+    "Chinese & Multilingual LLM",
+    "Long-Context AI"
+  ]
+}

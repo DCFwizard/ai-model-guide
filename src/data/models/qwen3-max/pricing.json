@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Pay-as-You-Go (Alibaba Cloud)",
+      "price": "~$0.86-$3.44 per million tokens",
+      "description": "Qwen3-Max's API pricing is tiered by the length of input. For typical inputs up to 32K tokens, it's about $0.861 per million input tokens and $3.441 per million output tokens. If you use larger contexts (32K–128K or beyond), the prices per token increase in tiers. These rates are roughly half the price of some competitors, making it very cost-competitive for large-scale usage."
+    },
+    {
+      "name": "Batch Processing",
+      "price": "50% discount on standard rates",
+      "description": "Batch calls (asynchronous processing jobs) are half-price for Qwen3-Max, encouraging users to queue up tasks if real-time interactivity isn't needed. This is particularly attractive for processing huge jobs overnight at lower priority, significantly reducing costs."
+    },
+    {
+      "name": "Free Trial and Quotas",
+      "price": "Free (1M tokens for 90 days)",
+      "description": "Alibaba Cloud often provides a free quota for new users. For Qwen3-Max, they offer something like \"1 million input and output tokens free, valid 90 days after activation\" for Model Studio usage. This means developers can experiment with Qwen at no cost initially. There's also a free tier on their ModelStudio where some number of calls per month might be free for low-volume use."
+    },
+    {
+      "name": "Enterprise Subscription",
+      "price": "Custom pricing",
+      "description": "While Alibaba primarily pushes the cloud API model, they have been integrating models into their business apps as well. Enterprise customers of Alibaba can get Qwen3-Max included in certain SaaS products or as part of an enterprise agreement. A company could license a dedicated Qwen3-Max instance on Alibaba Cloud for a fixed monthly fee depending on hardware requirements."
+    },
+    {
+      "name": "Community Access",
+      "price": "Free (research/demo access)",
+      "description": "If you are a researcher or open-source enthusiast, Alibaba has released smaller Qwen models openly (like Qwen-7B, Qwen-14B on Hugging Face). While Qwen3-Max is not fully open-sourced due to its size, Alibaba Cloud ModelScope community might host a demo, and there may be free research access available."
+    }
+  ],
+  "summary": "Using Qwen3-Max via API could be cheaper than using an equivalent OpenAI model for large tasks, especially when leveraging the batch discount. Pricing is pay-for-what-you-use, with free tokens to start. There's no fixed subscription for Qwen3-Max alone (unless you consider being an Alibaba Cloud user). Enterprises can integrate it and manage cost via the tiered pricing and batch jobs. Input tokens cost on the order of $1 per million and output around $3-9 per million depending on context length. Alibaba Cloud prices are often given in RMB for Chinese customers and can be lower to encourage adoption domestically."
+}
