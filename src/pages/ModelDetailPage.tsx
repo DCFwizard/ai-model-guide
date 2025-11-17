@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
+import { StructuredData } from '@/components/seo/StructuredData';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedUseCases } from '@/components/RelatedUseCases';
 import { Badge } from '@/components/ui/badge';
@@ -8,37 +9,21 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, CheckCircle, XCircle, FileText, DollarSign, Zap, Star, DollarSign as CostIcon } from 'lucide-react';
 import modelsData from '@/data/modelsLoader';
 import { AIModel } from '@/types';
+import { generateModelStructuredData } from '@/utils/structuredData';
 export function ModelDetailPage() {
   const { id } = useParams<{ id: string }>();
   const model = (modelsData as AIModel[]).find(m => m.id === id);
   if (!model) {
     return <Navigate to="/404" replace />;
   }
-  const softwareApplicationSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": model.name,
-    "applicationCategory": "AIModel",
-    "operatingSystem": "Cloud",
-    "provider": {
-      "@type": "Organization",
-      "name": model.provider
-    },
-    "description": model.description,
-    "offers": {
-      "@type": "Offer",
-      "price": model.cost_tier,
-      "priceCurrency": "USD"
-    }
-  };
+
   return (
     <>
       <SEO
         title={model.name}
         description={`Learn about the ${model.name} AI model from ${model.provider}, its strengths, use cases, and limitations.`}
-      >
-        <script type="application/ld+json">{JSON.stringify(softwareApplicationSchema)}</script>
-      </SEO>
+      />
+      <StructuredData data={generateModelStructuredData(model)} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 md:py-24">
           <Breadcrumbs items={[

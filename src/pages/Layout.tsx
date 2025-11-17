@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import { OrganizationSchema } from '@/components/OrganizationSchema';
 import { Toaster } from '@/components/ui/sonner';
 import { useWebVitals } from '@/hooks/useWebVitals';
+import { CompareBar } from '@/components/compare/CompareBar';
 
 export function Layout() {
   // Monitor Core Web Vitals
@@ -17,6 +18,7 @@ export function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <CompareBar />
       <Toaster richColors />
     </div>
   );
