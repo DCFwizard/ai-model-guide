@@ -150,7 +150,7 @@ export function FilterPanel() {
         {/* Industries */}
         <div>
           <h3 className="font-semibold mb-3 text-sm">Industries</h3>
-          <div className="space-y-2 max-h-48 overflow-y-auto">
+          <div className="space-y-2 max-h-48 overflow-y-auto pr-2 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border-2 [&::-webkit-scrollbar-thumb]:border-transparent hover:[&::-webkit-scrollbar-thumb]:bg-muted-foreground/40">
             {allIndustries.slice(0, 10).map(industry => (
               <div key={industry} className="flex items-center space-x-2">
                 <Checkbox
