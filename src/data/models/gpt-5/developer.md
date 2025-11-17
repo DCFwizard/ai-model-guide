@@ -1,0 +1,1 @@
+Developer: OpenAI (U.S.) – the organization led by Sam Altman (at launch time) that also created GPT-3, GPT-4, and ChatGPT. OpenAI developed GPT-5 in 2025 as part of its mission to ensure artificial general intelligence benefits all humanity.

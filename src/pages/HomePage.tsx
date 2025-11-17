@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock } from 'lucide-react';
 import useCasesData from '@/data/use-cases.json';
-import modelsData from '@/data/models.json';
+import modelsData from '@/data/modelsLoader';
 import blogPostsData from '@/data/blog-posts.json';
 import { AIModel, UseCase } from '@/types';
 export function HomePage() {

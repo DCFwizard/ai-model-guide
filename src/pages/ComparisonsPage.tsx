@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
-import modelsData from '@/data/models.json';
+import modelsData from '@/data/modelsLoader';
 import { AIModel } from '@/types';
 
 export function ComparisonsPage() {
