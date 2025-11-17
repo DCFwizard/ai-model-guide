@@ -121,6 +121,14 @@ import manusAiPricing from './models/manus-ai/pricing.json';
 import manusAiRating from './models/manus-ai/rating.json';
 import manusAiDeveloper from './models/manus-ai/developer.md?raw';
 
+// Import Genspark AI data from separate files
+import gensparkAiIndex from './models/genspark-ai/index.json';
+import gensparkAiDescription from './models/genspark-ai/description.md?raw';
+import gensparkAiUseCases from './models/genspark-ai/use-cases.json';
+import gensparkAiPricing from './models/genspark-ai/pricing.json';
+import gensparkAiRating from './models/genspark-ai/rating.json';
+import gensparkAiDeveloper from './models/genspark-ai/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -271,8 +279,18 @@ const manusAiModel: AIModel = {
   developer_info: manusAiDeveloper.trim(),
 } as AIModel;
 
+// Combine Genspark AI data from separate files
+const gensparkAiModel: AIModel = {
+  ...gensparkAiIndex,
+  detailed_description: gensparkAiDescription.trim(),
+  use_cases_detail: gensparkAiUseCases,
+  pricing_detail: gensparkAiPricing,
+  rating_detail: gensparkAiRating,
+  developer_info: gensparkAiDeveloper.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai', 'manus-ai'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai', 'manus-ai', 'genspark-ai'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -291,6 +309,7 @@ export const models: AIModel[] = [
   apriel20Model,
   replitAiModel,
   manusAiModel,
+  gensparkAiModel,
   ...modelsFromJson
 ];
 

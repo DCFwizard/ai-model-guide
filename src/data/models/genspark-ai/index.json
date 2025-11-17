@@ -1,0 +1,92 @@
+{
+  "id": "genspark-ai",
+  "name": "Genspark AI",
+  "provider": "Genspark, Inc.",
+  "description": "All-in-one 'Super Agent' workspace combining 9 AI models and 80+ specialized tools for autonomous task execution. Handles multi-modal tasks (text, voice, images, video) end-to-end, from planning trips and making phone calls to building presentations, analyzing data, and creating games – all from a single prompt.",
+  "modalities": [
+    "text",
+    "vision",
+    "speech",
+    "video"
+  ],
+  "context_window": "long",
+  "strengths": [
+    "autonomous execution",
+    "multi-modal",
+    "multi-model orchestration",
+    "real-world actions",
+    "voice calls",
+    "content creation",
+    "coding",
+    "workflow automation",
+    "reflection mechanism",
+    "productivity suite"
+  ],
+  "best_for": [
+    "Personal assistant tasks and vacation planning",
+    "Business presentations and slide decks",
+    "Automated phone calls and customer service",
+    "Content creation (videos, marketing materials)",
+    "Website and game development",
+    "Data analysis and financial reports",
+    "Workflow automation and form filling",
+    "Research and fact-checking"
+  ],
+  "consider_if": "You need an AI to handle complex, multi-step projects end-to-end with minimal input, especially tasks requiring multiple modalities or real-world actions like phone calls.",
+  "limitations": "Some intensive tasks may take longer due to multi-model orchestration. Real-world actions like phone calls introduce delays. Subscription required for regular use beyond trial.",
+  "cost_tier": "$$",
+  "open_weight": false,
+  "pricing": "Free trial (7 days, 5 tasks) | Starter $19/month | Creator $39/month | Pro $79/month | Agency $199/month | Enterprise (Custom)",
+  "tasks": [
+    "Trip planning and booking",
+    "Presentation creation",
+    "Phone calls and reservations",
+    "Video generation",
+    "Website development",
+    "Game creation",
+    "Data analysis",
+    "Market research",
+    "Content writing",
+    "SEO optimization",
+    "API integration",
+    "Form automation",
+    "Lead generation"
+  ],
+  "industries": [
+    "Productivity",
+    "Content Creation",
+    "Marketing",
+    "Business Intelligence",
+    "Software Development",
+    "Customer Service",
+    "Travel",
+    "E-commerce",
+    "Enterprise Automation"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 4,
+    "quality": 5,
+    "cost": 4
+  },
+  "links": {
+    "site": "https://genspark.ai",
+    "docs": "https://www.genspark.ai/spark/api-documentation-importance/688bfd1b-2172-4eec-972b-e97f83266387",
+    "pricing": "https://www.genspark.ai/pricing"
+  },
+  "category": "Autonomous AI Agent & Multi-Modal Productivity Suite",
+  "tags": [
+    "Super Agent",
+    "Autonomous agent",
+    "Multi-modal",
+    "Multi-model",
+    "Voice calls",
+    "Content creation",
+    "Productivity suite",
+    "Workflow automation",
+    "Real-world actions",
+    "Reflection mechanism",
+    "Coding",
+    "Video generation"
+  ]
+}
