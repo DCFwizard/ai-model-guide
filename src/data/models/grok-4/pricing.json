@@ -1,0 +1,20 @@
+{
+  "tiers": [
+    {
+      "name": "Grok Standard (Premium+ Add-on)",
+      "price": "$30/month",
+      "description": "For individual users on X (Twitter), Grok 4 is available as an add-on for X Premium+ subscribers. This gives full access to Grok's text, image, and voice features via the web and mobile app interface, within a generous usage cap. If you're not an X Premium+ user, xAI also provides access via their own site/app for a similar price."
+    },
+    {
+      "name": "SuperGrok Heavy",
+      "price": "$300/month",
+      "description": "For power users and enterprises, this unlocks \"Grok 4 Heavy,\" the multi-agent version of the model. Subscribers get the absolute maximum performance: Grok will deploy multiple cooperating expert agents on complex tasks, leading to faster and more accurate outcomes on things like large codebases or elaborate research problems. This tier is intended for serious professional use where the expense is justified by time savings."
+    },
+    {
+      "name": "API Access",
+      "price": "Pay-as-you-go",
+      "description": "Developers can integrate Grok 4 via the xAI API, which uses token billing (approximately $3 per million input tokens and $15 per million output tokens). The API allows programmatic use of Grok's capabilities in your own applications. xAI also offers a 50% discount on token prices for cached prompts and asynchronous batch jobs, which helps manage costs for large-scale use."
+    }
+  ],
+  "summary": "An individual can experiment with Grok 4 for $30 in a month – which is pricier than ChatGPT's usual $20, but xAI is positioning Grok as a more powerful agentic AI. Businesses or AI enthusiasts who need the absolute best can go for the $300 Heavy plan. The developer API pricing is comparable to industry standards for large models. Currently, there is no free tier for Grok 4 beyond any promotional windows – it's a premium service reflecting its cutting-edge nature."
+}

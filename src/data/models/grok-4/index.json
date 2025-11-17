@@ -1,0 +1,56 @@
+{
+  "id": "grok-4",
+  "name": "Grok 4 (xAI)",
+  "provider": "xAI",
+  "description": "xAI's flagship large language model with native tool use and real-time search capabilities. Touted as 'the world's most intelligent model,' Grok 4 can autonomously perform web searches, run code, and use external tools. Features a massive 2 million token context window and multimodal input (text, images, voice).",
+  "modalities": ["text", "vision", "speech"],
+  "context_window": "very long",
+  "strengths": ["reasoning", "coding", "tool use", "real-time search", "agentic", "multimodal", "context awareness"],
+  "best_for": [
+    "Autonomous research and troubleshooting",
+    "Complex coding and debugging",
+    "Multi-agent workflows",
+    "Real-time information gathering",
+    "Long-context tasks"
+  ],
+  "consider_if": "You need an AI that can autonomously use tools, search the web in real-time, and handle complex multi-step tasks with the latest information.",
+  "limitations": "Premium pricing ($30-$300/month). No free tier. Personality can be more playful/edgy than traditional models.",
+  "cost_tier": "$$-$$$",
+  "open_weight": false,
+  "pricing": "Grok Standard $30/month | SuperGrok Heavy $300/month | API pay-as-you-go (~$3-$15 per million tokens)",
+  "tasks": [
+    "Web research and fact-checking",
+    "Code generation and debugging",
+    "Multi-agent collaboration",
+    "Content writing",
+    "Problem-solving with tool use",
+    "Automated workflows",
+    "Technical troubleshooting"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Finance",
+    "Content Creation",
+    "Data Analysis",
+    "Automation"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 9,
+    "quality": 9,
+    "cost": 7
+  },
+  "links": {
+    "site": "https://x.ai",
+    "docs": "https://docs.x.ai/docs/overview",
+    "pricing": "https://grok.com/plans"
+  },
+  "category": "Large Language Model with Tools (Agentic LLM)",
+  "tags": [
+    "AI Assistant",
+    "Retrieval-Augmented Generation",
+    "Multimodal AI",
+    "Mixture-of-Experts"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "Autonomous Research and Troubleshooting",
+      "content": "Grok can handle complex research queries by searching the web in real time. If you ask a question about recent events or a tricky technical issue, Grok will issue its own search queries, read through results, and synthesize an answer. This makes it extremely powerful for up-to-date information gathering, debugging problems, or investigating niche topics."
+    },
+    {
+      "title": "Coding and Technical Tasks",
+      "content": "It's an excellent coding assistant. Grok 4 not only writes and fixes code, but can run the code in an isolated environment and use the output to refine its solutions. In demos, it debugged Python scripts and optimizations that previously required specialized tools. If you give it a repository, it can navigate, read files, and suggest improvements—behaving like a tireless junior developer."
+    },
+    {
+      "title": "Agentic Workflows",
+      "content": "Grok's architecture supports multi-agent collaboration (\"Grok 4 Heavy\" deploys several specialized sub-models working together). This is ideal for complex tasks that benefit from dividing the work – e.g., analyzing financial reports (one agent focuses on numbers, another on text), or planning an event (sub-agents handle venue research, budgeting, scheduling, etc.). Grok coordinates these agents to produce a coherent result."
+    },
+    {
+      "title": "General Q&A and Creative Writing",
+      "content": "Of course, Grok can still act as a conversational assistant for writing content, brainstorming, and answering questions on any topic. It maintains context extremely well over very long chats (thanks to the huge context window) and provides detailed, well-reasoned answers. It tends to be more direct and a bit playful in tone, reflecting Elon Musk's stated goal of a model with a bit of a personality."
+    }
+  ],
+  "summary": "Choose Grok if you have tool-using tasks or need the latest information. For instance, \"Find me the most recent research on battery technology and summarize it,\" or \"There's a bug in this code repository – diagnose it and fix it\". Grok will literally browse sources or execute code as needed. It's also great for automating workflows; e.g., you can ask Grok to fill out forms, draft emails, or schedule appointments if given the right tool access. In short, Grok 4 is like an AI with a web browser, coding IDE, and various specialized skills built-in – ideal for power users and developers who want more than a static chatbot."
+}
