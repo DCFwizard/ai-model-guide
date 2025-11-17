@@ -1,13 +1,35 @@
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import blogPosts from '@/data/blog-posts.json';
 import { BlogPost } from '@/types';
 
+type FilterType = 'all' | 'Guide' | 'News' | 'Updates';
+
 export function BlogPage() {
   const posts = blogPosts as BlogPost[];
+  const [activeFilters, setActiveFilters] = useState<FilterType[]>(['all']);
+
+  const handleFilterChange = (value: string[]) => {
+    if (value.length === 0) {
+      setActiveFilters(['all']);
+    } else if (value.length > 1 && value.includes('all')) {
+      setActiveFilters(value.filter(v => v !== 'all') as FilterType[]);
+    } else {
+      setActiveFilters(value as FilterType[]);
+    }
+  };
+
+  const filteredPosts = useMemo(() => {
+    return posts.filter(post => {
+      if (activeFilters.includes('all')) return true;
+      return activeFilters.includes(post.category as FilterType);
+    });
+  }, [posts, activeFilters]);
 
   return (
     <>
@@ -25,11 +47,21 @@ export function BlogPage() {
             </p>
           </div>
 
+          {/* Category Filters */}
+          <div className="mt-12 flex justify-center">
+            <ToggleGroup type="multiple" value={activeFilters} onValueChange={handleFilterChange} className="justify-center">
+              <ToggleGroupItem value="all">All</ToggleGroupItem>
+              <ToggleGroupItem value="Guide">Guide</ToggleGroupItem>
+              <ToggleGroupItem value="News">News</ToggleGroupItem>
+              <ToggleGroupItem value="Updates">Updates</ToggleGroupItem>
+            </ToggleGroup>
+          </div>
+
           {/* All Posts */}
-          {posts.length > 0 && (
+          {filteredPosts.length > 0 ? (
             <section className="mt-12">
               <div className="grid gap-8 md:grid-cols-2">
-                {posts.map((post) => (
+                {filteredPosts.map((post) => (
                   <Link key={post.slug} to={`/blog/${post.slug}`}>
                     <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
                       <CardHeader>
@@ -72,6 +104,11 @@ export function BlogPage() {
                 ))}
               </div>
             </section>
+          ) : (
+            <div className="text-center py-16 mt-12">
+              <h3 className="text-xl font-semibold">No Posts Found</h3>
+              <p className="text-muted-foreground mt-2">Try selecting different filters.</p>
+            </div>
           )}
         </div>
       </div>
