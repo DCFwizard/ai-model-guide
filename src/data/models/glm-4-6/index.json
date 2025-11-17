@@ -1,0 +1,74 @@
+{
+  "id": "glm-4-6",
+  "name": "GLM-4.6",
+  "provider": "Zhipu AI (Z.ai)",
+  "description": "Cutting-edge large language model designed for intelligent agent applications with 355 billion total parameters (32B active using MoE). Features expanded 200K token context window, exceptional coding performance, advanced reasoning capabilities, and built-in tool use support. State-of-the-art open model excelling in agent tasks, code generation, and long-context reasoning.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "very long",
+  "strengths": [
+    "coding",
+    "reasoning",
+    "agentic",
+    "tool use",
+    "long context",
+    "efficiency",
+    "open-source",
+    "alignment"
+  ],
+  "best_for": [
+    "AI coding assistant and IDE plugins",
+    "Autonomous agents with tool integration",
+    "Complex reasoning and analytical tasks",
+    "Creative content generation and role-playing",
+    "Long-form document analysis"
+  ],
+  "consider_if": "You need a powerful open-source model for coding assistance, building AI agents, or handling extremely long contexts with advanced reasoning capabilities.",
+  "limitations": "Full model requires robust hardware infrastructure. Running 355B parameters demands significant compute resources.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Free (open-source on Hugging Face) | Z.ai Chat (free tier) | Lite $3/month | Pro $15/month | Self-hosted (infrastructure costs only)",
+  "tasks": [
+    "Code generation and debugging",
+    "Front-end development and UI code",
+    "Multi-step agent workflows",
+    "Tool and API integration",
+    "Web search and data retrieval",
+    "Long-form analysis and reasoning",
+    "Financial report analysis",
+    "Legal reasoning",
+    "Creative writing and storytelling",
+    "Role-playing and dialogue systems"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Finance",
+    "Legal",
+    "Content Creation",
+    "AI Development",
+    "Enterprise Automation"
+  ],
+  "release_date": "2024",
+  "rating": {
+    "speed": 8,
+    "quality": 10,
+    "cost": 10
+  },
+  "links": {
+    "site": "https://z.ai",
+    "docs": "https://huggingface.co/zai-org/GLM-4.6"
+  },
+  "category": "Large Language Model – Agentic/Coding Focus (Open-Source)",
+  "tags": [
+    "Agentic AI",
+    "Coding",
+    "Open-source",
+    "Long context",
+    "MoE",
+    "Tool use",
+    "Autonomous agents",
+    "Reasoning"
+  ]
+}

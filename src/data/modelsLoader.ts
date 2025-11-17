@@ -89,6 +89,14 @@ import magistralMedium12Pricing from './models/magistral-medium-1-2/pricing.json
 import magistralMedium12Rating from './models/magistral-medium-1-2/rating.json';
 import magistralMedium12Developer from './models/magistral-medium-1-2/developer.md?raw';
 
+// Import GLM-4.6 data from separate files
+import glm46Index from './models/glm-4-6/index.json';
+import glm46Description from './models/glm-4-6/description.md?raw';
+import glm46UseCases from './models/glm-4-6/use-cases.json';
+import glm46Pricing from './models/glm-4-6/pricing.json';
+import glm46Rating from './models/glm-4-6/rating.json';
+import glm46Developer from './models/glm-4-6/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -199,8 +207,18 @@ const magistralMedium12Model: AIModel = {
   developer_info: magistralMedium12Developer.trim(),
 } as AIModel;
 
+// Combine GLM-4.6 data from separate files
+const glm46Model: AIModel = {
+  ...glm46Index,
+  detailed_description: glm46Description.trim(),
+  use_cases_detail: glm46UseCases,
+  pricing_detail: glm46Pricing,
+  rating_detail: glm46Rating,
+  developer_info: glm46Developer.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -215,6 +233,7 @@ export const models: AIModel[] = [
   kimiK2Model,
   exaone4Model,
   magistralMedium12Model,
+  glm46Model,
   ...modelsFromJson
 ];
 

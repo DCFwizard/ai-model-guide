@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "AI Coding Assistant",
+      "content": "GLM-4.6 delivers high performance in code understanding and generation. It can be used in IDE plugins or coding tools to write code, fix bugs, generate functions, and even create user interface code (it was tested in integrations like Claude Code and showed strong results in front-end page generation). Its coding prowess makes it a viable alternative to proprietary models for software development support."
+    },
+    {
+      "title": "Autonomous Agents & Tool Use",
+      "content": "The model's architecture enables it to act as an agent that uses tools and APIs during inference. Developers can build agents that have GLM-4.6 at their core, capable of searching the web, calling external APIs, or controlling other software to accomplish multi-step tasks. In tests, GLM-4.6 had stronger performance in tool-using and search-based agent tasks than previous GLM versions. For example, it can be part of an AI workflow that reads and summarizes documents, then queries databases or performs calculations as needed."
+    },
+    {
+      "title": "Complex Reasoning Tasks",
+      "content": "Thanks to improved reasoning and a huge context window, GLM-4.6 is well-suited for long-form analytical tasks. It can handle complex problem-solving like analyzing lengthy financial reports, performing multi-turn reasoning (e.g. legal reasoning or scientific analysis), and maintaining context over very large conversations or documents. Researchers and analysts can use it to get insights from massive text datasets or to manage conversations that require remembering extensive detail."
+    },
+    {
+      "title": "Creative and Conversational AI",
+      "content": "GLM-4.6 has been fine-tuned for better alignment with human style and preferences. This makes it capable of high-quality content creation – it can write stories, essays, or marketing copy with an improved sense of style. It also shines in role-playing or dialogue scenarios, producing more natural and contextually appropriate responses for chatbots or virtual assistants that need to maintain personas."
+    }
+  ],
+  "summary": "GLM-4.6 was purpose-built to power AI agents and coding assistants. Use it when you need exceptional coding support, autonomous agent capabilities with tool integration, complex long-form reasoning over massive contexts, or high-quality creative content generation with strong alignment to human preferences."
+}
