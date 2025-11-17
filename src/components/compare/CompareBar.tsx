@@ -12,11 +12,11 @@ export function CompareBar() {
   if (compareList.length === 0) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-4 z-50 animate-in slide-in-from-bottom">
+    <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border shadow-lg p-4 z-50 animate-in slide-in-from-bottom">
       <div className="container mx-auto flex items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <GitCompare className="h-5 w-5 text-blue-600" />
-          <span className="font-semibold text-sm">Compare Models:</span>
+          <GitCompare className="h-5 w-5 text-primary" />
+          <span className="font-semibold text-sm text-foreground">Compare Models:</span>
         </div>
 
         <div className="flex flex-wrap gap-2 flex-1">

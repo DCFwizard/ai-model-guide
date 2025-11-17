@@ -2,7 +2,7 @@ import { createContext, useState, ReactNode, useContext, useEffect } from 'react
 
 interface CompareContextType {
   compareList: string[];
-  addToCompare: (modelId: string) => void;
+  addToCompare: (modelId: string) => boolean;
   removeFromCompare: (modelId: string) => void;
   clearCompare: () => void;
   isInCompare: (modelId: string) => boolean;
@@ -35,12 +35,12 @@ export function CompareProvider({ children }: { children: ReactNode }) {
 
   const addToCompare = (modelId: string) => {
     if (compareList.length >= MAX_COMPARE) {
-      alert(`You can only compare up to ${MAX_COMPARE} models at a time`);
-      return;
+      return false;
     }
     if (!compareList.includes(modelId)) {
       setCompareList([...compareList, modelId]);
     }
+    return true;
   };
 
   const removeFromCompare = (modelId: string) => {
