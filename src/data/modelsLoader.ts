@@ -105,6 +105,14 @@ import apriel20Pricing from './models/apriel-2-0/pricing.json';
 import apriel20Rating from './models/apriel-2-0/rating.json';
 import apriel20Developer from './models/apriel-2-0/developer.md?raw';
 
+// Import Replit AI data from separate files
+import replitAiIndex from './models/replit-ai/index.json';
+import replitAiDescription from './models/replit-ai/description.md?raw';
+import replitAiUseCases from './models/replit-ai/use-cases.json';
+import replitAiPricing from './models/replit-ai/pricing.json';
+import replitAiRating from './models/replit-ai/rating.json';
+import replitAiDeveloper from './models/replit-ai/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -235,8 +243,18 @@ const apriel20Model: AIModel = {
   developer_info: apriel20Developer.trim(),
 } as AIModel;
 
+// Combine Replit AI data from separate files
+const replitAiModel: AIModel = {
+  ...replitAiIndex,
+  detailed_description: replitAiDescription.trim(),
+  use_cases_detail: replitAiUseCases,
+  pricing_detail: replitAiPricing,
+  rating_detail: replitAiRating,
+  developer_info: replitAiDeveloper.trim(),
+} as AIModel;
+
 // Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0'].includes(m.id));
+const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai'].includes(m.id));
 
 // Combine all models: modular models from folders + rest from JSON
 export const models: AIModel[] = [
@@ -253,6 +271,7 @@ export const models: AIModel[] = [
   magistralMedium12Model,
   glm46Model,
   apriel20Model,
+  replitAiModel,
   ...modelsFromJson
 ];
 
