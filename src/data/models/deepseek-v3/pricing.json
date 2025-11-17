@@ -1,0 +1,25 @@
+{
+  "tiers": [
+    {
+      "name": "Open-Source (Self-Hosting)",
+      "price": "Free (hardware costs only)",
+      "description": "DeepSeek-V3 is open-source and free to use. There is no licensing cost – you can download the model weights and deploy them on your own servers without paying DeepSeek. The only \"cost\" is the computing infrastructure you need to run it: If you run it on your own GPU server, you incur hardware and electricity costs. If you use a cloud service, you pay for the VM or container time. But these costs are under your control and can be optimized."
+    },
+    {
+      "name": "DeepSeek API (Pay-as-you-go)",
+      "price": "~$0.27-$1.10 per million tokens",
+      "description": "DeepSeek Inc. provides hosted API services for those who don't want to self-host. From Feb 2025 onward, the pricing was around $0.27 per million input tokens and $1.10 per million output tokens. These rates are dramatically cheaper than OpenAI or Anthropic (on the order of 10× or more cheaper). They often touted being the \"best value in the market\", which was accurate – no other model of this caliber was that inexpensive at the time."
+    },
+    {
+      "name": "Free Tier",
+      "price": "Free (with limits)",
+      "description": "DeepSeek offered free usage options. On their website, one could chat with V3.2 for free, perhaps with some daily limits, as a demo to showcase the model. They also released a mobile app and desktop app with a freemium model (basic usage free, power features on subscription). They had a Free Tier that allowed a certain number of tokens per month at no cost, to encourage onboarding."
+    },
+    {
+      "name": "Community Access",
+      "price": "Free",
+      "description": "Because the core model is open, many community-run instances (like on Hugging Face Spaces or small startups) allow free or near-free access to DeepSeek models. The model's weights and training code were on GitHub, with external contributions, making it accessible to everyone."
+    }
+  ],
+  "summary": "Using DeepSeek-V3 can be nearly free for moderate personal use and significantly cheaper at scale compared to closed alternatives (even an order-of-magnitude less in API costs than Claude or GPT in 2025). If you self-host, pricing = $0 (for license) + hardware costs. If you use DeepSeek's own cloud, they have a straightforward pay-as-you-go at extremely low per-token rates. No monthly subscription mandatory – just pay for what you use. This is great for scalability; you won't be locked into a big fee if you only occasionally use it, and if you use a lot, it's still cheap per unit. This is why many consider it the go-to for cost-sensitive deployments."
+}
