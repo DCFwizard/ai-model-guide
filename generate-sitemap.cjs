@@ -6,7 +6,7 @@ const path = require('path');
 function loadModels() {
   const modelsFromJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
-  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4'].includes(m.id)); // Exclude modular models
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2'].includes(m.id)); // Exclude modular models
 
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
@@ -211,7 +211,36 @@ function loadModels() {
     developer_info: llama4Developer,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, ...modelsFromJson];
+  // Load MiniMax-M2 from its folder
+  const minimaxM2Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/minimax-m2/index.json'), 'utf8')
+  );
+  const minimaxM2Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/minimax-m2/description.md'), 'utf8'
+  ).trim();
+  const minimaxM2UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/minimax-m2/use-cases.json'), 'utf8')
+  );
+  const minimaxM2Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/minimax-m2/pricing.json'), 'utf8')
+  );
+  const minimaxM2Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/minimax-m2/rating.json'), 'utf8')
+  );
+  const minimaxM2Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/minimax-m2/developer.md'), 'utf8'
+  ).trim();
+
+  const minimaxM2Model = {
+    ...minimaxM2Index,
+    detailed_description: minimaxM2Description,
+    use_cases_detail: minimaxM2UseCases,
+    pricing_detail: minimaxM2Pricing,
+    rating_detail: minimaxM2Rating,
+    developer_info: minimaxM2Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, ...modelsFromJson];
 }
 
 const modelsData = loadModels();

@@ -1,0 +1,30 @@
+{
+  "tiers": [
+    {
+      "name": "Model Acquisition (MIT License)",
+      "price": "Free",
+      "description": "MiniMax-M2 is released under MIT License, which means the model itself is free to use, modify, and integrate commercially. There's no licensing fee or per-use fee owed to MiniMax. This open availability defines its cost structure – companies can use it freely in their products without royalties or restrictions that could lead to costs."
+    },
+    {
+      "name": "Self-Hosting Costs",
+      "price": "Hardware costs only",
+      "description": "If you download M2 and run it on your own servers, your costs will be for hardware and maintenance. M2 can run on as few as 4 high-end GPUs (H100s) for production loads. If using cloud GPUs, those might cost something like ~$5-$15 per hour per GPU (depending on provider). So running an M2 instance might be on the order of $20-$60/hour on cloud. Over a month, that's about $15k-$45k if 24/7 – supporting potentially millions of queries. That is likely much cheaper per query than paying an API like OpenAI's."
+    },
+    {
+      "name": "Fine-tuning and Customization",
+      "price": "Variable (compute costs)",
+      "description": "If you fine-tune M2 on your data, you'll incur costs for that training (which might require a similar GPU setup for some hours or days, depending on data size). But again, no additional fees to the model creators. The MIT license allows complete freedom to modify and customize the model for specific use cases without any licensing constraints."
+    },
+    {
+      "name": "Managed Services (Third-Party)",
+      "price": "Significantly lower than proprietary APIs",
+      "description": "If you don't want to self-host, some third-party services or possibly MiniMax themselves could offer M2 via API or as a cloud service. Services like OpenRouter or HuggingFace Inference API might list M2. These services typically charge just above raw compute, at a fraction of OpenAI's costs. This provides a middle ground between full self-hosting and expensive proprietary APIs."
+    },
+    {
+      "name": "Community Access",
+      "price": "Free (with limitations)",
+      "description": "Because of MIT license, one might find community hostings that are free for limited use (for testing, demos). Also, being open, if you have spare compute, you essentially have zero marginal cost to use it as much as that compute allows. HuggingFace and other platforms may provide free demo access for experimentation."
+    }
+  ],
+  "summary": "No API fees to model provider. The real cost is infrastructure, which is under user control. Many companies can find this advantageous. For example, if you're running 100 million tokens of output a month, OpenAI might charge $6k, whereas running M2 might cost you significantly less if you amortize hardware. MiniMax's goal with M2 was to provide a very cost-effective alternative to closed models, with reports highlighting cost savings through fewer GPUs needed and no per-query charges. Using M2 in-house can achieve near state-of-art performance with manageable infrastructure at lower cloud costs and easier deployment."
+}
