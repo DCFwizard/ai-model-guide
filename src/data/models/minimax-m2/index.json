@@ -1,0 +1,72 @@
+{
+  "id": "minimax-m2",
+  "name": "MiniMax-M2",
+  "provider": "MiniMax AI",
+  "description": "Advanced open-source large language model with Mixture-of-Experts architecture focused on coding and agentic tool use. Features 230B total parameters with only 10B active per inference, achieving frontier-level intelligence at dramatically lower computational cost. Ranked #1 among open models on aggregate intelligence index, excels at autonomous agent tasks, tool use, and coding.",
+  "modalities": [
+    "text"
+  ],
+  "context_window": "long",
+  "strengths": [
+    "agentic",
+    "coding",
+    "tool use",
+    "reasoning",
+    "efficiency",
+    "open-source",
+    "cost-effective",
+    "multilingual",
+    "self-hostable"
+  ],
+  "best_for": [
+    "Enterprise AI assistants",
+    "Developer copilots and automation",
+    "Autonomous research agents",
+    "Financial and data analysis",
+    "Agent-based workflows",
+    "Resource-constrained environments"
+  ],
+  "consider_if": "You need near state-of-the-art AI with full control, want to avoid vendor lock-in, require efficient agentic capabilities and tool use, or need cost-effective enterprise deployment with strong coding abilities.",
+  "limitations": "Requires GPU infrastructure for self-hosting. Primarily text-focused (not inherently multimodal). May be slightly less polished in creative writing compared to heavily fine-tuned conversational models.",
+  "cost_tier": "$",
+  "open_weight": true,
+  "pricing": "Free under MIT license | Self-hosting (hardware costs only) | Managed third-party services available | No licensing fees or royalties",
+  "tasks": [
+    "Agentic task execution",
+    "Code generation and debugging",
+    "Autonomous research and analysis",
+    "Tool-augmented workflows",
+    "Data analysis and transformation",
+    "Multi-step planning and execution",
+    "API integration and automation",
+    "Enterprise chatbot development"
+  ],
+  "industries": [
+    "Software Development",
+    "Enterprise",
+    "Finance",
+    "Research",
+    "Data Analysis",
+    "Automation",
+    "Customer Service",
+    "DevOps"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 9,
+    "quality": 9,
+    "cost": 10
+  },
+  "links": {
+    "site": "https://www.minimax.io/",
+    "docs": "https://huggingface.co/MiniMaxAI/MiniMax-M2"
+  },
+  "category": "Open-Source Large Language Model (Agent & Coding Specialist)",
+  "tags": [
+    "Mixture-of-Experts LLM",
+    "Agentic AI",
+    "Code Assistant",
+    "Enterprise AI",
+    "Open Model 2025"
+  ]
+}
