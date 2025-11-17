@@ -1,0 +1,57 @@
+{
+  "id": "claude-sonnet-4-5",
+  "name": "Claude Sonnet 4.5",
+  "provider": "Anthropic",
+  "description": "Anthropic's most advanced Claude-series model optimized for coding, complex reasoning, and agentic tasks. Described as 'the best coding model in the world' and 'the strongest model for building complex agents' with enhanced tool use, computer control, and extended thinking modes. Features up to 1 million token context window.",
+  "modalities": ["text", "vision"],
+  "context_window": "very long",
+  "strengths": ["coding", "reasoning", "agentic", "tool use", "alignment", "safety", "context awareness", "long-form writing"],
+  "best_for": [
+    "Software development and debugging",
+    "Autonomous agents and task automation",
+    "Complex Q&A and advisory roles",
+    "Creative and long-form writing",
+    "Agent-assisted data analysis"
+  ],
+  "consider_if": "You need a challenging, multi-step task or an AI to act with a high degree of autonomy and reliability, particularly for enterprise settings.",
+  "limitations": "Can be overly cautious in responses. Extended thinking mode can slow down complex queries.",
+  "cost_tier": "$-$$$",
+  "open_weight": false,
+  "pricing": "Free tier available | Claude Pro $20/month | Claude Max $100-$200/month | Team $25-$30/user/month | Enterprise (custom)",
+  "tasks": [
+    "Code generation and debugging",
+    "Autonomous agent tasks",
+    "Complex reasoning and research",
+    "Long-form content writing",
+    "Data analysis and transformation",
+    "Document review and analysis",
+    "Customer service automation"
+  ],
+  "industries": [
+    "Software Development",
+    "Enterprise",
+    "Finance",
+    "Legal",
+    "Healthcare",
+    "Customer Service",
+    "Research"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 9,
+    "cost": 8
+  },
+  "links": {
+    "site": "https://claude.ai",
+    "docs": "https://docs.claude.com",
+    "pricing": "https://www.claude.com/pricing"
+  },
+  "category": "Large Language Model (AI Assistant) – specialized in coding & tool use",
+  "tags": [
+    "Frontier model",
+    "Autonomy/Agents",
+    "Multimodal",
+    "Constitutional AI"
+  ]
+}
