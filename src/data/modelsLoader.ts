@@ -1,5 +1,4 @@
 import { AIModel } from '@/types';
-import modelsJson from './models.json';
 
 // Import GPT-5 data from separate files
 import gpt5Index from './models/gpt-5/index.json';
@@ -289,10 +288,7 @@ const gensparkAiModel: AIModel = {
   developer_info: gensparkAiDeveloper.trim(),
 } as AIModel;
 
-// Filter out modular models from models.json
-const modelsFromJson = (modelsJson as AIModel[]).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0', 'replit-ai', 'manus-ai', 'genspark-ai'].includes(m.id));
-
-// Combine all models: modular models from folders + rest from JSON
+// All models are now loaded from modular folders
 export const models: AIModel[] = [
   gpt5Model,
   grok4Model,
@@ -310,7 +306,6 @@ export const models: AIModel[] = [
   replitAiModel,
   manusAiModel,
   gensparkAiModel,
-  ...modelsFromJson
 ];
 
 export default models;
