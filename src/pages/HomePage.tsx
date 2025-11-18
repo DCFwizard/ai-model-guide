@@ -13,7 +13,7 @@ import { AIModel, UseCase } from '@/types';
 export function HomePage() {
   const topModels = (modelsData as AIModel[]).slice(0, 6);
   const popularUseCases = (useCasesData as UseCase[]).slice(0, 6);
-  const featuredArticle = (blogPostsData as any[]).find(post => post.slug === 'gemini-web-youtube-summarization-workflow');
+  const featuredArticle = (blogPostsData as any[]).find(post => post.slug === 'gemini-3-pro-benchmark-ai-performance');
   return (
     <>
       <SEO
