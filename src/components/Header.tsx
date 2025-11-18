@@ -11,6 +11,7 @@ const navLinks = [
   { to: '/models', label: 'Models' },
   { to: '/use-cases', label: 'Use Cases' },
   { to: '/blog', label: 'Blog' },
+  { to: '/about', label: 'About' },
 ];
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
