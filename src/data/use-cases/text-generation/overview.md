@@ -1,0 +1,1 @@
+Text generation involves creating human-like text for various purposes, such as writing articles, marketing copy, emails, or creative fiction. Models are evaluated on their creativity, coherence, and ability to adopt a specific style or tone.

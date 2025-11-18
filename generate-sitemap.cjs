@@ -496,10 +496,42 @@ function loadBlogPosts() {
   });
 }
 
+// Load use cases from modular structure
+function loadUseCases() {
+  const useCaseSlugs = [
+    'summarization',
+    'rag',
+    'coding-assistance',
+    'text-generation',
+    'vision',
+    'agents'
+  ];
+
+  return useCaseSlugs.map(slug => {
+    const indexPath = path.join(__dirname, `src/data/use-cases/${slug}/index.json`);
+    const overviewPath = path.join(__dirname, `src/data/use-cases/${slug}/overview.md`);
+    const recommendationsPath = path.join(__dirname, `src/data/use-cases/${slug}/recommendations.json`);
+    const evaluationCriteriaPath = path.join(__dirname, `src/data/use-cases/${slug}/evaluation-criteria.json`);
+    const faqPath = path.join(__dirname, `src/data/use-cases/${slug}/faq.json`);
+
+    const indexData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+    const overview = fs.readFileSync(overviewPath, 'utf8').trim();
+    const recommendations = JSON.parse(fs.readFileSync(recommendationsPath, 'utf8'));
+    const evaluationCriteria = JSON.parse(fs.readFileSync(evaluationCriteriaPath, 'utf8'));
+    const faq = JSON.parse(fs.readFileSync(faqPath, 'utf8'));
+
+    return {
+      ...indexData,
+      overview,
+      recommendations,
+      evaluation_criteria: evaluationCriteria,
+      faq
+    };
+  });
+}
+
 const modelsData = loadModels();
-const useCasesData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'src/data/use-cases.json'), 'utf8')
-);
+const useCasesData = loadUseCases();
 const blogPostsData = loadBlogPosts();
 
 const SITE_URL = 'https://whichaimodeltouseforwhat.com';

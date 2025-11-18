@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
-import useCasesData from '@/data/use-cases.json';
+import useCasesData from '@/data/useCasesLoader';
 import { UseCase } from '@/types';
 
 interface RelatedUseCasesProps {

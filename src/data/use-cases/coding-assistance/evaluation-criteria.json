@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Language Support",
+    "description": "How well does the model perform in your specific programming language and framework?"
+  },
+  {
+    "title": "Problem-Solving Ability",
+    "description": "Can the model understand and solve complex algorithmic challenges, not just generate simple snippets?"
+  },
+  {
+    "title": "Debugging Skills",
+    "description": "When given a piece of buggy code and an error message, can the model identify the issue and suggest a correct fix?"
+  },
+  {
+    "title": "Contextual Awareness",
+    "description": "Does the model understand the broader context of your project to provide relevant and consistent suggestions?"
+  }
+]
