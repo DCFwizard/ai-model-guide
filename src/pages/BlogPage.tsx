@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import blogPosts from '@/data/blog-posts.json';
+import blogPosts from '@/data/blogPostsLoader';
 import { BlogPost } from '@/types';
 
 type FilterType = 'all' | 'Guide' | 'News' | 'Updates';
