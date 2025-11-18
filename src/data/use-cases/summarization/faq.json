@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What's the difference between extractive and abstractive summarization?",
+    "answer": "Extractive summarization selects key sentences directly from the source text, while abstractive summarization generates new sentences to capture the core meaning, which is what modern LLMs do."
+  },
+  {
+    "question": "How can I improve summary quality?",
+    "answer": "Use clear, specific prompts. For example, instead of 'Summarize this,' try 'Summarize this meeting transcript into a list of key decisions and action items.'"
+  },
+  {
+    "question": "Can models summarize audio or video?",
+    "answer": "Yes, but it's a two-step process. First, you need a speech-to-text model to transcribe the audio, then you can feed the transcript to a text model for summarization."
+  }
+]

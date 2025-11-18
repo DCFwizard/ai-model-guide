@@ -1,0 +1,6 @@
+{
+  "slug": "rag",
+  "title": "Retrieval-Augmented Generation (RAG)",
+  "description": "Answer questions using a private knowledge base for accurate, context-aware responses.",
+  "icon": "Database"
+}

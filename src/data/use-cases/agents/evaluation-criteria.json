@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Reasoning & Planning",
+    "description": "Can the model break down a complex goal into a logical sequence of smaller, executable steps?"
+  },
+  {
+    "title": "Tool Use Reliability",
+    "description": "How reliably can the model call functions/tools with the correct arguments and handle their outputs to inform its next action?"
+  },
+  {
+    "title": "Resilience",
+    "description": "When a tool fails or an unexpected event occurs, can the agent recover, re-plan, and still attempt to complete its goal?"
+  },
+  {
+    "title": "Cost & Speed",
+    "description": "Agentic workflows can involve many model calls, so the cost and latency of the chosen model are critical factors for user experience."
+  }
+]
