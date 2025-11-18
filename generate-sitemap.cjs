@@ -388,13 +388,36 @@ function loadModels() {
   return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, ...modelsFromJson];
 }
 
+// Load blog posts from modular structure
+function loadBlogPosts() {
+  const blogPostSlugs = [
+    'gemini-3-pro-benchmark-ai-performance',
+    'manus-browser-operator-local-automation',
+    'gemini-web-youtube-summarization-workflow',
+    'gpt-5-1-chatgpt-smarter-warmer-personalized',
+    'kimi-k2-thinking-moonshot-ai-reasoning-powerhouse',
+    'monthly-update-ai-models-october-2025'
+  ];
+
+  return blogPostSlugs.map(slug => {
+    const indexPath = path.join(__dirname, `src/data/blog-posts/${slug}/index.json`);
+    const contentPath = path.join(__dirname, `src/data/blog-posts/${slug}/content.md`);
+
+    const indexData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+    const content = fs.readFileSync(contentPath, 'utf8').trim();
+
+    return {
+      ...indexData,
+      content
+    };
+  });
+}
+
 const modelsData = loadModels();
 const useCasesData = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src/data/use-cases.json'), 'utf8')
 );
-const blogPostsData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'src/data/blog-posts.json'), 'utf8')
-);
+const blogPostsData = loadBlogPosts();
 
 const SITE_URL = 'https://whichaimodeltouseforwhat.com';
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format

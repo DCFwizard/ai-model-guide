@@ -3,7 +3,7 @@ import { SEO } from '@/components/SEO';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, User } from 'lucide-react';
-import blogPosts from '@/data/blog-posts.json';
+import blogPosts from '@/data/blogPostsLoader';
 import { BlogPost } from '@/types';
 
 export function BlogPostPage() {
