@@ -63,8 +63,8 @@ export function BlogPage() {
               <div className="grid gap-8 md:grid-cols-2">
                 {filteredPosts.map((post) => (
                   <Link key={post.slug} to={`/blog/${post.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
-                      <CardHeader>
+                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group flex flex-col">
+                      <CardHeader className="flex-grow">
                         <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                           <Badge>{post.category}</Badge>
                           <span className="flex items-center gap-1">
