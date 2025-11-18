@@ -7,31 +7,41 @@ export function AboutPage() {
         title="About Us"
         description="Learn about the mission and purpose of the AI Model Guide."
       />
-      <StaticPageLayout title="About This Guide">
+      <StaticPageLayout title="About Us">
         <p>
-          The world of AI is moving at an incredible pace. New models are released constantly, each with its own unique strengths, weaknesses, and ideal use cases. For developers, researchers, and product managers, navigating this landscape to find the right tool for the job can be overwhelming.
+          The world of artificial intelligence is evolving at an extraordinary pace. New models are released constantly, each with its own strengths, limitations, and ideal use cases. For developers, researchers, and product managers, navigating this landscape and choosing the right tool can feel overwhelming. That is why we created <strong>AI Model Guide – Which AI Model To Use For What?</strong>, a practical resource designed to help you make confident, informed decisions.
         </p>
-        <p>
-          That's why we created the <strong>AI Model Guide</strong>.
-        </p>
+
         <h2>Our Mission</h2>
         <p>
-          Our mission is simple: to provide a clear, practical, and vendor-neutral resource for choosing the right AI model. We cut through the hype to deliver concise, actionable information that helps you build better, faster, and more effectively with AI.
+          Our mission is simple: to provide clear, actionable, and vendor-neutral guidance for selecting the most effective AI model for your task. We cut through the hype and focus on what truly matters, offering concise insights that help you build better, faster, and more efficiently with AI. The right model can be the difference between a project that thrives and one that struggles, so we organize information around real-world use cases such as summarization, coding assistance, and retrieval augmented generation.
         </p>
-        <p>
-          We believe that the right model can be the difference between a project that succeeds and one that struggles. By organizing information around real-world use cases—like summarization, coding assistance, and Retrieval-Augmented Generation (RAG)—we aim to connect your problem directly to the best possible solution.
-        </p>
+
         <h2>What We Do</h2>
-        <ul>
-          <li><strong>Curate and Compare:</strong> We track the leading AI models from providers like OpenAI, Anthropic, Google, Meta, and more, presenting their capabilities in an easy-to-compare format.</li>
-          <li><strong>Focus on Practicality:</strong> We emphasize real-world performance, cost-effectiveness, and the specific tasks where each model excels.</li>
-          <li><strong>Maintain Neutrality:</strong> Our recommendations are based on the technical merits and common applications of each model, without preference for any single provider.</li>
-        </ul>
+
+        <h3>Curate and Compare</h3>
         <p>
-          This guide is a living document, updated as the AI landscape evolves. We hope it serves as a valuable companion on your journey of building with artificial intelligence.
+          We closely track the leading AI models from providers like OpenAI, Anthropic, Google, Meta, and others, presenting their capabilities in a format that is easy to compare.
         </p>
-        <p className="mt-8 text-muted-foreground">
-          Built with ❤️ at Cloudflare
+
+        <h3>Focus on Practicality</h3>
+        <p>
+          We emphasize real-world performance, cost effectiveness, context length, and the specific tasks where each model excels.
+        </p>
+
+        <h3>Maintain Neutrality</h3>
+        <p>
+          All recommendations are based on the technical merits and common applications of each model, without preference for any provider.
+        </p>
+
+        <h3>Evolve With the AI Landscape</h3>
+        <p>
+          This guide is a living, continuously updated resource built to grow as AI advances. We also welcome community feedback and contributions to keep the information accurate and helpful for everyone.
+        </p>
+
+        <h2>Why We Do It</h2>
+        <p>
+          We believe AI should be accessible and understandable. By providing transparent, unbiased insights, our goal is to help you choose the right model for your needs and make your work with artificial intelligence easier, more efficient, and better informed. Whether you are here to compare tools, validate your choices, or simply explore what is possible, this guide is built to support you on your journey.
         </p>
       </StaticPageLayout>
     </>
