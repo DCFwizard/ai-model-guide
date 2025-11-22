@@ -1,18 +1,18 @@
 [
   {
     "title": "Retrieval Quality",
-    "description": "Go beyond binary relevance and measure graded relevance using NDCG or Recall@K. Evaluate retrieval coverage: does the system consistently find all required evidence? Include tests for adversarial queries, paraphrasing, and domain-shift retrieval."
+    "description": "- Go beyond binary relevance and measure graded relevance using NDCG or Recall@K\n- Evaluate retrieval coverage: does the system consistently find all required evidence?\n- Include tests for adversarial queries, paraphrasing, and domain-shift retrieval"
   },
   {
     "title": "Context Integration",
-    "description": "Measure how well the model filters irrelevant retrieved chunks. Assess whether the model over-relies on retrieval even when irrelevant. Test the ability to merge multiple retrieved passages into a unified reasoning chain."
+    "description": "- Measure how well the model filters irrelevant retrieved chunks\n- Assess whether the model over-relies on retrieval even when irrelevant\n- Test the ability to merge multiple retrieved passages into a unified reasoning chain"
   },
   {
     "title": "Groundedness",
-    "description": "Force the model to cite which retrieved chunk supports each sentence. Penalize hallucinations even when retrieval partially overlaps with the correct answer. Use groundedness scoring with LLM-as-a-judge to evaluate alignment with retrieved content."
+    "description": "- Force the model to cite which retrieved chunk supports each sentence\n- Penalize hallucinations even when retrieval partially overlaps with the correct answer\n- Use groundedness scoring with LLM-as-a-judge to evaluate alignment with retrieved content"
   },
   {
     "title": "Latency & Cost",
-    "description": "Measure separately: retrieval latency, reranking latency, and generation latency. Evaluate how increasing K (number of retrieved documents) impacts total costs and output quality. Test cost-efficiency under different retrieval backends (BM25, hybrid, dense vectors)."
+    "description": "- Measure separately: retrieval latency, reranking latency, and generation latency\n- Evaluate how increasing K (number of retrieved documents) impacts total costs and output quality\n- Test cost-efficiency under different retrieval backends (BM25, hybrid, dense vectors)"
   }
 ]

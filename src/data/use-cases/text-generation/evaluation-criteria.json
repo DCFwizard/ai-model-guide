@@ -1,18 +1,18 @@
 [
   {
     "title": "Creativity",
-    "description": "Evaluate originality with LLM-as-a-judge ratings and plagiarism detection tools. Test creative flexibility with prompts requiring metaphor, narrative shifts, or stylistic imitation. Distinguish between creativity and coherence in evaluation."
+    "description": "- Evaluate originality with LLM-as-a-judge ratings and plagiarism detection tools\n- Test creative flexibility with prompts requiring metaphor, narrative shifts, or stylistic imitation\n- Distinguish between creativity and coherence in evaluation"
   },
   {
     "title": "Coherence",
-    "description": "Test long-range narrative consistency over several paragraphs or sections. Evaluate entity tracking, plot consistency, and ability to handle multiple characters/topics. Measure coherence degradation under long-context scenarios."
+    "description": "- Test long-range narrative consistency over several paragraphs or sections\n- Evaluate entity tracking, plot consistency, and ability to handle multiple characters/topics\n- Measure coherence degradation under long-context scenarios"
   },
   {
     "title": "Instruction Following",
-    "description": "Assess compliance with explicit constraints (word limit, tone, format). Evaluate multi-step instruction-following ability. Use structured evaluation with LLM-as-a-judge for grading adherence."
+    "description": "- Assess compliance with explicit constraints (word limit, tone, format)\n- Evaluate multi-step instruction-following ability\n- Use structured evaluation with LLM-as-a-judge for grading adherence"
   },
   {
     "title": "Factuality",
-    "description": "Introduce fact-checking tasks where incorrect but plausible facts are intentionally inserted. Evaluate external-knowledge reasoning vs. hallucination susceptibility. Test consistency across multiple rewrites of the same factual prompt."
+    "description": "- Introduce fact-checking tasks where incorrect but plausible facts are intentionally inserted\n- Evaluate external-knowledge reasoning vs. hallucination susceptibility\n- Test consistency across multiple rewrites of the same factual prompt"
   }
 ]
