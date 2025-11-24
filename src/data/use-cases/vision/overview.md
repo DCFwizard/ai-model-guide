@@ -1,0 +1,1 @@
+Vision or multimodal models can process and understand visual information in addition to text. They can describe images, read text from documents, analyze charts and graphs, and answer questions about the content of a picture or video frame.

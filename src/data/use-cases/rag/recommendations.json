@@ -1,0 +1,14 @@
+{
+  "premium": {
+    "model_id": "gpt-5",
+    "reason": "Combines strong reasoning with long context, ideal for grounding answers in retrieved documents."
+  },
+  "balanced": {
+    "model_id": "grok-4",
+    "reason": "Native real-time search and tool use, perfect when RAG must mix your data with live web information."
+  },
+  "budget": {
+    "model_id": "qwen3-max",
+    "reason": "1T-parameter MoE with very long context and strong tool-use, great for large-scale, enterprise RAG setups."
+  }
+}

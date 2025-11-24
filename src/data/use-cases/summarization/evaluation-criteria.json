@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Context Window",
+    "description": "Can the model handle the full length of your documents? Models like Claude 3 are ideal for very long inputs."
+  },
+  {
+    "title": "Factual Accuracy",
+    "description": "Does the summary accurately reflect the source text without introducing hallucinations or errors?"
+  },
+  {
+    "title": "Coherence & Readability",
+    "description": "Is the generated summary well-written, easy to understand, and fluent?"
+  },
+  {
+    "title": "Cost & Latency",
+    "description": "For high-volume summarization, efficient models like Mistral can provide significant cost savings."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Faithfulness to Context",
+    "description": "Does the model's answer strictly adhere to the provided documents, avoiding outside knowledge or hallucinations?"
+  },
+  {
+    "title": "Reasoning Ability",
+    "description": "Can the model synthesize information from multiple retrieved chunks to answer complex questions?"
+  },
+  {
+    "title": "Speed and Cost",
+    "description": "RAG can be token-intensive. Efficient models are crucial for maintaining a good user experience and managing costs."
+  },
+  {
+    "title": "Tool Use / Function Calling",
+    "description": "Robust function calling is essential for integrating the retrieval step into the model's workflow."
+  }
+]
