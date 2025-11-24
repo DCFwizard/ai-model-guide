@@ -1,6 +1,6 @@
 import { SEO } from '@/components/SEO';
 import { UseCaseCard } from '@/components/UseCaseCard';
-import useCasesData from '@/data/useCasesLoader';
+import useCasesData from '@/data/use-cases.json';
 import { UseCase } from '@/types';
 export function UseCasesPage() {
   const useCases = useCasesData as UseCase[];
