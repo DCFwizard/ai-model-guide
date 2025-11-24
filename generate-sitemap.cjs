@@ -2,8 +2,12 @@
 const fs = require('fs');
 const path = require('path');
 
-// Load all models from individual model folders
+// Load models from both sources (models.json + individual model folders)
 function loadModels() {
+  const modelsFromJson = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models.json'), 'utf8')
+  ).filter(m => !['gpt-5', 'grok-4', 'claude-sonnet-4-5', 'gemini-2-5-pro', 'qwen3-max', 'deepseek-v3', 'llama-4', 'minimax-m2', 'kimi-k2', 'exaone-4', 'magistral-medium-1-2', 'glm-4-6', 'apriel-2-0'].includes(m.id)); // Exclude modular models
+
   // Load GPT-5 from its folder
   const gpt5Index = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'src/data/models/gpt-5/index.json'), 'utf8')
@@ -381,94 +385,7 @@ function loadModels() {
     developer_info: apriel20Developer,
   };
 
-  // Load Replit AI from its folder
-  const replitAiIndex = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/replit-ai/index.json'), 'utf8')
-  );
-  const replitAiDescription = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/replit-ai/description.md'), 'utf8'
-  ).trim();
-  const replitAiUseCases = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/replit-ai/use-cases.json'), 'utf8')
-  );
-  const replitAiPricing = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/replit-ai/pricing.json'), 'utf8')
-  );
-  const replitAiRating = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/replit-ai/rating.json'), 'utf8')
-  );
-  const replitAiDeveloper = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/replit-ai/developer.md'), 'utf8'
-  ).trim();
-
-  const replitAiModel = {
-    ...replitAiIndex,
-    detailed_description: replitAiDescription,
-    use_cases_detail: replitAiUseCases,
-    pricing_detail: replitAiPricing,
-    rating_detail: replitAiRating,
-    developer_info: replitAiDeveloper,
-  };
-
-  // Load Manus AI from its folder
-  const manusAiIndex = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/manus-ai/index.json'), 'utf8')
-  );
-  const manusAiDescription = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/manus-ai/description.md'), 'utf8'
-  ).trim();
-  const manusAiUseCases = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/manus-ai/use-cases.json'), 'utf8')
-  );
-  const manusAiPricing = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/manus-ai/pricing.json'), 'utf8')
-  );
-  const manusAiRating = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/manus-ai/rating.json'), 'utf8')
-  );
-  const manusAiDeveloper = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/manus-ai/developer.md'), 'utf8'
-  ).trim();
-
-  const manusAiModel = {
-    ...manusAiIndex,
-    detailed_description: manusAiDescription,
-    use_cases_detail: manusAiUseCases,
-    pricing_detail: manusAiPricing,
-    rating_detail: manusAiRating,
-    developer_info: manusAiDeveloper,
-  };
-
-  // Load Genspark AI from its folder
-  const gensparkAiIndex = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/genspark-ai/index.json'), 'utf8')
-  );
-  const gensparkAiDescription = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/genspark-ai/description.md'), 'utf8'
-  ).trim();
-  const gensparkAiUseCases = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/genspark-ai/use-cases.json'), 'utf8')
-  );
-  const gensparkAiPricing = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/genspark-ai/pricing.json'), 'utf8')
-  );
-  const gensparkAiRating = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'src/data/models/genspark-ai/rating.json'), 'utf8')
-  );
-  const gensparkAiDeveloper = fs.readFileSync(
-    path.join(__dirname, 'src/data/models/genspark-ai/developer.md'), 'utf8'
-  ).trim();
-
-  const gensparkAiModel = {
-    ...gensparkAiIndex,
-    detailed_description: gensparkAiDescription,
-    use_cases_detail: gensparkAiUseCases,
-    pricing_detail: gensparkAiPricing,
-    rating_detail: gensparkAiRating,
-    developer_info: gensparkAiDeveloper,
-  };
-
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, replitAiModel, manusAiModel, gensparkAiModel];
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, ...modelsFromJson];
 }
 
 // Load blog posts from modular structure
