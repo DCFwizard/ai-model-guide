@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Image Comprehension",
+    "description": "How accurately does the model understand the objects, relationships, and context within an image?"
+  },
+  {
+    "title": "OCR Accuracy",
+    "description": "For document analysis, how well does the model perform Optical Character Recognition (OCR) to extract text, especially from complex layouts?"
+  },
+  {
+    "title": "Data Extraction",
+    "description": "Can the model accurately extract structured data from unstructured visual inputs like invoices, receipts, or charts?"
+  },
+  {
+    "title": "Latency",
+    "description": "Processing images is more computationally intensive than text. Consider the speed requirements for your application."
+  }
+]

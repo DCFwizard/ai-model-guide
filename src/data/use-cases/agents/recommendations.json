@@ -1,0 +1,14 @@
+{
+  "premium": {
+    "model_id": "genspark-ai",
+    "reason": "\"Super Agent\" workspace combining multiple models and 80+ tools to execute complex multi-step tasks end-to-end."
+  },
+  "balanced": {
+    "model_id": "claude-sonnet-4-5",
+    "reason": "Very strong backbone for agents: tool use, computer control and long-running reasoning for complex workflows."
+  },
+  "budget": {
+    "model_id": "manus-ai",
+    "reason": "Autonomous agent platform that takes high-level goals and independently plans and executes multi-step jobs."
+  }
+}

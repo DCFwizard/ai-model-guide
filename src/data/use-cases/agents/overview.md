@@ -1,0 +1,1 @@
+AI agents are systems that use LLMs as their 'brain' to reason, plan, and execute a sequence of actions to achieve a goal. They can use 'tools' (like calling an API, searching the web, or running code) to interact with the outside world and complete complex, multi-step tasks autonomously.
