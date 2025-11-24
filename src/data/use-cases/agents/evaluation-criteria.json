@@ -1,18 +1,18 @@
 [
   {
     "title": "Task Completion",
-    "description": "Evaluate multi-step workflows where the agent must plan, revise, and recover from errors. Measure success across both deterministic and open-ended tasks. Test generalization to unseen tasks requiring novel planning."
+    "description": "• Evaluate multi-step workflows where the agent must plan, revise, and recover from errors\n• Measure success across both deterministic and open-ended tasks\n• Test generalization to unseen tasks requiring novel planning"
   },
   {
     "title": "Tool Use",
-    "description": "Measure accuracy in selecting the correct tool for the job. Evaluate parameter correctness and efficiency of tool calls. Introduce intentional tool errors to test error-handling and fallback strategies."
+    "description": "• Measure accuracy in selecting the correct tool for the job\n• Evaluate parameter correctness and efficiency of tool calls\n• Introduce intentional tool errors to test error-handling and fallback strategies"
   },
   {
     "title": "Planning Ability",
-    "description": "Analyze chain-of-thought depth, logical consistency, and branching strategy. Test with long-horizon tasks requiring decision checkpoints. Measure how the agent revises plans dynamically when conditions change."
+    "description": "• Analyze chain-of-thought depth, logical consistency, and branching strategy\n• Test with long-horizon tasks requiring decision checkpoints\n• Measure how the agent revises plans dynamically when conditions change"
   },
   {
     "title": "Robustness",
-    "description": "Evaluate resilience against ambiguous instructions, missing data, and noisy environments. Test robustness against adversarial inputs and misdirection. Measure the agent's ability to detect and avoid hallucinations or unsafe actions."
+    "description": "• Evaluate resilience against ambiguous instructions, missing data, and noisy environments\n• Test robustness against adversarial inputs and misdirection\n• Measure the agent's ability to detect and avoid hallucinations or unsafe actions"
   }
 ]

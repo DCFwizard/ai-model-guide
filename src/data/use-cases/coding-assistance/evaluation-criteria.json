@@ -1,18 +1,18 @@
 [
   {
     "title": "Reasoning Ability",
-    "description": "Test with tasks requiring multi-step logical reasoning, not only syntax correctness. Evaluate how the model handles incomplete instructions or ambiguous requirements. Include adversarial code tests such as tricky edge cases, recursion, or state tracking."
+    "description": "• Test with tasks requiring multi-step logical reasoning, not only syntax correctness\n• Evaluate how the model handles incomplete instructions or ambiguous requirements\n• Include adversarial code tests such as tricky edge cases, recursion, or state tracking"
   },
   {
     "title": "Accuracy / Code Correctness",
-    "description": "Use unit tests, integration tests, and static analysis tools to evaluate correctness. Measure compilation success, runtime errors, and logical correctness separately. Evaluate model robustness to incorrect or inconsistent user input."
+    "description": "• Use unit tests, integration tests, and static analysis tools to evaluate correctness\n• Measure compilation success, runtime errors, and logical correctness separately\n• Evaluate model robustness to incorrect or inconsistent user input"
   },
   {
     "title": "Tool Use Integration",
-    "description": "Test the ability to call external tools (debuggers, linters, package managers). Evaluate if the model selects the appropriate tool for a given task. Measure how consistently it produces editor-friendly structured outputs (JSON, XML, CLI commands)."
+    "description": "• Test the ability to call external tools (debuggers, linters, package managers)\n• Evaluate if the model selects the appropriate tool for a given task\n• Measure how consistently it produces editor-friendly structured outputs (JSON, XML, CLI commands)"
   },
   {
     "title": "Language Support",
-    "description": "Evaluate performance across programming languages and frameworks relevant to the intended use case. Include cross-language reasoning tasks (e.g., translating Python to Rust). Test the handling of large multi-file repositories through long-context encoding."
+    "description": "• Evaluate performance across programming languages and frameworks relevant to the intended use case\n• Include cross-language reasoning tasks (e.g., translating Python to Rust)\n• Test the handling of large multi-file repositories through long-context encoding"
   }
 ]
