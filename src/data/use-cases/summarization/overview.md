@@ -1,1 +1,0 @@
-Summarization is the task of creating a short, accurate, and coherent version of a longer text document. AI models excel at this by identifying key points and generating fluent summaries, saving significant time and effort in processing large volumes of information.

@@ -1,1 +1,0 @@
-RAG is a technique that enhances LLMs by connecting them to external knowledge bases. Instead of relying solely on its training data, the model first retrieves relevant information from your documents and then uses that information to generate a more accurate, up-to-date, and verifiable answer.
