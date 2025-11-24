@@ -1,18 +1,18 @@
 [
   {
+    "title": "Reasoning Ability",
+    "description": "Test with tasks requiring multi-step logical reasoning, not only syntax correctness. Evaluate how the model handles incomplete instructions or ambiguous requirements. Include adversarial code tests such as tricky edge cases, recursion, or state tracking."
+  },
+  {
+    "title": "Accuracy / Code Correctness",
+    "description": "Use unit tests, integration tests, and static analysis tools to evaluate correctness. Measure compilation success, runtime errors, and logical correctness separately. Evaluate model robustness to incorrect or inconsistent user input."
+  },
+  {
+    "title": "Tool Use Integration",
+    "description": "Test the ability to call external tools (debuggers, linters, package managers). Evaluate if the model selects the appropriate tool for a given task. Measure how consistently it produces editor-friendly structured outputs (JSON, XML, CLI commands)."
+  },
+  {
     "title": "Language Support",
-    "description": "How well does the model perform in your specific programming language and framework?"
-  },
-  {
-    "title": "Problem-Solving Ability",
-    "description": "Can the model understand and solve complex algorithmic challenges, not just generate simple snippets?"
-  },
-  {
-    "title": "Debugging Skills",
-    "description": "When given a piece of buggy code and an error message, can the model identify the issue and suggest a correct fix?"
-  },
-  {
-    "title": "Contextual Awareness",
-    "description": "Does the model understand the broader context of your project to provide relevant and consistent suggestions?"
+    "description": "Evaluate performance across programming languages and frameworks relevant to the intended use case. Include cross-language reasoning tasks (e.g., translating Python to Rust). Test the handling of large multi-file repositories through long-context encoding."
   }
 ]

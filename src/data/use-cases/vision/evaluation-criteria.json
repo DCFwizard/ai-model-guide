@@ -1,18 +1,18 @@
 [
   {
-    "title": "Image Comprehension",
-    "description": "How accurately does the model understand the objects, relationships, and context within an image?"
+    "title": "Image Understanding",
+    "description": "Evaluate object recognition, spatial reasoning, and fine-grained visual detail extraction. Test robustness under image noise, cropping, rotations, and occlusions. Include evaluation of diagram understanding and chart/graph interpretation."
   },
   {
-    "title": "OCR Accuracy",
-    "description": "For document analysis, how well does the model perform Optical Character Recognition (OCR) to extract text, especially from complex layouts?"
+    "title": "OCR & Text Extraction",
+    "description": "Test accuracy under real-world conditions: glare, low resolution, handwriting. Distinguish between OCR accuracy and semantic interpretation accuracy. Evaluate multilingual OCR performance."
   },
   {
     "title": "Data Extraction",
-    "description": "Can the model accurately extract structured data from unstructured visual inputs like invoices, receipts, or charts?"
+    "description": "Test structured extraction from complex images (invoices, tables, forms). Measure consistency in layout reconstruction tasks. Evaluate grounding between visual elements and textual references."
   },
   {
     "title": "Latency",
-    "description": "Processing images is more computationally intensive than text. Consider the speed requirements for your application."
+    "description": "Benchmark both image processing time and multimodal generation time. Measure impact of image size and resolution on throughput. Compare GPU vs CPU performance for real-time applications."
   }
 ]
