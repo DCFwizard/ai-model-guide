@@ -1,5 +1,9 @@
 import { BlogPost } from '@/types';
 
+// Import Claude Opus 4.5 blog post
+import claudeOpus45Index from './blog-posts/claude-opus-4-5-ai-coding-reasoning-autonomy/index.json';
+import claudeOpus45Content from './blog-posts/claude-opus-4-5-ai-coding-reasoning-autonomy/content.md?raw';
+
 // Import Gemini 3 Pro blog post
 import gemini3ProIndex from './blog-posts/gemini-3-pro-benchmark-ai-performance/index.json';
 import gemini3ProContent from './blog-posts/gemini-3-pro-benchmark-ai-performance/content.md?raw';
@@ -25,6 +29,11 @@ import monthlyUpdateIndex from './blog-posts/monthly-update-ai-models-october-20
 import monthlyUpdateContent from './blog-posts/monthly-update-ai-models-october-2025/content.md?raw';
 
 // Combine index.json with content.md for each blog post
+const claudeOpus45Post: BlogPost = {
+  ...claudeOpus45Index,
+  content: claudeOpus45Content.trim(),
+} as BlogPost;
+
 const gemini3ProPost: BlogPost = {
   ...gemini3ProIndex,
   content: gemini3ProContent.trim(),
@@ -57,6 +66,7 @@ const monthlyUpdatePost: BlogPost = {
 
 // Export all blog posts as an array
 export const blogPosts: BlogPost[] = [
+  claudeOpus45Post,
   gemini3ProPost,
   manusBrowserPost,
   geminiYoutubePost,
