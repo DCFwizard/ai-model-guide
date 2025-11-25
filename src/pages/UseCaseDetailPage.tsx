@@ -93,7 +93,13 @@ export function UseCaseDetailPage() {
               {useCase.evaluation_criteria.map((criterion) => (
                 <Card key={criterion.title}>
                   <CardHeader><CardTitle>{criterion.title}</CardTitle></CardHeader>
-                  <CardContent><p className="text-muted-foreground">{criterion.description}</p></CardContent>
+                  <CardContent>
+                    <ul className="text-muted-foreground space-y-2">
+                      {criterion.description.split('\n').map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
                 </Card>
               ))}
             </div>
