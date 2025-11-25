@@ -1,18 +1,18 @@
 [
   {
     "title": "Context Window",
-    "description": "Can the model handle the full length of your documents? Models like Claude 3 are ideal for very long inputs."
+    "description": "• Assess not only max token capacity but how the model preserves logical structure when chunking long documents\n• Evaluate whether the model can reconstruct global narrative consistency across multiple segments\n• Consider degradation in summary quality as document length increases"
   },
   {
     "title": "Factual Accuracy",
-    "description": "Does the summary accurately reflect the source text without introducing hallucinations or errors?"
+    "description": "• Incorporate LLM-as-a-judge factual consistency checks (e.g., QAGS, FactCC)\n• Compare summaries against source text with semantic similarity metrics, not just ROUGE\n• Evaluate whether key numerical data, citations, and names are preserved without distortion"
   },
   {
-    "title": "Coherence & Readability",
-    "description": "Is the generated summary well-written, easy to understand, and fluent?"
+    "title": "Faithfulness",
+    "description": "• Test whether summaries include fabricated details not present in the source\n• Measure groundedness by prompting the model to cite the specific parts of the input supporting each claim\n• Use contrastive evaluation by intentionally injecting misleading text to test robustness"
   },
   {
-    "title": "Cost & Latency",
-    "description": "For high-volume summarization, efficient models like Mistral can provide significant cost savings."
+    "title": "Coherence",
+    "description": "• Evaluate paragraph transitions, sentence ordering, and pronoun resolution\n• Test with multi-topic documents to verify the model's ability to maintain a structured narrative instead of merging unrelated concepts\n• Include human-rated coherence benchmarks for long-form summarization"
   }
 ]

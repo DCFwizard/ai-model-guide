@@ -1,18 +1,18 @@
 [
   {
-    "title": "Reasoning & Planning",
-    "description": "Can the model break down a complex goal into a logical sequence of smaller, executable steps?"
+    "title": "Task Completion",
+    "description": "• Evaluate multi-step workflows where the agent must plan, revise, and recover from errors\n• Measure success across both deterministic and open-ended tasks\n• Test generalization to unseen tasks requiring novel planning"
   },
   {
-    "title": "Tool Use Reliability",
-    "description": "How reliably can the model call functions/tools with the correct arguments and handle their outputs to inform its next action?"
+    "title": "Tool Use",
+    "description": "• Measure accuracy in selecting the correct tool for the job\n• Evaluate parameter correctness and efficiency of tool calls\n• Introduce intentional tool errors to test error-handling and fallback strategies"
   },
   {
-    "title": "Resilience",
-    "description": "When a tool fails or an unexpected event occurs, can the agent recover, re-plan, and still attempt to complete its goal?"
+    "title": "Planning Ability",
+    "description": "• Analyze chain-of-thought depth, logical consistency, and branching strategy\n• Test with long-horizon tasks requiring decision checkpoints\n• Measure how the agent revises plans dynamically when conditions change"
   },
   {
-    "title": "Cost & Speed",
-    "description": "Agentic workflows can involve many model calls, so the cost and latency of the chosen model are critical factors for user experience."
+    "title": "Robustness",
+    "description": "• Evaluate resilience against ambiguous instructions, missing data, and noisy environments\n• Test robustness against adversarial inputs and misdirection\n• Measure the agent's ability to detect and avoid hallucinations or unsafe actions"
   }
 ]

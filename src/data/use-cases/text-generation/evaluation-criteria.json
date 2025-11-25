@@ -1,18 +1,18 @@
 [
   {
-    "title": "Creativity & Style",
-    "description": "Can the model generate text that is engaging, original, and matches your desired tone (e.g., formal, witty, technical)?"
+    "title": "Creativity",
+    "description": "• Evaluate originality with LLM-as-a-judge ratings and plagiarism detection tools\n• Test creative flexibility with prompts requiring metaphor, narrative shifts, or stylistic imitation\n• Distinguish between creativity and coherence in evaluation"
   },
   {
     "title": "Coherence",
-    "description": "Does the generated text flow logically and stay on topic, especially in longer pieces of content?"
+    "description": "• Test long-range narrative consistency over several paragraphs or sections\n• Evaluate entity tracking, plot consistency, and ability to handle multiple characters/topics\n• Measure coherence degradation under long-context scenarios"
   },
   {
     "title": "Instruction Following",
-    "description": "How well does the model adhere to complex instructions, constraints, and formatting requirements in your prompt?"
+    "description": "• Assess compliance with explicit constraints (word limit, tone, format)\n• Evaluate multi-step instruction-following ability\n• Use structured evaluation with LLM-as-a-judge for grading adherence"
   },
   {
     "title": "Factuality",
-    "description": "For non-fiction content, it's crucial to verify the model's outputs, as even the best models can 'hallucinate' facts."
+    "description": "• Introduce fact-checking tasks where incorrect but plausible facts are intentionally inserted\n• Evaluate external-knowledge reasoning vs. hallucination susceptibility\n• Test consistency across multiple rewrites of the same factual prompt"
   }
 ]
