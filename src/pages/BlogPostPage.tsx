@@ -120,6 +120,12 @@ export function BlogPostPage() {
                     </h3>
                   );
                 }
+                // Support for HTML links/buttons
+                if (paragraph.trim().startsWith('<a ')) {
+                  return (
+                    <div key={index} className="my-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  );
+                }
                 if (paragraph.startsWith('**Choose ') || paragraph.startsWith('- ')) {
                   return (
                     <p key={index} className="my-4">
