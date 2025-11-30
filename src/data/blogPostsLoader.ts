@@ -1,5 +1,9 @@
 import { BlogPost } from '@/types';
 
+// Import The Thinking Game review
+import thinkingGameIndex from './blog-posts/thinking-game-review-deepmind-agi-documentary/index.json';
+import thinkingGameContent from './blog-posts/thinking-game-review-deepmind-agi-documentary/content.md?raw';
+
 // Import Claude Opus 4.5 blog post
 import claudeOpus45Index from './blog-posts/claude-opus-4-5-ai-coding-reasoning-autonomy/index.json';
 import claudeOpus45Content from './blog-posts/claude-opus-4-5-ai-coding-reasoning-autonomy/content.md?raw';
@@ -29,6 +33,11 @@ import monthlyUpdateIndex from './blog-posts/monthly-update-ai-models-october-20
 import monthlyUpdateContent from './blog-posts/monthly-update-ai-models-october-2025/content.md?raw';
 
 // Combine index.json with content.md for each blog post
+const thinkingGamePost: BlogPost = {
+  ...thinkingGameIndex,
+  content: thinkingGameContent.trim(),
+} as BlogPost;
+
 const claudeOpus45Post: BlogPost = {
   ...claudeOpus45Index,
   content: claudeOpus45Content.trim(),
@@ -66,6 +75,7 @@ const monthlyUpdatePost: BlogPost = {
 
 // Export all blog posts as an array
 export const blogPosts: BlogPost[] = [
+  thinkingGamePost,
   claudeOpus45Post,
   gemini3ProPost,
   manusBrowserPost,
