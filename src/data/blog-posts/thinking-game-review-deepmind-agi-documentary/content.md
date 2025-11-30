@@ -12,6 +12,7 @@ While celebrating these achievements, The Thinking Game does not shy away from t
 The core message of the documentary is one of profound opportunity and immense responsibility. By choosing to prioritize safety, pure research, and the application of AI to scientific good (like AlphaFold), DeepMind sets a precedent for how this powerful, civilization-redefining technology should be handled.
 The Thinking Game is more than a company profile; it is a vital, timely documentary about the ultimate intellectual challenge, the personal sacrifices required to meet it, and the moral framework needed to ensure that the advent of AGI benefits all of humanity.
 ## Watch the Documentary
-**Title:** The Thinking Game | Full documentary | Tribeca Film Festival official selection
-**Channel:** Google DeepMind
-[Watch on YouTube →](https://www.youtube.com/watch?v=d95J8yzvjbQ)
+Title: The Thinking Game | Full documentary | Tribeca Film Festival official selection
+Channel: Google DeepMind
+
+<a href="https://www.youtube.com/watch?v=d95J8yzvjbQ" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background-color: #ef4444; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 16px;">Watch on YouTube →</a>
