@@ -8,7 +8,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import blogPosts from '@/data/blogPostsLoader';
 import { BlogPost } from '@/types';
 
-type FilterType = 'all' | 'Guide' | 'News' | 'Updates';
+type FilterType = 'all' | 'Guide' | 'News' | 'Updates' | 'Review';
 
 export function BlogPage() {
   const posts = blogPosts as BlogPost[];
@@ -54,6 +54,7 @@ export function BlogPage() {
               <ToggleGroupItem value="Guide">Guide</ToggleGroupItem>
               <ToggleGroupItem value="News">News</ToggleGroupItem>
               <ToggleGroupItem value="Updates">Updates</ToggleGroupItem>
+              <ToggleGroupItem value="Review">Review</ToggleGroupItem>
             </ToggleGroup>
           </div>
 
