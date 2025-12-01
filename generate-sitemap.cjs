@@ -468,7 +468,36 @@ function loadModels() {
     developer_info: gensparkAiDeveloper,
   };
 
-  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, replitAiModel, manusAiModel, gensparkAiModel];
+  // Load Gemini 3 from its folder
+  const gemini3Index = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-3/index.json'), 'utf8')
+  );
+  const gemini3Description = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gemini-3/description.md'), 'utf8'
+  ).trim();
+  const gemini3UseCases = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-3/use-cases.json'), 'utf8')
+  );
+  const gemini3Pricing = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-3/pricing.json'), 'utf8')
+  );
+  const gemini3Rating = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'src/data/models/gemini-3/rating.json'), 'utf8')
+  );
+  const gemini3Developer = fs.readFileSync(
+    path.join(__dirname, 'src/data/models/gemini-3/developer.md'), 'utf8'
+  ).trim();
+
+  const gemini3Model = {
+    ...gemini3Index,
+    detailed_description: gemini3Description,
+    use_cases_detail: gemini3UseCases,
+    pricing_detail: gemini3Pricing,
+    rating_detail: gemini3Rating,
+    developer_info: gemini3Developer,
+  };
+
+  return [gpt5Model, grok4Model, claudeSonnet45Model, gemini25ProModel, gemini3Model, qwen3MaxModel, deepseekV3Model, llama4Model, minimaxM2Model, kimiK2Model, exaone4Model, magistralMedium12Model, glm46Model, apriel20Model, replitAiModel, manusAiModel, gensparkAiModel];
 }
 
 // Load blog posts from modular structure
