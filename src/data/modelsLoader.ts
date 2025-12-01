@@ -128,6 +128,14 @@ import gensparkAiPricing from './models/genspark-ai/pricing.json';
 import gensparkAiRating from './models/genspark-ai/rating.json';
 import gensparkAiDeveloper from './models/genspark-ai/developer.md?raw';
 
+// Import Gemini 3 data from separate files
+import gemini3Index from './models/gemini-3/index.json';
+import gemini3Description from './models/gemini-3/description.md?raw';
+import gemini3UseCases from './models/gemini-3/use-cases.json';
+import gemini3Pricing from './models/gemini-3/pricing.json';
+import gemini3Rating from './models/gemini-3/rating.json';
+import gemini3Developer from './models/gemini-3/developer.md?raw';
+
 // Combine GPT-5 data from separate files
 const gpt5Model: AIModel = {
   ...gpt5Index,
@@ -288,12 +296,23 @@ const gensparkAiModel: AIModel = {
   developer_info: gensparkAiDeveloper.trim(),
 } as AIModel;
 
+// Combine Gemini 3 data from separate files
+const gemini3Model: AIModel = {
+  ...gemini3Index,
+  detailed_description: gemini3Description.trim(),
+  use_cases_detail: gemini3UseCases,
+  pricing_detail: gemini3Pricing,
+  rating_detail: gemini3Rating,
+  developer_info: gemini3Developer.trim(),
+} as AIModel;
+
 // All models are now loaded from modular folders
 export const models: AIModel[] = [
   gpt5Model,
   grok4Model,
   claudeSonnet45Model,
   gemini25ProModel,
+  gemini3Model,
   qwen3MaxModel,
   deepseekV3Model,
   llama4Model,

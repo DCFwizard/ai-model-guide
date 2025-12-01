@@ -1,0 +1,59 @@
+{
+  "id": "gemini-3",
+  "name": "Gemini 3",
+  "provider": "Google DeepMind",
+  "description": "Google DeepMind's most intelligent AI model to date, designed to bring any idea to life. Gemini 3 combines advanced language understanding with multimodal perception, accepting text, images, video, audio, and code as inputs. Excels at deep reasoning and context understanding with an unprecedented 1 million token context window.",
+  "modalities": ["text", "vision", "speech", "video"],
+  "context_window": "very long",
+  "strengths": ["reasoning", "coding", "multimodal", "context awareness", "agentic capabilities", "creative content", "long context"],
+  "best_for": [
+    "Learning and research with complex materials",
+    "Advanced coding and software development",
+    "Creative content generation (text, images, video)",
+    "Multi-step task planning and automation",
+    "Deep document analysis and synthesis"
+  ],
+  "consider_if": "You need the most intelligent AI model for complex reasoning, multimodal understanding, creative projects, or agentic task automation with deep Google ecosystem integration.",
+  "limitations": "Ultra-premium features like Deep Think mode require expensive subscription. Best suited for Google ecosystem users.",
+  "cost_tier": "$-$$$",
+  "open_weight": false,
+  "pricing": "Free tier available | Google AI Pro $20/month | Google AI Ultra $249.99/month",
+  "tasks": [
+    "Complex reasoning and learning",
+    "Code generation and debugging",
+    "Creative content generation",
+    "Document synthesis and analysis",
+    "Multi-step workflow automation",
+    "Multimodal understanding",
+    "Agentic task execution"
+  ],
+  "industries": [
+    "Software Development",
+    "Research",
+    "Education",
+    "Creative Arts",
+    "Enterprise",
+    "Marketing",
+    "Content Creation"
+  ],
+  "release_date": "2025",
+  "rating": {
+    "speed": 8,
+    "quality": 10,
+    "cost": 6
+  },
+  "links": {
+    "site": "https://gemini.google.com",
+    "docs": "https://ai.google.dev/gemini-api/docs",
+    "pricing": "https://gemini.google/subscriptions/"
+  },
+  "category": "Multimodal Large Language Model (Enterprise-grade)",
+  "tags": [
+    "Generative AI",
+    "Code Assistant",
+    "Multimodal",
+    "Agentic AI",
+    "Creative AI",
+    "Long-context AI"
+  ]
+}

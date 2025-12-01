@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "title": "Learning & Research",
+      "content": "Gemini 3 can help users learn new topics or analyze complex information. It \"synthesizes information about any topic across multiple modalities\" – for example, it can read and summarize academic papers, transcribe and analyze long videos or lectures, and even translate handwritten recipes. This makes it useful for students, researchers, or anyone looking to understand large or complex materials. It can generate study aids (like flashcards or visual explanations) and provide insights in a way that \"makes sense for you\" by leveraging its multimodal reasoning."
+    },
+    {
+      "title": "Coding & Software Development",
+      "content": "Gemini 3 is exceptional for programming assistance. It can generate code, debug, and even create interactive web UIs from natural language prompts. Google calls it \"the best vibe coding and agentic coding model\" they've built, significantly boosting developer productivity. Developers can use Gemini 3 to handle complex coding tasks, get help with front-end design, or even have the AI act as an \"AI pair programmer\" within IDEs. It's integrated into tools like Google's AI Studio, Antigravity platform, as well as third-party developer platforms (e.g. Cursor, GitHub Copilot, JetBrains, Replit) – indicating it's suited for tasks ranging from writing code and fixing bugs to generating entire app prototypes from scratch."
+    },
+    {
+      "title": "Creative Content Generation",
+      "content": "The model is well-suited for creative pursuits. It can assist in writing (e.g. drafting articles, stories, or marketing copy) with high coherence and context awareness. Thanks to its multimodal skills, Gemini 3 can also help create or edit images and even videos when used via specialized tools. For instance, it integrates with Google's image model (code-named Nano Banana) and video generation model (Veo) for creative projects. Users can describe an image or scene, and Gemini (through these tools) will generate it. This enables use cases like designing graphics, making short videos, or generating illustrations from prompts. Its ability to interpret visual input means you could feed it a sketch or photo and ask for enhancements or variations. In short, Gemini 3 acts as a creative assistant for artists, writers, and designers, helping brainstorm ideas and produce content."
+    },
+    {
+      "title": "Planning & Task Automation",
+      "content": "Gemini 3 has strong \"agentic\" capabilities – meaning it can follow multi-step instructions and use tools to act on the user's behalf. It's useful for planning complex tasks or workflows. For example, it can help plan a project or trip, break down tasks, and even execute certain steps (like searching for information, managing a calendar, or sorting emails). Google notes that Gemini 3 can \"take action on your behalf by navigating complex, multi-step workflows from start to finish\", all under user guidance. Early demonstrations show it can book services, organize your inbox, or control a browser to gather information. This makes it a powerful assistant for productivity – essentially a smart agent that not only plans but can also do things (via tool integrations like web browsing or code execution). Business users might leverage this for tasks like analyzing financial reports or generating data visualizations automatically. In enterprise scenarios, partners reported Gemini 3 is able to interpret internal knowledge bases and execute workflows, leading to faster decisions across domains from marketing to legal."
+    },
+    {
+      "title": "Everyday AI Assistant",
+      "content": "As a general AI assistant, Gemini 3 can handle the typical use cases one expects from advanced chatbots. It can answer questions, write summaries, translate languages, draft emails, and have conversational dialogues. Its responses are designed to be \"smart, concise and direct,\" offering genuine insight rather than just generic answers. You might use Gemini 3 via the Gemini app for daily tasks like brainstorming ideas, getting writing feedback, or simply asking general knowledge questions. With its improved understanding of context and intent, it often knows \"what you need with less prompting\", making it a convenient everyday helper."
+    }
+  ],
+  "summary": "Use Gemini 3 whenever you have a complex or creative task that could benefit from AI – from learning a difficult subject, coding a new application, generating content, to delegating routine chores. It is designed as a multipurpose AI with high reasoning ability, suitable for developers, students, professionals, and general users alike. Its agentic capabilities, multimodal understanding, and long context window make it particularly powerful for tasks that other models struggle with."
+}
