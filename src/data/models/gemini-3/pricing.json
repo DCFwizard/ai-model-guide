@@ -1,0 +1,20 @@
+{
+  "tiers": [
+    {
+      "name": "Free Access",
+      "price": "Free",
+      "description": "Anyone with a Google account can use the basic Gemini app for free. The free tier provides access to Gemini's capabilities albeit with some limitations. Free users primarily get the smaller Gemini 2.5 model (called \"Flash\" for fast responses) for most queries, with only limited access to the full Gemini 3 Pro model for certain short interactions. Despite the limits, the free plan still allows trying features like image generation and the \"Deep Research\" mode on a smaller scale. It also includes 15 GB of cloud storage (the usual free Google Drive/Photos storage). This tier is suitable for casual use and experimentation with Gemini's basic abilities at no cost."
+    },
+    {
+      "name": "Google AI Pro",
+      "price": "$20/month",
+      "description": "To unlock Gemini 3's full power, Google offers the AI Pro plan. Priced at $20 USD per month, this plan includes 2 TB of cloud storage and higher-tier access to Gemini 3. Pro subscribers get unlimited chats with the Gemini 3 Pro model, meaning you'll consistently get the most advanced model for your queries. It also enables larger and longer conversations (utilizing that huge context window), and grants access to premium features like \"Deep Research\" (which can analyze hundreds of pages or multiple sources in real time) and image/video generation tools at higher usage limits. The AI Pro plan includes access to Google's Gemini Pro model along with other perks like 1,000 AI credits for video generation and integration of Gemini into Gmail/Docs. This plan is ideal for power users or professionals who need the advanced capabilities regularly. (Note: Google often provides a 1-month free trial for new Pro subscribers, and students in certain regions can get Pro free for a year as a promotion.)"
+    },
+    {
+      "name": "Google AI Ultra",
+      "price": "$249.99/month",
+      "description": "For the maximum capabilities, Google offers an AI Ultra plan at $249.99 USD per month. This is an ultra-premium tier that includes a massive 30 TB of storage and the very latest AI features. Ultra subscribers get everything in Pro plus exclusive benefits. Critically, Ultra gives access to Gemini 3 Deep Think mode – an enhanced version of Gemini 3 with even greater reasoning depth (intended for the most complex problem-solving). Ultra also enables Gemini Agent features, where the AI can autonomously use tools and act as a full personal assistant. Google describes AI Ultra as the \"VIP pass\" to its best AI, including the \"best version of the Gemini assistant\". In addition, Ultra includes the highest limits for generative image and video tools (e.g. unlimited use of the latest Veo video generator in HD) and even perks like an included YouTube Premium subscription. This plan is aimed at AI enthusiasts, developers, and creatives who need extremely high usage and the absolute cutting-edge features. It's currently the only way to get the Deep Think mode. The plan offers a 50% discount on the first three months for new users."
+    }
+  ],
+  "summary": "Individual users can start with free, then upgrade to $20/mo for heavy personal use. Power users or small businesses might consider the Ultra $249.99/mo if they really need a lot of AI output and additional perks like Deep Think mode and agentic capabilities. The pricing isn't just for the model alone but for a bundle of services with Gemini 3 at the core, including cloud storage, image/video generation, and integration into Google's productivity apps. For most individual users, the Pro plan will offer the best balance of advanced AI access at a much lower cost than Ultra, while businesses or AI labs might consider Ultra for its maximum capacity and early access to new features. Casual users can stick with the free tier to get a taste of Gemini 3 on a smaller scale."
+}
