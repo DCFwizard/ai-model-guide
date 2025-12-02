@@ -91,7 +91,7 @@ export default ({ mode }: { mode: string }) => {
   return defineConfig({
     plugins: [react(), cloudflare(), watchDependenciesPlugin()],
     build: {
-      minify: 'terser',
+      minify: 'esbuild', // Use esbuild for faster minification (default, no extra deps)
       sourcemap: false, // Disable source maps in production for performance
       // Ottimizza output per cache
       rollupOptions: {
@@ -118,13 +118,6 @@ export default ({ mode }: { mode: string }) => {
       },
       // Ottimizza chunks
       chunkSizeWarningLimit: 1000,
-      // Minificazione con terser
-      terserOptions: {
-        compress: {
-          drop_console: true, // Rimuovi console.log in production
-          drop_debugger: true,
-        },
-      },
     },
     customLogger: env.VITE_LOGGER_TYPE === 'json' ? customLogger : undefined,
     // Enable source maps in development too
