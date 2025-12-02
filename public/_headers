@@ -1,71 +1,108 @@
-# Cache configuration for Cloudflare Pages
-# This file optimizes caching to improve performance and reduce bandwidth
+# Cache strategy per Cloudflare Pages
+# Ottimizzato per massimizzare cache hit ratio (target 80%+)
 
-# Static assets (JS, CSS) - immutable with 1 year cache
+# Assets statici con hash - cache immutable 1 anno
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
 
-# JavaScript files
-/*.js
+# JavaScript e CSS bundle con hash - cache 1 anno
+/assets/*.js
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/javascript
 
-# CSS files
-/*.css
+/assets/*.css
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: text/css
 
-# Images - 1 year cache
+# Font files - cache 1 anno
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Immagini in assets - cache 1 anno (hanno hash)
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Immagini nella root - cache 1 mese
 /*.png
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
 /*.jpg
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
 /*.jpeg
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
 /*.gif
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
 /*.webp
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
 /*.svg
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=2592000
+/*.ico
+  Cache-Control: public, max-age=2592000
 
-# Fonts - immutable with 1 year cache
-/*.woff
-  Cache-Control: public, max-age=31536000, immutable
-/*.woff2
-  Cache-Control: public, max-age=31536000, immutable
-/*.ttf
-  Cache-Control: public, max-age=31536000, immutable
-/*.otf
-  Cache-Control: public, max-age=31536000, immutable
-/*.eot
-  Cache-Control: public, max-age=31536000, immutable
-
-# JSON data files - 1 hour cache (allow updates)
-/*.json
-  Cache-Control: public, max-age=3600
-
-# HTML files - 1 hour cache (allow frequent updates)
-/*.html
+# JSON data files - cache 1 ora (possono cambiare con deploy)
+/data/*.json
   Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: application/json
 
-# Root HTML - shorter cache for SPA
+# Modelli JSON nelle cartelle - cache 1 ora
+/data/models/*/*.json
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: application/json
+
+# Markdown files - cache 1 ora
+/data/models/*/*.md
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/markdown
+
+# Blog posts JSON - cache 1 ora
+/data/blog-posts/*/*.json
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: application/json
+
+# HTML pages - cache breve con revalidation
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Root index.html - cache 5 minuti
 /index.html
   Cache-Control: public, max-age=300, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
 
-# Sitemap - 1 day cache
+# Service worker - no cache (deve aggiornarsi subito)
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Manifest - cache 1 giorno
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+/site.webmanifest
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+# Robots e sitemap - cache 1 giorno
+/robots.txt
+  Cache-Control: public, max-age=86400
+
 /sitemap.xml
   Cache-Control: public, max-age=86400
 
-# Favicon and manifest - 1 week cache
+# Favicon - cache 1 settimana
 /favicon.ico
   Cache-Control: public, max-age=604800
-/manifest.json
-  Cache-Control: public, max-age=604800
-/robots.txt
-  Cache-Control: public, max-age=604800
 
-# Security headers for all pages
+# Security headers per tutte le pagine
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
