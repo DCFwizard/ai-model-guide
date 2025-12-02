@@ -21,7 +21,7 @@ export function Header() {
         <div className="flex h-16 items-center">
           <div className="flex items-center flex-1">
             <NavLink to="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-              <img src={logoImage} alt="AI Model Guide Logo" className="h-24 w-24" />
+              <img src={logoImage} alt="AI Model Guide Logo" className="h-24 w-24" width="96" height="96" decoding="async" fetchPriority="high" />
               <span className="font-bold text-lg hidden sm:inline-block">AI Model Guide</span>
             </NavLink>
           </div>

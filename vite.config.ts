@@ -91,13 +91,33 @@ export default ({ mode }: { mode: string }) => {
   return defineConfig({
     plugins: [react(), cloudflare(), watchDependenciesPlugin()],
     build: {
-      minify: true,
-      sourcemap: "inline", // Use inline source maps for better error reporting
+      minify: 'esbuild', // Use esbuild for faster minification (default, no extra deps)
+      sourcemap: false, // Disable source maps in production for performance
+      // Ottimizza output per cache
       rollupOptions: {
         output: {
-          sourcemapExcludeSources: false, // Include original source in source maps
+          // File naming con hash per cache busting automatico
+          entryFileNames: 'assets/[name].[hash].js',
+          chunkFileNames: 'assets/[name].[hash].js',
+          assetFileNames: (assetInfo) => {
+            // File diversi hanno TTL diverse
+            const info = assetInfo.name?.split('.') ?? [];
+            const ext = info[info.length - 1];
+
+            // Fonts e immagini hanno hash più lungo (cache lunga)
+            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+              return `assets/images/[name].[hash][extname]`;
+            }
+            if (/woff2?|ttf|otf|eot/i.test(ext)) {
+              return `assets/fonts/[name].[hash][extname]`;
+            }
+
+            return `assets/[name].[hash][extname]`;
+          },
         },
       },
+      // Ottimizza chunks
+      chunkSizeWarningLimit: 1000,
     },
     customLogger: env.VITE_LOGGER_TYPE === 'json' ? customLogger : undefined,
     // Enable source maps in development too

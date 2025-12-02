@@ -54,6 +54,7 @@ export function LazyImage({
       )}
       onLoad={() => setIsLoaded(true)}
       loading="lazy" // Native browser lazy loading as fallback
+      decoding="async" // Async decoding for better performance
       {...props}
     />
   );
